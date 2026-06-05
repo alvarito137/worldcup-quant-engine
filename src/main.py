@@ -5,6 +5,7 @@ from data_loader import load_or_create_mock_data
 from value_engine import build_picks
 from report_generator import generate_markdown_report
 from content_generator import generate_content_scripts
+from newsletter_generator import generate_newsletter
 
 
 def main():
@@ -17,6 +18,7 @@ def main():
 
     generate_markdown_report(picks)
     generate_content_scripts(picks)
+    generate_newsletter(picks)
 
 
 if __name__ == "__main__":
