@@ -57,6 +57,7 @@ def export_premium_picks(picks):
     ]
 
     os.makedirs(PROCESSED_DIR, exist_ok=True)
+
     premium.to_csv(PREMIUM_OUTPUT_PATH, index=False)
 
     print(f"Premium picks exported: {PREMIUM_OUTPUT_PATH}")
