@@ -1,7 +1,8 @@
-import math
 import os
 import pandas as pd
 import numpy as np
+
+from model import calculate_match_probabilities
 
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -29,50 +30,6 @@ def implied_probability(decimal_odds: float) -> float:
 
     return 1 / decimal_odds
 
-
-def sigmoid(x: float) -> float:
-    """
-    Converts a rating difference into a probability-like number between 0 and 1.
-    """
-
-    return 1 / (1 + math.exp(-x))
-
-
-def calculate_match_probabilities(team_a_rating: float, team_b_rating: float) -> dict:
-    """
-    Simple baseline football model.
-
-    This is not a final betting model.
-    This model uses team rating difference to estimate:
-
-    - Team A win probability
-    - Draw probability
-    - Team B win probability
-    """
-
-    rating_diff = team_a_rating - team_b_rating
-
-    # Rating advantage.
-    raw_team_a_strength = sigmoid(rating_diff / 400)
-
-    # Base draw probability in football.
-    base_draw_probability = 0.26
-
-    # If two teams are close in rating, draw probability increases.
-    closeness = max(0, 1 - abs(rating_diff) / 500)
-    draw_probability = base_draw_probability + (0.06 * closeness)
-
-    # Remaining probability is split between team A and team B.
-    remaining_probability = 1 - draw_probability
-
-    team_a_win_probability = remaining_probability * raw_team_a_strength
-    team_b_win_probability = remaining_probability * (1 - raw_team_a_strength)
-
-    return {
-        "team_a_win_probability": team_a_win_probability,
-        "draw_probability": draw_probability,
-        "team_b_win_probability": team_b_win_probability,
-    }
 
 
 def fractional_kelly(decimal_odds: float, model_probability: float, fraction: float = 0.25) -> float:
@@ -111,7 +68,33 @@ def get_signal(value_gap: float) -> str:
         return "POSSIBLE VALUE"
     else:
         return "NO BET"
+    
+def get_risk_label(decimal_odds: float, model_probability: float, value_gap: float) -> str:
+    """
+    Classifies the risk level of a pick.
 
+    This is not a guarantee. It is a simple risk label based on:
+    - odds size
+    - model probability
+    - value gap
+    """
+
+    if decimal_odds >= 5.00:
+        return "VERY HIGH RISK"
+
+    if decimal_odds >= 3.50:
+        return "HIGH RISK"
+
+    if model_probability < 0.30:
+        return "HIGH RISK"
+
+    if value_gap >= 0.10 and model_probability >= 0.35:
+        return "MEDIUM RISK"
+
+    if decimal_odds <= 2.00 and model_probability >= 0.45:
+        return "LOW RISK"
+
+    return "MEDIUM RISK"    
 
 def build_picks() -> pd.DataFrame:
     """
@@ -179,6 +162,11 @@ def build_picks() -> pd.DataFrame:
             )
 
             signal = get_signal(value_gap)
+            risk_label = get_risk_label(
+                decimal_odds=decimal_odds,
+                model_probability=model_probability,
+                value_gap=value_gap
+            )
 
             all_rows.append({
                 "match_id": match_id,
@@ -193,6 +181,7 @@ def build_picks() -> pd.DataFrame:
                 "value_gap": round(value_gap, 4),
                 "kelly_stake_pct": round(kelly_stake_pct, 4),
                 "signal": signal,
+                "risk_label": risk_label,
             })
 
     picks = pd.DataFrame(all_rows)

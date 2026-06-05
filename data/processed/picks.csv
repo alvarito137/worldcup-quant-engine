@@ -1,16 +1,16 @@
-match_id,date,stage,team_a,team_b,selection,decimal_odds,implied_probability,model_probability,value_gap,kelly_stake_pct,signal
-4,2026-06-14,Group Stage,Argentina,Austria,Austria,6.0,0.1667,0.2732,0.1065,0.032,STRONG VALUE
-3,2026-06-13,Group Stage,Brazil,Morocco,Morocco,4.7,0.2128,0.3067,0.0939,0.0298,POSSIBLE VALUE
-1,2026-06-11,Group Stage,Mexico,South Africa,South Africa,5.2,0.1923,0.2695,0.0772,0.0239,POSSIBLE VALUE
-5,2026-06-15,Group Stage,Spain,Uruguay,Uruguay,3.9,0.2564,0.3179,0.0615,0.0207,POSSIBLE VALUE
-4,2026-06-14,Group Stage,Argentina,Austria,Draw,4.0,0.25,0.2984,0.0484,0.0161,NO BET
-1,2026-06-11,Group Stage,Mexico,South Africa,Draw,3.7,0.2703,0.2972,0.0269,0.0092,NO BET
-2,2026-06-12,Group Stage,Canada,Qatar,Qatar,3.6,0.2778,0.303,0.0252,0.0087,NO BET
-3,2026-06-13,Group Stage,Brazil,Morocco,Draw,3.5,0.2857,0.3092,0.0235,0.0082,NO BET
-5,2026-06-15,Group Stage,Spain,Uruguay,Draw,3.4,0.2941,0.3128,0.0187,0.0066,NO BET
-2,2026-06-12,Group Stage,Canada,Qatar,Draw,3.25,0.3077,0.308,0.0003,0.0001,NO BET
-2,2026-06-12,Group Stage,Canada,Qatar,Canada,2.05,0.4878,0.389,-0.0988,0.0,NO BET
-5,2026-06-15,Group Stage,Spain,Uruguay,Spain,1.95,0.5128,0.3693,-0.1435,0.0,NO BET
-3,2026-06-13,Group Stage,Brazil,Morocco,Brazil,1.8,0.5556,0.3841,-0.1715,0.0,NO BET
-1,2026-06-11,Group Stage,Mexico,South Africa,Mexico,1.65,0.6061,0.4333,-0.1727,0.0,NO BET
-4,2026-06-14,Group Stage,Argentina,Austria,Argentina,1.55,0.6452,0.4284,-0.2167,0.0,NO BET
+match_id,date,stage,team_a,team_b,selection,decimal_odds,implied_probability,model_probability,value_gap,kelly_stake_pct,signal,risk_label
+4,2026-06-14,Group Stage,Argentina,Austria,Austria,6.0,0.1667,0.2732,0.1065,0.032,STRONG VALUE,VERY HIGH RISK
+3,2026-06-13,Group Stage,Brazil,Morocco,Morocco,4.7,0.2128,0.3067,0.0939,0.0298,POSSIBLE VALUE,HIGH RISK
+1,2026-06-11,Group Stage,Mexico,South Africa,South Africa,5.2,0.1923,0.2695,0.0772,0.0239,POSSIBLE VALUE,VERY HIGH RISK
+5,2026-06-15,Group Stage,Spain,Uruguay,Uruguay,3.9,0.2564,0.3179,0.0615,0.0207,POSSIBLE VALUE,HIGH RISK
+4,2026-06-14,Group Stage,Argentina,Austria,Draw,4.0,0.25,0.2984,0.0484,0.0161,NO BET,HIGH RISK
+1,2026-06-11,Group Stage,Mexico,South Africa,Draw,3.7,0.2703,0.2972,0.0269,0.0092,NO BET,HIGH RISK
+2,2026-06-12,Group Stage,Canada,Qatar,Qatar,3.6,0.2778,0.303,0.0252,0.0087,NO BET,HIGH RISK
+3,2026-06-13,Group Stage,Brazil,Morocco,Draw,3.5,0.2857,0.3092,0.0235,0.0082,NO BET,HIGH RISK
+5,2026-06-15,Group Stage,Spain,Uruguay,Draw,3.4,0.2941,0.3128,0.0187,0.0066,NO BET,MEDIUM RISK
+2,2026-06-12,Group Stage,Canada,Qatar,Draw,3.25,0.3077,0.308,0.0003,0.0001,NO BET,MEDIUM RISK
+2,2026-06-12,Group Stage,Canada,Qatar,Canada,2.05,0.4878,0.389,-0.0988,0.0,NO BET,MEDIUM RISK
+5,2026-06-15,Group Stage,Spain,Uruguay,Spain,1.95,0.5128,0.3693,-0.1435,0.0,NO BET,MEDIUM RISK
+3,2026-06-13,Group Stage,Brazil,Morocco,Brazil,1.8,0.5556,0.3841,-0.1715,0.0,NO BET,MEDIUM RISK
+1,2026-06-11,Group Stage,Mexico,South Africa,Mexico,1.65,0.6061,0.4333,-0.1727,0.0,NO BET,MEDIUM RISK
+4,2026-06-14,Group Stage,Argentina,Austria,Argentina,1.55,0.6452,0.4284,-0.2167,0.0,NO BET,MEDIUM RISK
