@@ -94,7 +94,45 @@ def get_risk_label(decimal_odds: float, model_probability: float, value_gap: flo
     if decimal_odds <= 2.00 and model_probability >= 0.45:
         return "LOW RISK"
 
-    return "MEDIUM RISK"    
+    return "MEDIUM RISK"   
+
+def get_risk_penalty(risk_label: str) -> float:
+    """
+    Converts risk label into a numeric penalty.
+
+    Higher risk = higher penalty.
+    """
+
+    risk_penalties = {
+        "LOW RISK": 0.00,
+        "MEDIUM RISK": 0.03,
+        "HIGH RISK": 0.06,
+        "VERY HIGH RISK": 0.10,
+    }
+
+    return risk_penalties.get(risk_label, 0.06)
+
+
+def calculate_confidence_score(
+    model_probability: float,
+    value_gap: float,
+    risk_label: str
+) -> float:
+    """
+    Calculates a practical confidence score.
+
+    This is not a guarantee.
+    It is a ranking score to prioritize picks.
+
+    Formula:
+    confidence_score = model_probability + value_gap - risk_penalty
+    """
+
+    risk_penalty = get_risk_penalty(risk_label)
+
+    confidence_score = model_probability + value_gap - risk_penalty
+
+    return confidence_score
 
 def build_picks() -> pd.DataFrame:
     """
@@ -168,6 +206,12 @@ def build_picks() -> pd.DataFrame:
                 value_gap=value_gap
             )
 
+            confidence_score = calculate_confidence_score(
+                model_probability=model_probability,
+                value_gap=value_gap,
+                risk_label=risk_label
+            )
+
             all_rows.append({
                 "match_id": match_id,
                 "date": match["date"],
@@ -182,16 +226,30 @@ def build_picks() -> pd.DataFrame:
                 "kelly_stake_pct": round(kelly_stake_pct, 4),
                 "signal": signal,
                 "risk_label": risk_label,
+                "confidence_score": round(confidence_score, 4),
             })
 
     picks = pd.DataFrame(all_rows)
 
+    signal_rank = {
+        "STRONG VALUE": 1,
+        "POSSIBLE VALUE": 2,
+        "NO BET": 3,
+    }
+
+    picks["signal_rank"] = picks["signal"].map(signal_rank)
+
     picks = picks.sort_values(
-        by="value_gap",
-        ascending=False
+        by=["signal_rank", "confidence_score", "value_gap"],
+        ascending=[True, False, False]
     )
+
+    picks = picks.drop(columns=["signal_rank"])
 
     os.makedirs(PROCESSED_DIR, exist_ok=True)
     picks.to_csv(PICKS_OUTPUT_PATH, index=False)
 
     return picks
+
+
+

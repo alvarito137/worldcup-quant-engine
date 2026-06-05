@@ -50,6 +50,18 @@ def generate_content_scripts(picks):
                 f"That creates a value gap of **{row['value_gap']:.1%}**."
             )
             lines.append("")
+            lines.append(
+                f"Risk label: **{row['risk_label']}**. "
+                "Value does not mean certainty. It only means the price may be different from the model estimate."
+             )
+            
+            lines.append("")
+            lines.append(
+                f"Confidence score: **{row['confidence_score']:.1%}**. "
+                "This score combines model probability, value gap, and risk penalty."
+             )
+            
+            
 
             lines.append("### Closing")
             lines.append(
