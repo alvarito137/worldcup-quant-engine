@@ -3,62 +3,62 @@
 ## Script 1
 
 ### Hook
-My World Cup model found a possible market gap in Argentina vs Austria.
+My World Cup model found a possible market gap in Germany vs Curaçao.
 
 ### Simple Explanation
-The market odds imply that **Austria** has about 16.7% chance.
+The market odds imply that **Curaçao** has about 2.1% chance.
 
-My model estimates the probability closer to 27.3%.
+My model estimates the probability closer to 34.0%.
 
-That creates a value gap of **10.7%**.
+That creates a value gap of **31.9%**.
 
 Risk label: **VERY HIGH RISK**. Value does not mean certainty. It only means the price may be different from the model estimate.
 
-Confidence score: **28.0%**. This score combines model probability, value gap, and risk penalty.
+Confidence score: **55.9%**. This score combines model probability, value gap, and risk penalty.
 ### Closing
 This is not a guaranteed bet. It is just a data signal. The goal is to compare price vs probability, not gamble emotionally.
 
 ### Caption
-Data signal for Argentina vs Austria: Austria shows a 10.7% value gap. #WorldCup2026 #SportsAnalytics #BettingData #FootballAnalytics
+Data signal for Germany vs Curaçao: Curaçao shows a 31.9% value gap. #WorldCup2026 #SportsAnalytics #BettingData #FootballAnalytics
 
 ## Script 2
 
 ### Hook
-My World Cup model found a possible market gap in Brazil vs Morocco.
+My World Cup model found a possible market gap in France vs Iraq.
 
 ### Simple Explanation
-The market odds imply that **Morocco** has about 21.3% chance.
+The market odds imply that **Iraq** has about 4.4% chance.
 
-My model estimates the probability closer to 30.7%.
+My model estimates the probability closer to 34.0%.
 
-That creates a value gap of **9.4%**.
+That creates a value gap of **29.6%**.
 
-Risk label: **HIGH RISK**. Value does not mean certainty. It only means the price may be different from the model estimate.
+Risk label: **VERY HIGH RISK**. Value does not mean certainty. It only means the price may be different from the model estimate.
 
-Confidence score: **34.1%**. This score combines model probability, value gap, and risk penalty.
+Confidence score: **53.6%**. This score combines model probability, value gap, and risk penalty.
 ### Closing
 This is not a guaranteed bet. It is just a data signal. The goal is to compare price vs probability, not gamble emotionally.
 
 ### Caption
-Data signal for Brazil vs Morocco: Morocco shows a 9.4% value gap. #WorldCup2026 #SportsAnalytics #BettingData #FootballAnalytics
+Data signal for France vs Iraq: Iraq shows a 29.6% value gap. #WorldCup2026 #SportsAnalytics #BettingData #FootballAnalytics
 
 ## Script 3
 
 ### Hook
-My World Cup model found a possible market gap in Spain vs Uruguay.
+My World Cup model found a possible market gap in Ecuador vs Curaçao.
 
 ### Simple Explanation
-The market odds imply that **Uruguay** has about 25.6% chance.
+The market odds imply that **Curaçao** has about 7.6% chance.
 
-My model estimates the probability closer to 31.8%.
+My model estimates the probability closer to 34.0%.
 
-That creates a value gap of **6.2%**.
+That creates a value gap of **26.4%**.
 
-Risk label: **HIGH RISK**. Value does not mean certainty. It only means the price may be different from the model estimate.
+Risk label: **VERY HIGH RISK**. Value does not mean certainty. It only means the price may be different from the model estimate.
 
-Confidence score: **31.9%**. This score combines model probability, value gap, and risk penalty.
+Confidence score: **50.4%**. This score combines model probability, value gap, and risk penalty.
 ### Closing
 This is not a guaranteed bet. It is just a data signal. The goal is to compare price vs probability, not gamble emotionally.
 
 ### Caption
-Data signal for Spain vs Uruguay: Uruguay shows a 6.2% value gap. #WorldCup2026 #SportsAnalytics #BettingData #FootballAnalytics
+Data signal for Ecuador vs Curaçao: Curaçao shows a 26.4% value gap. #WorldCup2026 #SportsAnalytics #BettingData #FootballAnalytics

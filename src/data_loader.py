@@ -1,8 +1,14 @@
 import os
 import pandas as pd
+from dotenv import load_dotenv
 
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+ENV_PATH = os.path.join(BASE_DIR, ".env")
+load_dotenv(ENV_PATH)
+
+DATA_MODE = os.getenv("DATA_MODE", "mock").lower()
 
 RAW_DIR = os.path.join(BASE_DIR, "data", "raw")
 PROCESSED_DIR = os.path.join(BASE_DIR, "data", "processed")
@@ -116,10 +122,14 @@ def create_mock_data():
 def load_or_create_mock_data():
     """
     Checks if required raw data exists.
-    If not, creates mock data.
+    If DATA_MODE=api, it does not create mock data.
     """
 
     ensure_directories()
+
+    if DATA_MODE == "api":
+        print("DATA_MODE=api. Using API data files.")
+        return
 
     if (
         not os.path.exists(FIXTURES_PATH)
@@ -128,4 +138,4 @@ def load_or_create_mock_data():
     ):
         create_mock_data()
     else:
-        print("Raw data already exists.")
+        print("Raw mock data already exists.")

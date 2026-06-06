@@ -8,23 +8,23 @@ This is not a guaranteed pick. It is a data signal.
 
 ## Signal
 
-Match: **Brazil vs Morocco**
+Match: **Germany vs Curaçao**
 
-Selection: **Morocco**
+Selection: **Curaçao**
 
-Market probability: **21.28%**
+Market probability: **2.13%**
 
-Model probability: **30.67%**
+Model probability: **34.00%**
 
-Value gap: **9.39%**
+Value gap: **31.87%**
 
-Risk: **HIGH RISK**
+Risk: **VERY HIGH RISK**
 
 ## Simple Explanation
 
-The market odds imply Morocco has around 21.28% chance.
+The market odds imply Curaçao has around 2.13% chance.
 
-My model estimates it closer to 30.67%.
+My model estimates it closer to 34.00%.
 
 That difference is the value gap. It does not mean the pick will win. It means the price may be different from the model estimate.
 

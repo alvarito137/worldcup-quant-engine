@@ -1,18 +1,30 @@
 import os
 import pandas as pd
 import numpy as np
+from dotenv import load_dotenv
 
 from model import calculate_match_probabilities
 
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
+ENV_PATH = os.path.join(BASE_DIR, ".env")
+load_dotenv(ENV_PATH)
+
+DATA_MODE = os.getenv("DATA_MODE", "mock").lower()
+
 RAW_DIR = os.path.join(BASE_DIR, "data", "raw")
 PROCESSED_DIR = os.path.join(BASE_DIR, "data", "processed")
 
-FIXTURES_PATH = os.path.join(RAW_DIR, "fixtures.csv")
-ODDS_PATH = os.path.join(RAW_DIR, "odds.csv")
-RATINGS_PATH = os.path.join(RAW_DIR, "team_ratings.csv")
+if DATA_MODE == "api":
+    FIXTURES_PATH = os.path.join(RAW_DIR, "fixtures_api.csv")
+    ODDS_PATH = os.path.join(RAW_DIR, "odds_api.csv")
+    RATINGS_PATH = os.path.join(RAW_DIR, "team_ratings_api.csv")
+else:
+    FIXTURES_PATH = os.path.join(RAW_DIR, "fixtures.csv")
+    ODDS_PATH = os.path.join(RAW_DIR, "odds.csv")
+    RATINGS_PATH = os.path.join(RAW_DIR, "team_ratings.csv")
+
 PICKS_OUTPUT_PATH = os.path.join(PROCESSED_DIR, "picks.csv")
 
 

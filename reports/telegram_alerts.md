@@ -8,37 +8,37 @@ Data-driven signals comparing model probability vs market-implied probability.
 
 Not financial advice. No guaranteed profit. Bet responsibly.
 
-Found 4 potential value signal(s).
+Found 106 potential value signal(s).
 
 ## Alert 1
 
-🚨 POSSIBLE VALUE
+🚨 STRONG VALUE
 
-Match: Brazil vs Morocco
-Selection: Morocco
-Odds: 4.7
-Market probability: 21.28%
-Model probability: 30.67%
-Value gap: 9.39%
-Risk: HIGH RISK
-Confidence score: 34.06%
-Kelly 25% stake: 2.98% of bankroll
+Match: Germany vs Curaçao
+Selection: Curaçao
+Odds: 47.0
+Market probability: 2.13%
+Model probability: 34.00%
+Value gap: 31.87%
+Risk: VERY HIGH RISK
+Confidence score: 55.87%
+Kelly 25% stake: 8.14% of bankroll
 
 Reminder: value does not mean certainty. This is only a data signal.
 
 ## Alert 2
 
-🚨 POSSIBLE VALUE
+🚨 STRONG VALUE
 
-Match: Spain vs Uruguay
-Selection: Uruguay
-Odds: 3.9
-Market probability: 25.64%
-Model probability: 31.79%
-Value gap: 6.15%
-Risk: HIGH RISK
-Confidence score: 31.93%
-Kelly 25% stake: 2.07% of bankroll
+Match: France vs Iraq
+Selection: Iraq
+Odds: 22.93
+Market probability: 4.36%
+Model probability: 34.00%
+Value gap: 29.64%
+Risk: VERY HIGH RISK
+Confidence score: 53.64%
+Kelly 25% stake: 7.75% of bankroll
 
 Reminder: value does not mean certainty. This is only a data signal.
 
@@ -46,30 +46,46 @@ Reminder: value does not mean certainty. This is only a data signal.
 
 🚨 STRONG VALUE
 
-Match: Argentina vs Austria
-Selection: Austria
-Odds: 6.0
-Market probability: 16.67%
-Model probability: 27.32%
-Value gap: 10.65%
+Match: Ecuador vs Curaçao
+Selection: Curaçao
+Odds: 13.11
+Market probability: 7.63%
+Model probability: 34.00%
+Value gap: 26.37%
 Risk: VERY HIGH RISK
-Confidence score: 27.97%
-Kelly 25% stake: 3.20% of bankroll
+Confidence score: 50.37%
+Kelly 25% stake: 7.14% of bankroll
 
 Reminder: value does not mean certainty. This is only a data signal.
 
 ## Alert 4
 
-🚨 POSSIBLE VALUE
+🚨 STRONG VALUE
 
-Match: Mexico vs South Africa
-Selection: South Africa
-Odds: 5.2
-Market probability: 19.23%
-Model probability: 26.95%
-Value gap: 7.72%
+Match: Iraq vs Norway
+Selection: Iraq
+Odds: 12.79
+Market probability: 7.82%
+Model probability: 34.00%
+Value gap: 26.18%
 Risk: VERY HIGH RISK
-Confidence score: 24.66%
-Kelly 25% stake: 2.39% of bankroll
+Confidence score: 50.18%
+Kelly 25% stake: 7.10% of bankroll
+
+Reminder: value does not mean certainty. This is only a data signal.
+
+## Alert 5
+
+🚨 STRONG VALUE
+
+Match: Qatar vs Switzerland
+Selection: Qatar
+Odds: 12.55
+Market probability: 7.97%
+Model probability: 34.00%
+Value gap: 26.03%
+Risk: VERY HIGH RISK
+Confidence score: 50.03%
+Kelly 25% stake: 7.07% of bankroll
 
 Reminder: value does not mean certainty. This is only a data signal.

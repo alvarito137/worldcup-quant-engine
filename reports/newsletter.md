@@ -6,20 +6,21 @@ This brief compares market-implied probabilities against a simple internal model
 
 ## Main Takeaway
 
-The strongest signal today is **Morocco** in **Brazil vs Morocco**.
+The strongest signal today is **Curaçao** in **Germany vs Curaçao**.
 
-The market implies a probability of **21.28%**, while the model estimates **30.67%**.
+The market implies a probability of **2.13%**, while the model estimates **34.00%**.
 
-That creates a value gap of **9.39%**.
+That creates a value gap of **31.87%**.
 
-Risk label: **HIGH RISK**. Confidence score: **34.06%**.
+Risk label: **VERY HIGH RISK**. Confidence score: **55.87%**.
 
 ## Top Value Signals
 
-1. **Morocco** — Brazil vs Morocco | Odds: 4.7 | Value gap: 9.39% | Risk: HIGH RISK | Confidence: 34.06%
-2. **Uruguay** — Spain vs Uruguay | Odds: 3.9 | Value gap: 6.15% | Risk: HIGH RISK | Confidence: 31.93%
-3. **Austria** — Argentina vs Austria | Odds: 6.0 | Value gap: 10.65% | Risk: VERY HIGH RISK | Confidence: 27.97%
-4. **South Africa** — Mexico vs South Africa | Odds: 5.2 | Value gap: 7.72% | Risk: VERY HIGH RISK | Confidence: 24.66%
+1. **Curaçao** — Germany vs Curaçao | Odds: 47.0 | Value gap: 31.87% | Risk: VERY HIGH RISK | Confidence: 55.87%
+2. **Iraq** — France vs Iraq | Odds: 22.93 | Value gap: 29.64% | Risk: VERY HIGH RISK | Confidence: 53.64%
+3. **Curaçao** — Ecuador vs Curaçao | Odds: 13.11 | Value gap: 26.37% | Risk: VERY HIGH RISK | Confidence: 50.37%
+4. **Iraq** — Iraq vs Norway | Odds: 12.79 | Value gap: 26.18% | Risk: VERY HIGH RISK | Confidence: 50.18%
+5. **Qatar** — Qatar vs Switzerland | Odds: 12.55 | Value gap: 26.03% | Risk: VERY HIGH RISK | Confidence: 50.03%
 
 ## Bankroll Note
 
