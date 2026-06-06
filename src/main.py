@@ -11,6 +11,7 @@ from telegram_alert_generator import generate_telegram_alerts
 from free_sample_generator import generate_free_sample
 from performance_tracker import update_pick_history
 from performance_summary_generator import generate_performance_summary
+from sales_copy_generator import generate_sales_copy
 
 
 def main():
@@ -29,6 +30,8 @@ def main():
     generate_free_sample(picks)
     update_pick_history(picks)
     generate_performance_summary()
+    generate_sales_copy()
+    
 
 
 if __name__ == "__main__":
