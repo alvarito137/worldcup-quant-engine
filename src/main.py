@@ -8,6 +8,7 @@ from content_generator import generate_content_scripts
 from newsletter_generator import generate_newsletter
 from exporter import export_premium_picks
 from telegram_alert_generator import generate_telegram_alerts
+from free_sample_generator import generate_free_sample
 
 
 def main():
@@ -23,6 +24,7 @@ def main():
     generate_newsletter(picks)
     export_premium_picks(picks)
     generate_telegram_alerts(picks)
+    generate_free_sample(picks)
 
 
 if __name__ == "__main__":
