@@ -61,6 +61,22 @@ def calculate_performance_metrics(history: pd.DataFrame) -> dict:
         "average_confidence_score": average_confidence_score,
     }
 
+def get_recent_closed_picks(history: pd.DataFrame, limit: int = 10) -> pd.DataFrame:
+    """
+    Returns the most recent closed picks for display in the performance summary.
+    """
+
+    closed_picks = history[history["status"] == "CLOSED"].copy()
+
+    if closed_picks.empty:
+        return closed_picks
+
+    closed_picks = closed_picks.sort_values(
+        by="date",
+        ascending=False
+    )
+
+    return closed_picks.head(limit)
 
 def generate_performance_summary():
     """
@@ -86,6 +102,7 @@ def generate_performance_summary():
 
     history = pd.read_csv(PICK_HISTORY_PATH)
     metrics = calculate_performance_metrics(history)
+    recent_closed_picks = get_recent_closed_picks(history)
 
     lines = []
 
@@ -118,6 +135,29 @@ def generate_performance_summary():
     lines.append(f"- Average confidence score: **{metrics['average_confidence_score']:.2%}**")
     lines.append("")
 
+    lines.append("## Recent Closed Picks")
+    lines.append("")
+
+    if recent_closed_picks.empty:
+        lines.append("No closed picks yet.")
+        lines.append("")
+    else:
+        lines.append("| Date | Match | Selection | Odds | Result | P/L Units | Risk | Confidence |")
+        lines.append("|---|---|---|---:|---|---:|---|---:|")
+
+        for _, row in recent_closed_picks.iterrows():
+            lines.append(
+                f"| {row['date']} "
+                f"| {row['match']} "
+                f"| {row['selection']} "
+                f"| {row['odds_taken']} "
+                f"| {row['result']} "
+                f"| {row['profit_loss_units']:.4f} "
+                f"| {row['risk_label']} "
+                f"| {row['confidence_score']:.2%} |"
+            )
+
+        lines.append("")
     lines.append("## Important Note")
     lines.append("")
     lines.append(
