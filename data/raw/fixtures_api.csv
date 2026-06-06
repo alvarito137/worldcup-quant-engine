@@ -1,0 +1,73 @@
+match_id,date,team_a,team_b,stage
+1,2026-06-11,Mexico,South Africa,FIFA World Cup
+2,2026-06-12,South Korea,Czech Republic,FIFA World Cup
+3,2026-06-12,Canada,Bosnia & Herzegovina,FIFA World Cup
+4,2026-06-13,USA,Paraguay,FIFA World Cup
+5,2026-06-13,Qatar,Switzerland,FIFA World Cup
+6,2026-06-13,Brazil,Morocco,FIFA World Cup
+7,2026-06-14,Haiti,Scotland,FIFA World Cup
+8,2026-06-14,Australia,Turkey,FIFA World Cup
+9,2026-06-14,Germany,Curaçao,FIFA World Cup
+10,2026-06-14,Netherlands,Japan,FIFA World Cup
+11,2026-06-14,Ivory Coast,Ecuador,FIFA World Cup
+12,2026-06-15,Sweden,Tunisia,FIFA World Cup
+13,2026-06-15,Spain,Cape Verde,FIFA World Cup
+14,2026-06-15,Belgium,Egypt,FIFA World Cup
+15,2026-06-15,Saudi Arabia,Uruguay,FIFA World Cup
+16,2026-06-16,Iran,New Zealand,FIFA World Cup
+17,2026-06-16,France,Senegal,FIFA World Cup
+18,2026-06-16,Iraq,Norway,FIFA World Cup
+19,2026-06-17,Argentina,Algeria,FIFA World Cup
+20,2026-06-17,Austria,Jordan,FIFA World Cup
+21,2026-06-17,Portugal,DR Congo,FIFA World Cup
+22,2026-06-17,England,Croatia,FIFA World Cup
+23,2026-06-17,Ghana,Panama,FIFA World Cup
+24,2026-06-18,Uzbekistan,Colombia,FIFA World Cup
+25,2026-06-18,Czech Republic,South Africa,FIFA World Cup
+26,2026-06-18,Switzerland,Bosnia & Herzegovina,FIFA World Cup
+27,2026-06-18,Canada,Qatar,FIFA World Cup
+28,2026-06-19,Mexico,South Korea,FIFA World Cup
+29,2026-06-19,USA,Australia,FIFA World Cup
+30,2026-06-19,Scotland,Morocco,FIFA World Cup
+31,2026-06-20,Brazil,Haiti,FIFA World Cup
+32,2026-06-20,Turkey,Paraguay,FIFA World Cup
+33,2026-06-20,Netherlands,Sweden,FIFA World Cup
+34,2026-06-20,Germany,Ivory Coast,FIFA World Cup
+35,2026-06-21,Ecuador,Curaçao,FIFA World Cup
+36,2026-06-21,Tunisia,Japan,FIFA World Cup
+37,2026-06-21,Spain,Saudi Arabia,FIFA World Cup
+38,2026-06-21,Belgium,Iran,FIFA World Cup
+39,2026-06-21,Uruguay,Cape Verde,FIFA World Cup
+40,2026-06-22,New Zealand,Egypt,FIFA World Cup
+41,2026-06-22,Argentina,Austria,FIFA World Cup
+42,2026-06-22,France,Iraq,FIFA World Cup
+43,2026-06-23,Norway,Senegal,FIFA World Cup
+44,2026-06-23,Jordan,Algeria,FIFA World Cup
+45,2026-06-23,Portugal,Uzbekistan,FIFA World Cup
+46,2026-06-23,England,Ghana,FIFA World Cup
+47,2026-06-23,Panama,Croatia,FIFA World Cup
+48,2026-06-24,Colombia,DR Congo,FIFA World Cup
+49,2026-06-24,Bosnia & Herzegovina,Qatar,FIFA World Cup
+50,2026-06-24,Switzerland,Canada,FIFA World Cup
+51,2026-06-24,Scotland,Brazil,FIFA World Cup
+52,2026-06-24,Morocco,Haiti,FIFA World Cup
+53,2026-06-25,Czech Republic,Mexico,FIFA World Cup
+54,2026-06-25,South Africa,South Korea,FIFA World Cup
+55,2026-06-25,Curaçao,Ivory Coast,FIFA World Cup
+56,2026-06-25,Ecuador,Germany,FIFA World Cup
+57,2026-06-25,Japan,Sweden,FIFA World Cup
+58,2026-06-25,Tunisia,Netherlands,FIFA World Cup
+59,2026-06-26,Paraguay,Australia,FIFA World Cup
+60,2026-06-26,Turkey,USA,FIFA World Cup
+61,2026-06-26,Norway,France,FIFA World Cup
+62,2026-06-26,Senegal,Iraq,FIFA World Cup
+63,2026-06-27,Cape Verde,Saudi Arabia,FIFA World Cup
+64,2026-06-27,Uruguay,Spain,FIFA World Cup
+65,2026-06-27,New Zealand,Belgium,FIFA World Cup
+66,2026-06-27,Egypt,Iran,FIFA World Cup
+67,2026-06-27,Croatia,Ghana,FIFA World Cup
+68,2026-06-27,Panama,England,FIFA World Cup
+69,2026-06-27,Colombia,Portugal,FIFA World Cup
+70,2026-06-27,DR Congo,Uzbekistan,FIFA World Cup
+71,2026-06-28,Algeria,Austria,FIFA World Cup
+72,2026-06-28,Jordan,Argentina,FIFA World Cup
