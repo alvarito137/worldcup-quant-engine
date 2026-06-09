@@ -13,6 +13,7 @@ ODDS_API_OUTPUT_PATH = os.path.join(RAW_DIR, "odds_api.csv")
 TEAM_RATINGS_API_OUTPUT_PATH = os.path.join(RAW_DIR, "team_ratings_api.csv")
 
 EXISTING_RATINGS_PATH = os.path.join(RAW_DIR, "team_ratings.csv")
+MANUAL_RATINGS_PATH = os.path.join(RAW_DIR, "manual_team_ratings.csv")
 
 
 def load_odds_snapshot() -> pd.DataFrame:
@@ -116,14 +117,47 @@ def build_average_odds(snapshot: pd.DataFrame, match_id_map: dict) -> pd.DataFra
     return average_odds
 
 
+def normalize_team_name(team_name: str) -> str:
+    """
+    Normalizes team names for safer rating lookup.
+    """
+
+    return str(team_name).strip()
+
+
+def load_rating_sources() -> dict:
+    """
+    Loads ratings from manual_team_ratings.csv first.
+    Falls back to team_ratings.csv if needed.
+
+    Manual ratings have priority.
+    """
+
+    rating_map = {}
+
+    if os.path.exists(EXISTING_RATINGS_PATH):
+        existing = pd.read_csv(EXISTING_RATINGS_PATH)
+
+        for _, row in existing.iterrows():
+            team = normalize_team_name(row["team"])
+            rating_map[team] = row["rating"]
+
+    if os.path.exists(MANUAL_RATINGS_PATH):
+        manual = pd.read_csv(MANUAL_RATINGS_PATH)
+
+        for _, row in manual.iterrows():
+            team = normalize_team_name(row["team"])
+            rating_map[team] = row["rating"]
+
+    return rating_map
+
+
 def build_team_ratings(fixtures: pd.DataFrame) -> pd.DataFrame:
     """
     Builds team ratings for API teams.
 
-    If a team already exists in team_ratings.csv, keep its rating.
-    Otherwise assign a temporary default rating.
-
-    Later, we should replace these with real ELO/FIFA/model ratings.
+    Uses manual_team_ratings.csv when available.
+    Falls back to 1600 for unknown teams.
     """
 
     teams = sorted(
@@ -131,16 +165,18 @@ def build_team_ratings(fixtures: pd.DataFrame) -> pd.DataFrame:
         | set(fixtures["team_b"].dropna().tolist())
     )
 
-    existing_rating_map = {}
-
-    if os.path.exists(EXISTING_RATINGS_PATH):
-        existing = pd.read_csv(EXISTING_RATINGS_PATH)
-        existing_rating_map = dict(zip(existing["team"], existing["rating"]))
+    rating_map = load_rating_sources()
 
     rows = []
 
+    missing_teams = []
+
     for team in teams:
-        rating = existing_rating_map.get(team, 1600)
+        clean_team = normalize_team_name(team)
+        rating = rating_map.get(clean_team, 1600)
+
+        if clean_team not in rating_map:
+            missing_teams.append(clean_team)
 
         rows.append({
             "team": team,
@@ -149,8 +185,12 @@ def build_team_ratings(fixtures: pd.DataFrame) -> pd.DataFrame:
 
     ratings = pd.DataFrame(rows)
 
-    return ratings
+    if missing_teams:
+        print("\nTeams missing manual ratings:")
+        for team in missing_teams:
+            print(f"- {team}")
 
+    return ratings
 
 def main():
     snapshot = load_odds_snapshot()

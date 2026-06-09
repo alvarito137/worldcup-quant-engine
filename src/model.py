@@ -14,34 +14,32 @@ def sigmoid(x: float) -> float:
 
 def calculate_match_probabilities(team_a_rating: float, team_b_rating: float) -> dict:
     """
-    Baseline football probability model.
+    Conservative football probability model.
 
-    Inputs:
-    - team_a_rating
-    - team_b_rating
+    This model uses rating difference to estimate:
+    - Team A win probability
+    - Draw probability
+    - Team B win probability
 
-    Outputs:
-    - team_a_win_probability
-    - draw_probability
-    - team_b_win_probability
-
-    Important:
-    This is a simple baseline model, not a final professional betting model.
+    It is intentionally more conservative with underdogs.
     """
 
     rating_diff = team_a_rating - team_b_rating
 
-    # Convert rating difference into strength probability.
-    raw_team_a_strength = sigmoid(rating_diff / 400)
+    # More sensitive than the previous /400 version.
+    # Lower denominator = stronger effect from rating differences.
+    raw_team_a_strength = sigmoid(rating_diff / 220)
 
-    # Base draw probability in football.
-    base_draw_probability = 0.26
+    # Base draw probability.
+    base_draw_probability = 0.25
 
-    # If teams are similar in strength, draw probability increases.
-    closeness = max(0, 1 - abs(rating_diff) / 500)
-    draw_probability = base_draw_probability + (0.06 * closeness)
+    # Draw is higher when teams are close.
+    closeness = max(0, 1 - abs(rating_diff) / 450)
+    draw_probability = base_draw_probability + (0.07 * closeness)
 
-    # Remaining probability goes to both teams.
+    # Draw should not become too high.
+    draw_probability = min(draw_probability, 0.32)
+
     remaining_probability = 1 - draw_probability
 
     team_a_win_probability = remaining_probability * raw_team_a_strength

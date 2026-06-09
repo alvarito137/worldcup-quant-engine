@@ -6,21 +6,21 @@ This brief compares market-implied probabilities against a simple internal model
 
 ## Main Takeaway
 
-The strongest signal today is **Curaçao** in **Germany vs Curaçao**.
+The strongest signal today is **Australia** in **Paraguay vs Australia**.
 
-The market implies a probability of **2.13%**, while the model estimates **34.00%**.
+The market implies a probability of **28.74%**, while the model estimates **40.85%**.
 
-That creates a value gap of **31.87%**.
+That creates a value gap of **12.11%**.
 
-Risk label: **VERY HIGH RISK**. Confidence score: **55.87%**.
+Risk label: **MEDIUM RISK**. Confidence score: **49.96%**.
 
 ## Top Value Signals
 
-1. **Curaçao** — Germany vs Curaçao | Odds: 47.0 | Value gap: 31.87% | Risk: VERY HIGH RISK | Confidence: 55.87%
-2. **Iraq** — France vs Iraq | Odds: 22.93 | Value gap: 29.64% | Risk: VERY HIGH RISK | Confidence: 53.64%
-3. **Curaçao** — Ecuador vs Curaçao | Odds: 13.11 | Value gap: 26.37% | Risk: VERY HIGH RISK | Confidence: 50.37%
-4. **Iraq** — Iraq vs Norway | Odds: 12.79 | Value gap: 26.18% | Risk: VERY HIGH RISK | Confidence: 50.18%
-5. **Qatar** — Qatar vs Switzerland | Odds: 12.55 | Value gap: 26.03% | Risk: VERY HIGH RISK | Confidence: 50.03%
+1. **Australia** — Paraguay vs Australia | Odds: 3.48 | Value gap: 12.11% | Risk: MEDIUM RISK | Confidence: 49.96%
+2. **Iran** — Egypt vs Iran | Odds: 3.41 | Value gap: 10.67% | Risk: MEDIUM RISK | Confidence: 47.66%
+3. **Australia** — Australia vs Turkey | Odds: 4.75 | Value gap: 15.51% | Risk: HIGH RISK | Confidence: 46.07%
+4. **Qatar** — Bosnia & Herzegovina vs Qatar | Odds: 6.08 | Value gap: 17.55% | Risk: VERY HIGH RISK | Confidence: 41.55%
+5. **Senegal** — Norway vs Senegal | Odds: 3.4 | Value gap: 7.15% | Risk: MEDIUM RISK | Confidence: 40.72%
 
 ## Bankroll Note
 
