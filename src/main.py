@@ -14,7 +14,7 @@ from performance_summary_generator import generate_performance_summary
 from sales_copy_generator import generate_sales_copy
 from pricing_strategy_generator import generate_pricing_strategy
 from model_audit_generator import generate_model_audit_report
-
+from public_brief_generator import generate_public_brief
 
 def main():
     load_or_create_mock_data()
@@ -35,6 +35,7 @@ def main():
     generate_sales_copy()
     generate_pricing_strategy()
     generate_model_audit_report(picks)
+    generate_public_brief(picks)
     
 
 

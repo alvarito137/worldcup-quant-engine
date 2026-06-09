@@ -1,217 +1,217 @@
-date,stage,match,selection,decimal_odds,market_probability,model_probability,value_gap,signal,risk_label,confidence_score,kelly_stake_pct,bankroll_note
-2026-06-14,FIFA World Cup,Australia vs Turkey,Australia,4.75,0.2105,0.3919,0.1813,STRONG VALUE,HIGH RISK,0.5132,0.0574,Small stake only. Do not overexpose bankroll.
-2026-06-25,FIFA World Cup,Czech Republic vs Mexico,Czech Republic,4.46,0.2242,0.3265,0.1023,STRONG VALUE,HIGH RISK,0.3687,0.033,Small stake only. Do not overexpose bankroll.
-2026-06-23,FIFA World Cup,Norway vs Senegal,Senegal,3.4,0.2941,0.3919,0.0977,POSSIBLE VALUE,MEDIUM RISK,0.4596,0.0346,Moderate caution. Follow fractional Kelly only.
-2026-06-20,FIFA World Cup,Turkey vs Paraguay,Paraguay,3.38,0.2959,0.3919,0.096,POSSIBLE VALUE,MEDIUM RISK,0.4578,0.0341,Moderate caution. Follow fractional Kelly only.
-2026-06-26,FIFA World Cup,Paraguay vs Australia,Australia,3.48,0.2874,0.365,0.0776,POSSIBLE VALUE,MEDIUM RISK,0.4126,0.0272,Moderate caution. Follow fractional Kelly only.
-2026-06-27,FIFA World Cup,Egypt vs Iran,Iran,3.41,0.2933,0.3573,0.0641,POSSIBLE VALUE,MEDIUM RISK,0.3914,0.0227,Moderate caution. Follow fractional Kelly only.
-2026-06-19,FIFA World Cup,USA vs Australia,Australia,4.56,0.2193,0.3188,0.0995,POSSIBLE VALUE,HIGH RISK,0.3583,0.0319,Small stake only. Do not overexpose bankroll.
-2026-06-12,FIFA World Cup,Canada vs Bosnia & Herzegovina,Bosnia & Herzegovina,4.5,0.2222,0.3188,0.0966,POSSIBLE VALUE,HIGH RISK,0.3553,0.031,Small stake only. Do not overexpose bankroll.
-2026-06-14,FIFA World Cup,Ivory Coast vs Ecuador,Ivory Coast,3.65,0.274,0.3419,0.0679,POSSIBLE VALUE,HIGH RISK,0.3498,0.0234,Small stake only. Do not overexpose bankroll.
-2026-06-17,FIFA World Cup,England vs Croatia,Croatia,4.85,0.2062,0.3035,0.0973,POSSIBLE VALUE,HIGH RISK,0.3407,0.0306,Small stake only. Do not overexpose bankroll.
-2026-06-15,FIFA World Cup,Sweden vs Tunisia,Tunisia,4.21,0.2375,0.3188,0.0812,POSSIBLE VALUE,HIGH RISK,0.34,0.0266,Small stake only. Do not overexpose bankroll.
-2026-06-19,FIFA World Cup,Mexico vs South Korea,South Korea,4.54,0.2203,0.3035,0.0832,POSSIBLE VALUE,HIGH RISK,0.3267,0.0267,Small stake only. Do not overexpose bankroll.
-2026-06-13,FIFA World Cup,USA vs Paraguay,Paraguay,3.94,0.2538,0.3188,0.065,POSSIBLE VALUE,HIGH RISK,0.3237,0.0218,Small stake only. Do not overexpose bankroll.
-2026-06-25,FIFA World Cup,Ecuador vs Germany,Ecuador,4.99,0.2004,0.2587,0.0583,POSSIBLE VALUE,HIGH RISK,0.257,0.0182,Small stake only. Do not overexpose bankroll.
-2026-06-24,FIFA World Cup,Bosnia & Herzegovina vs Qatar,Qatar,6.08,0.1645,0.3342,0.1697,STRONG VALUE,VERY HIGH RISK,0.4039,0.0508,Tiny stake only. High variance pick.
-2026-06-27,FIFA World Cup,Uruguay vs Spain,Uruguay,5.33,0.1876,0.3188,0.1312,STRONG VALUE,VERY HIGH RISK,0.3499,0.0404,Tiny stake only. High variance pick.
-2026-06-13,FIFA World Cup,Brazil vs Morocco,Morocco,5.77,0.1733,0.2959,0.1225,POSSIBLE VALUE,VERY HIGH RISK,0.3184,0.0371,Tiny stake only. High variance pick.
-2026-06-23,FIFA World Cup,Jordan vs Algeria,Jordan,5.74,0.1742,0.2734,0.0991,POSSIBLE VALUE,VERY HIGH RISK,0.2725,0.03,Tiny stake only. High variance pick.
-2026-06-18,FIFA World Cup,Switzerland vs Bosnia & Herzegovina,Bosnia & Herzegovina,5.62,0.1779,0.2734,0.0954,POSSIBLE VALUE,VERY HIGH RISK,0.2688,0.029,Tiny stake only. High variance pick.
-2026-06-15,FIFA World Cup,Belgium vs Egypt,Egypt,5.18,0.1931,0.2734,0.0803,POSSIBLE VALUE,VERY HIGH RISK,0.2537,0.0249,Tiny stake only. High variance pick.
-2026-06-27,FIFA World Cup,Croatia vs Ghana,Ghana,5.45,0.1835,0.266,0.0825,POSSIBLE VALUE,VERY HIGH RISK,0.2485,0.0253,Tiny stake only. High variance pick.
-2026-06-26,FIFA World Cup,Norway vs France,France,1.8,0.5556,0.546,-0.0095,NO BET,LOW RISK,0.5365,0.0,No bet suggested.
-2026-06-19,FIFA World Cup,Scotland vs Morocco,Morocco,1.97,0.5076,0.5057,-0.002,NO BET,LOW RISK,0.5037,0.0,No bet suggested.
-2026-06-21,FIFA World Cup,Uruguay vs Cape Verde,Uruguay,1.43,0.6993,0.5906,-0.1087,NO BET,LOW RISK,0.482,0.0,No bet suggested.
-2026-06-28,FIFA World Cup,Jordan vs Argentina,Argentina,1.19,0.8403,0.6601,-0.1802,NO BET,LOW RISK,0.48,0.0,No bet suggested.
-2026-06-25,FIFA World Cup,Tunisia vs Netherlands,Netherlands,1.51,0.6623,0.5689,-0.0934,NO BET,LOW RISK,0.4755,0.0,No bet suggested.
-2026-06-18,FIFA World Cup,Czech Republic vs South Africa,Czech Republic,1.98,0.5051,0.4888,-0.0162,NO BET,LOW RISK,0.4726,0.0,No bet suggested.
-2026-06-24,FIFA World Cup,Scotland vs Brazil,Brazil,1.46,0.6849,0.5763,-0.1087,NO BET,LOW RISK,0.4676,0.0,No bet suggested.
-2026-06-26,FIFA World Cup,Turkey vs USA,USA,2.52,0.3968,0.4454,0.0486,NO BET,MEDIUM RISK,0.464,0.0201,No bet suggested.
-2026-06-16,FIFA World Cup,Iran vs New Zealand,Iran,1.9,0.5263,0.4888,-0.0375,NO BET,LOW RISK,0.4513,0.0,No bet suggested.
-2026-06-21,FIFA World Cup,Tunisia vs Japan,Japan,1.78,0.5618,0.5057,-0.0561,NO BET,LOW RISK,0.4495,0.0,No bet suggested.
-2026-06-17,FIFA World Cup,Argentina vs Algeria,Argentina,1.39,0.7194,0.5835,-0.1359,NO BET,LOW RISK,0.4476,0.0,No bet suggested.
-2026-06-20,FIFA World Cup,Netherlands vs Sweden,Netherlands,1.64,0.6098,0.5221,-0.0876,NO BET,LOW RISK,0.4345,0.0,No bet suggested.
-2026-06-22,FIFA World Cup,Argentina vs Austria,Argentina,1.64,0.6098,0.5221,-0.0876,NO BET,LOW RISK,0.4345,0.0,No bet suggested.
-2026-06-24,FIFA World Cup,Morocco vs Haiti,Morocco,1.33,0.7519,0.5906,-0.1612,NO BET,LOW RISK,0.4294,0.0,No bet suggested.
-2026-06-15,FIFA World Cup,Saudi Arabia vs Uruguay,Uruguay,1.47,0.6803,0.5538,-0.1265,NO BET,LOW RISK,0.4273,0.0,No bet suggested.
-2026-06-25,FIFA World Cup,South Africa vs South Korea,South Korea,1.99,0.5025,0.463,-0.0396,NO BET,LOW RISK,0.4234,0.0,No bet suggested.
-2026-06-27,FIFA World Cup,Cape Verde vs Saudi Arabia,Saudi Arabia,2.73,0.3663,0.4098,0.0435,NO BET,MEDIUM RISK,0.4233,0.0172,No bet suggested.
-2026-06-27,FIFA World Cup,Panama vs England,England,1.29,0.7752,0.5976,-0.1776,NO BET,LOW RISK,0.4201,0.0,No bet suggested.
-2026-06-22,FIFA World Cup,New Zealand vs Egypt,Egypt,1.7,0.5882,0.4973,-0.091,NO BET,LOW RISK,0.4063,0.0,No bet suggested.
-2026-06-23,FIFA World Cup,Panama vs Croatia,Croatia,1.49,0.6711,0.5382,-0.133,NO BET,LOW RISK,0.4052,0.0,No bet suggested.
-2026-06-28,FIFA World Cup,Algeria vs Austria,Austria,2.27,0.4405,0.4365,-0.004,NO BET,MEDIUM RISK,0.4026,0.0,No bet suggested.
-2026-06-27,FIFA World Cup,New Zealand vs Belgium,Belgium,1.28,0.7812,0.5906,-0.1906,NO BET,LOW RISK,0.4,0.0,No bet suggested.
-2026-06-12,FIFA World Cup,South Korea vs Czech Republic,Czech Republic,2.79,0.3584,0.3919,0.0334,NO BET,MEDIUM RISK,0.3953,0.013,No bet suggested.
-2026-06-25,FIFA World Cup,Japan vs Sweden,Japan,2.06,0.4854,0.4542,-0.0312,NO BET,MEDIUM RISK,0.393,0.0,No bet suggested.
-2026-06-23,FIFA World Cup,Portugal vs Uzbekistan,Portugal,1.24,0.8065,0.5976,-0.2088,NO BET,LOW RISK,0.3888,0.0,No bet suggested.
-2026-06-27,FIFA World Cup,Colombia vs Portugal,Portugal,2.16,0.463,0.4365,-0.0264,NO BET,MEDIUM RISK,0.3801,0.0,No bet suggested.
-2026-06-25,FIFA World Cup,Ecuador vs Germany,Germany,1.67,0.5988,0.4888,-0.11,NO BET,LOW RISK,0.3788,0.0,No bet suggested.
-2026-06-20,FIFA World Cup,Germany vs Ivory Coast,Germany,1.54,0.6494,0.5139,-0.1354,NO BET,LOW RISK,0.3785,0.0,No bet suggested.
-2026-06-18,FIFA World Cup,Canada vs Qatar,Qatar,9.69,0.1032,0.2883,0.1851,NO BET,VERY HIGH RISK,0.3734,0.0516,No bet suggested.
-2026-06-17,FIFA World Cup,Portugal vs DR Congo,Portugal,1.26,0.7937,0.5835,-0.2101,NO BET,LOW RISK,0.3734,0.0,No bet suggested.
-2026-06-16,FIFA World Cup,Iraq vs Norway,Iraq,12.79,0.0782,0.2734,0.1952,NO BET,VERY HIGH RISK,0.3685,0.0529,No bet suggested.
-2026-06-22,FIFA World Cup,France vs Iraq,France,1.12,0.8929,0.6306,-0.2623,NO BET,LOW RISK,0.3683,0.0,No bet suggested.
-2026-06-20,FIFA World Cup,Brazil vs Haiti,Brazil,1.07,0.9346,0.6487,-0.2859,NO BET,LOW RISK,0.3628,0.0,No bet suggested.
-2026-06-18,FIFA World Cup,Uzbekistan vs Colombia,Colombia,1.4,0.7143,0.5382,-0.1761,NO BET,LOW RISK,0.3621,0.0,No bet suggested.
-2026-06-24,FIFA World Cup,Colombia vs DR Congo,Colombia,1.46,0.6849,0.5221,-0.1628,NO BET,LOW RISK,0.3593,0.0,No bet suggested.
-2026-06-27,FIFA World Cup,Croatia vs Ghana,Croatia,1.66,0.6024,0.4803,-0.1221,NO BET,LOW RISK,0.3581,0.0,No bet suggested.
-2026-06-11,FIFA World Cup,Mexico vs South Africa,Mexico,1.42,0.7042,0.5302,-0.174,NO BET,LOW RISK,0.3562,0.0,No bet suggested.
-2026-06-16,FIFA World Cup,France vs Senegal,France,1.45,0.6897,0.5221,-0.1675,NO BET,LOW RISK,0.3546,0.0,No bet suggested.
-2026-06-27,FIFA World Cup,DR Congo vs Uzbekistan,Uzbekistan,3.15,0.3175,0.3496,0.0322,NO BET,MEDIUM RISK,0.3518,0.0118,No bet suggested.
-2026-06-15,FIFA World Cup,Spain vs Cape Verde,Spain,1.09,0.9174,0.6306,-0.2869,NO BET,LOW RISK,0.3437,0.0,No bet suggested.
-2026-06-15,FIFA World Cup,Belgium vs Egypt,Belgium,1.66,0.6024,0.4716,-0.1308,NO BET,LOW RISK,0.3409,0.0,No bet suggested.
-2026-06-14,FIFA World Cup,Germany vs Curaçao,Germany,1.04,0.9615,0.6487,-0.3128,NO BET,LOW RISK,0.3359,0.0,No bet suggested.
-2026-06-14,FIFA World Cup,Netherlands vs Japan,Netherlands,1.97,0.5076,0.4365,-0.0711,NO BET,MEDIUM RISK,0.3355,0.0,No bet suggested.
-2026-06-17,FIFA World Cup,Ghana vs Panama,Ghana,2.04,0.4902,0.4276,-0.0625,NO BET,MEDIUM RISK,0.3351,0.0,No bet suggested.
-2026-06-14,FIFA World Cup,Ivory Coast vs Ecuador,Ecuador,2.36,0.4237,0.3919,-0.0319,NO BET,MEDIUM RISK,0.33,0.0,No bet suggested.
-2026-06-23,FIFA World Cup,England vs Ghana,England,1.31,0.7634,0.546,-0.2173,NO BET,LOW RISK,0.3287,0.0,No bet suggested.
-2026-06-24,FIFA World Cup,Switzerland vs Canada,Switzerland,2.08,0.4808,0.4187,-0.062,NO BET,MEDIUM RISK,0.3267,0.0,No bet suggested.
-2026-06-17,FIFA World Cup,Austria vs Jordan,Austria,1.31,0.7634,0.5382,-0.2252,NO BET,LOW RISK,0.313,0.0,No bet suggested.
-2026-06-18,FIFA World Cup,Switzerland vs Bosnia & Herzegovina,Switzerland,1.58,0.6329,0.4716,-0.1613,NO BET,LOW RISK,0.3104,0.0,No bet suggested.
-2026-06-13,FIFA World Cup,Qatar vs Switzerland,Qatar,12.55,0.0797,0.2443,0.1647,NO BET,VERY HIGH RISK,0.309,0.0447,No bet suggested.
-2026-06-14,FIFA World Cup,Haiti vs Scotland,Haiti,6.52,0.1534,0.2808,0.1274,NO BET,VERY HIGH RISK,0.3082,0.0376,No bet suggested.
-2026-06-23,FIFA World Cup,Jordan vs Algeria,Algeria,1.57,0.6369,0.4716,-0.1653,NO BET,LOW RISK,0.3063,0.0,No bet suggested.
-2026-06-21,FIFA World Cup,Belgium vs Iran,Iran,7.88,0.1269,0.266,0.1391,NO BET,VERY HIGH RISK,0.3051,0.0398,No bet suggested.
-2026-06-27,FIFA World Cup,DR Congo vs Uzbekistan,DR Congo,2.31,0.4329,0.3829,-0.05,NO BET,MEDIUM RISK,0.3029,0.0,No bet suggested.
-2026-06-26,FIFA World Cup,Senegal vs Iraq,Senegal,1.44,0.6944,0.4973,-0.1972,NO BET,LOW RISK,0.3001,0.0,No bet suggested.
-2026-06-13,FIFA World Cup,USA vs Paraguay,USA,1.97,0.5076,0.4187,-0.0889,NO BET,MEDIUM RISK,0.2998,0.0,No bet suggested.
-2026-06-24,FIFA World Cup,Switzerland vs Canada,Canada,3.56,0.2809,0.3188,0.0379,NO BET,HIGH RISK,0.2967,0.0132,No bet suggested.
-2026-06-14,FIFA World Cup,Germany vs Curaçao,Draw,18.4,0.0543,0.225,0.1707,NO BET,VERY HIGH RISK,0.2957,0.0451,No bet suggested.
-2026-06-19,FIFA World Cup,Mexico vs South Korea,Mexico,1.82,0.5495,0.4365,-0.1129,NO BET,MEDIUM RISK,0.2936,0.0,No bet suggested.
-2026-06-17,FIFA World Cup,Ghana vs Panama,Panama,3.66,0.2732,0.3111,0.0379,NO BET,HIGH RISK,0.289,0.013,No bet suggested.
-2026-06-21,FIFA World Cup,Spain vs Saudi Arabia,Spain,1.1,0.9091,0.5976,-0.3115,NO BET,LOW RISK,0.2862,0.0,No bet suggested.
-2026-06-27,FIFA World Cup,Colombia vs Portugal,Colombia,3.42,0.2924,0.3035,0.0111,NO BET,MEDIUM RISK,0.2845,0.0039,No bet suggested.
-2026-06-15,FIFA World Cup,Sweden vs Tunisia,Sweden,1.91,0.5236,0.4187,-0.1048,NO BET,MEDIUM RISK,0.2839,0.0,No bet suggested.
-2026-06-27,FIFA World Cup,Egypt vs Iran,Egypt,2.3,0.4348,0.3739,-0.0608,NO BET,MEDIUM RISK,0.2831,0.0,No bet suggested.
-2026-06-21,FIFA World Cup,Ecuador vs Curaçao,Ecuador,1.21,0.8264,0.5538,-0.2727,NO BET,LOW RISK,0.2811,0.0,No bet suggested.
-2026-06-12,FIFA World Cup,South Korea vs Czech Republic,South Korea,2.67,0.3745,0.3419,-0.0326,NO BET,MEDIUM RISK,0.2793,0.0,No bet suggested.
-2026-06-28,FIFA World Cup,Algeria vs Austria,Algeria,3.35,0.2985,0.3035,0.005,NO BET,MEDIUM RISK,0.2784,0.0018,No bet suggested.
-2026-06-14,FIFA World Cup,Netherlands vs Japan,Japan,3.64,0.2747,0.3035,0.0287,NO BET,HIGH RISK,0.2722,0.0099,No bet suggested.
-2026-06-20,FIFA World Cup,Brazil vs Haiti,Draw,11.86,0.0843,0.225,0.1407,NO BET,VERY HIGH RISK,0.2657,0.0384,No bet suggested.
-2026-06-25,FIFA World Cup,Curaçao vs Ivory Coast,Curaçao,12.25,0.0816,0.2235,0.1419,NO BET,VERY HIGH RISK,0.2655,0.0386,No bet suggested.
-2026-06-15,FIFA World Cup,Spain vs Cape Verde,Draw,10.74,0.0931,0.2288,0.1356,NO BET,VERY HIGH RISK,0.2644,0.0374,No bet suggested.
-2026-06-21,FIFA World Cup,Spain vs Saudi Arabia,Draw,9.38,0.1066,0.235,0.1284,NO BET,VERY HIGH RISK,0.2634,0.0359,No bet suggested.
-2026-06-26,FIFA World Cup,Senegal vs Iraq,Iraq,7.16,0.1397,0.2515,0.1118,NO BET,VERY HIGH RISK,0.2633,0.0325,No bet suggested.
-2026-06-16,FIFA World Cup,Iraq vs Norway,Draw,6.81,0.1468,0.255,0.1082,NO BET,VERY HIGH RISK,0.2632,0.0317,No bet suggested.
-2026-06-17,FIFA World Cup,England vs Croatia,England,1.72,0.5814,0.4365,-0.1449,NO BET,MEDIUM RISK,0.2617,0.0,No bet suggested.
-2026-06-12,FIFA World Cup,Canada vs Bosnia & Herzegovina,Canada,1.81,0.5525,0.4187,-0.1338,NO BET,MEDIUM RISK,0.255,0.0,No bet suggested.
-2026-06-14,FIFA World Cup,Haiti vs Scotland,Scotland,1.49,0.6711,0.463,-0.2082,NO BET,LOW RISK,0.2548,0.0,No bet suggested.
-2026-06-25,FIFA World Cup,Curaçao vs Ivory Coast,Ivory Coast,1.24,0.8065,0.5302,-0.2762,NO BET,LOW RISK,0.254,0.0,No bet suggested.
-2026-06-25,FIFA World Cup,South Africa vs South Korea,South Africa,3.88,0.2577,0.2808,0.0231,NO BET,HIGH RISK,0.2439,0.0078,No bet suggested.
-2026-06-25,FIFA World Cup,Czech Republic vs Mexico,Mexico,1.83,0.5464,0.4098,-0.1367,NO BET,MEDIUM RISK,0.2431,0.0,No bet suggested.
-2026-06-13,FIFA World Cup,Qatar vs Switzerland,Draw,6.31,0.1585,0.25,0.0915,NO BET,VERY HIGH RISK,0.2415,0.0272,No bet suggested.
-2026-06-26,FIFA World Cup,Paraguay vs Australia,Paraguay,2.18,0.4587,0.365,-0.0937,NO BET,MEDIUM RISK,0.2413,0.0,No bet suggested.
-2026-06-21,FIFA World Cup,Belgium vs Iran,Belgium,1.39,0.7194,0.4803,-0.2392,NO BET,LOW RISK,0.2411,0.0,No bet suggested.
-2026-06-22,FIFA World Cup,New Zealand vs Egypt,New Zealand,4.92,0.2033,0.2515,0.0482,NO BET,HIGH RISK,0.2397,0.0151,No bet suggested.
-2026-06-13,FIFA World Cup,Brazil vs Morocco,Brazil,1.61,0.6211,0.4454,-0.1757,NO BET,MEDIUM RISK,0.2397,0.0,No bet suggested.
-2026-06-25,FIFA World Cup,Japan vs Sweden,Sweden,3.59,0.2786,0.2883,0.0097,NO BET,HIGH RISK,0.238,0.0034,No bet suggested.
-2026-06-27,FIFA World Cup,Cape Verde vs Saudi Arabia,Cape Verde,2.59,0.3861,0.3265,-0.0596,NO BET,MEDIUM RISK,0.2368,0.0,No bet suggested.
-2026-06-22,FIFA World Cup,France vs Iraq,Draw,8.24,0.1214,0.2288,0.1074,NO BET,VERY HIGH RISK,0.2361,0.0306,No bet suggested.
-2026-06-19,FIFA World Cup,USA vs Australia,USA,1.74,0.5747,0.4187,-0.156,NO BET,MEDIUM RISK,0.2327,0.0,No bet suggested.
-2026-06-21,FIFA World Cup,Ecuador vs Curaçao,Draw,6.55,0.1527,0.2425,0.0898,NO BET,VERY HIGH RISK,0.2323,0.0265,No bet suggested.
-2026-06-21,FIFA World Cup,Ecuador vs Curaçao,Curaçao,13.11,0.0763,0.2037,0.1274,NO BET,VERY HIGH RISK,0.2312,0.0345,No bet suggested.
-2026-06-21,FIFA World Cup,Belgium vs Iran,Draw,4.62,0.2165,0.2538,0.0373,NO BET,HIGH RISK,0.231,0.0119,No bet suggested.
-2026-06-17,FIFA World Cup,Austria vs Jordan,Jordan,9.29,0.1076,0.2168,0.1092,NO BET,VERY HIGH RISK,0.226,0.0306,No bet suggested.
-2026-06-25,FIFA World Cup,Curaçao vs Ivory Coast,Draw,5.96,0.1678,0.2462,0.0785,NO BET,VERY HIGH RISK,0.2247,0.0236,No bet suggested.
-2026-06-16,FIFA World Cup,Iran vs New Zealand,New Zealand,4.29,0.2331,0.2587,0.0256,NO BET,HIGH RISK,0.2243,0.0083,No bet suggested.
-2026-06-14,FIFA World Cup,Haiti vs Scotland,Draw,4.36,0.2294,0.2562,0.0269,NO BET,HIGH RISK,0.2231,0.0087,No bet suggested.
-2026-06-11,FIFA World Cup,Mexico vs South Africa,South Africa,8.05,0.1242,0.2235,0.0993,NO BET,VERY HIGH RISK,0.2229,0.0284,No bet suggested.
-2026-06-24,FIFA World Cup,Colombia vs DR Congo,DR Congo,7.22,0.1385,0.2304,0.0919,NO BET,VERY HIGH RISK,0.2223,0.0267,No bet suggested.
-2026-06-16,FIFA World Cup,France vs Senegal,Senegal,7.08,0.1412,0.2304,0.0891,NO BET,VERY HIGH RISK,0.2195,0.0259,No bet suggested.
-2026-06-21,FIFA World Cup,Tunisia vs Japan,Tunisia,4.73,0.2114,0.2443,0.0329,NO BET,HIGH RISK,0.2173,0.0104,No bet suggested.
-2026-06-26,FIFA World Cup,Senegal vs Iraq,Draw,4.44,0.2252,0.2512,0.026,NO BET,HIGH RISK,0.2173,0.0084,No bet suggested.
-2026-06-18,FIFA World Cup,Canada vs Qatar,Draw,5.03,0.1988,0.2575,0.0587,NO BET,VERY HIGH RISK,0.2162,0.0183,No bet suggested.
-2026-06-24,FIFA World Cup,Bosnia & Herzegovina vs Qatar,Draw,3.92,0.2551,0.265,0.0099,NO BET,HIGH RISK,0.2149,0.0033,No bet suggested.
-2026-06-16,FIFA World Cup,France vs Senegal,Draw,4.51,0.2217,0.2475,0.0258,NO BET,HIGH RISK,0.2133,0.0083,No bet suggested.
-2026-06-27,FIFA World Cup,Uruguay vs Spain,Draw,3.95,0.2532,0.2625,0.0093,NO BET,HIGH RISK,0.2118,0.0031,No bet suggested.
-2026-06-23,FIFA World Cup,England vs Ghana,Ghana,9.13,0.1095,0.2102,0.1007,NO BET,VERY HIGH RISK,0.2109,0.0283,No bet suggested.
-2026-06-18,FIFA World Cup,Uzbekistan vs Colombia,Draw,4.55,0.2198,0.245,0.0252,NO BET,HIGH RISK,0.2102,0.0081,No bet suggested.
-2026-06-18,FIFA World Cup,Uzbekistan vs Colombia,Uzbekistan,8.08,0.1238,0.2168,0.0931,NO BET,VERY HIGH RISK,0.2099,0.0266,No bet suggested.
-2026-06-18,FIFA World Cup,Czech Republic vs South Africa,South Africa,4.04,0.2475,0.2587,0.0112,NO BET,HIGH RISK,0.2098,0.0037,No bet suggested.
-2026-06-23,FIFA World Cup,Portugal vs Uzbekistan,Draw,6.23,0.1605,0.235,0.0745,NO BET,VERY HIGH RISK,0.2095,0.0222,No bet suggested.
-2026-06-17,FIFA World Cup,Austria vs Jordan,Draw,5.45,0.1835,0.245,0.0615,NO BET,VERY HIGH RISK,0.2065,0.0188,No bet suggested.
-2026-06-11,FIFA World Cup,Mexico vs South Africa,Draw,4.42,0.2262,0.2462,0.02,NO BET,HIGH RISK,0.2063,0.0065,No bet suggested.
-2026-06-27,FIFA World Cup,Panama vs England,Draw,6.06,0.165,0.235,0.07,NO BET,VERY HIGH RISK,0.205,0.021,No bet suggested.
-2026-06-17,FIFA World Cup,Portugal vs DR Congo,Draw,5.85,0.1709,0.2375,0.0666,NO BET,VERY HIGH RISK,0.2041,0.0201,No bet suggested.
-2026-06-24,FIFA World Cup,Scotland vs Brazil,Draw,4.68,0.2137,0.2388,0.0251,NO BET,HIGH RISK,0.2038,0.008,No bet suggested.
-2026-06-20,FIFA World Cup,Germany vs Ivory Coast,Draw,4.24,0.2358,0.2487,0.0129,NO BET,HIGH RISK,0.2017,0.0042,No bet suggested.
-2026-06-20,FIFA World Cup,Germany vs Ivory Coast,Ivory Coast,5.77,0.1733,0.2373,0.064,NO BET,VERY HIGH RISK,0.2013,0.0194,No bet suggested.
-2026-06-20,FIFA World Cup,Turkey vs Paraguay,Turkey,2.21,0.4525,0.3419,-0.1106,NO BET,MEDIUM RISK,0.2013,0.0,No bet suggested.
-2026-06-28,FIFA World Cup,Jordan vs Argentina,Draw,6.93,0.1443,0.2225,0.0782,NO BET,VERY HIGH RISK,0.2007,0.0228,No bet suggested.
-2026-06-13,FIFA World Cup,Brazil vs Morocco,Draw,3.86,0.2591,0.2588,-0.0003,NO BET,HIGH RISK,0.1984,0.0,No bet suggested.
-2026-06-13,FIFA World Cup,Qatar vs Switzerland,Switzerland,1.23,0.813,0.5057,-0.3074,NO BET,LOW RISK,0.1983,0.0,No bet suggested.
-2026-06-19,FIFA World Cup,USA vs Australia,Draw,3.74,0.2674,0.2625,-0.0049,NO BET,HIGH RISK,0.1976,0.0,No bet suggested.
-2026-06-23,FIFA World Cup,Jordan vs Algeria,Draw,3.96,0.2525,0.255,0.0025,NO BET,HIGH RISK,0.1975,0.0008,No bet suggested.
-2026-06-17,FIFA World Cup,Argentina vs Algeria,Draw,4.59,0.2179,0.2375,0.0196,NO BET,HIGH RISK,0.1971,0.0063,No bet suggested.
-2026-06-18,FIFA World Cup,Switzerland vs Bosnia & Herzegovina,Draw,3.95,0.2532,0.255,0.0018,NO BET,HIGH RISK,0.1968,0.0006,No bet suggested.
-2026-06-23,FIFA World Cup,England vs Ghana,Draw,5.24,0.1908,0.2437,0.0529,NO BET,VERY HIGH RISK,0.1967,0.0163,No bet suggested.
-2026-06-15,FIFA World Cup,Saudi Arabia vs Uruguay,Draw,4.34,0.2304,0.2425,0.0121,NO BET,HIGH RISK,0.1946,0.0039,No bet suggested.
-2026-06-27,FIFA World Cup,Uruguay vs Spain,Spain,1.63,0.6135,0.4187,-0.1948,NO BET,MEDIUM RISK,0.194,0.0,No bet suggested.
-2026-06-14,FIFA World Cup,Australia vs Turkey,Draw,3.59,0.2786,0.2662,-0.0123,NO BET,HIGH RISK,0.1939,0.0,No bet suggested.
-2026-06-24,FIFA World Cup,Colombia vs DR Congo,Draw,4.14,0.2415,0.2475,0.006,NO BET,HIGH RISK,0.1935,0.002,No bet suggested.
-2026-06-27,FIFA World Cup,New Zealand vs Belgium,Draw,5.58,0.1792,0.2362,0.057,NO BET,VERY HIGH RISK,0.1933,0.0174,No bet suggested.
-2026-06-17,FIFA World Cup,England vs Croatia,Draw,3.74,0.2674,0.26,-0.0074,NO BET,HIGH RISK,0.1926,0.0,No bet suggested.
-2026-06-15,FIFA World Cup,Belgium vs Egypt,Draw,3.88,0.2577,0.255,-0.0027,NO BET,HIGH RISK,0.1923,0.0,No bet suggested.
-2026-06-21,FIFA World Cup,Spain vs Saudi Arabia,Saudi Arabia,23.18,0.0431,0.1674,0.1242,NO BET,VERY HIGH RISK,0.1916,0.0325,No bet suggested.
-2026-06-23,FIFA World Cup,Panama vs Croatia,Panama,6.88,0.1453,0.2168,0.0715,NO BET,VERY HIGH RISK,0.1883,0.0209,No bet suggested.
-2026-06-21,FIFA World Cup,Uruguay vs Cape Verde,Draw,4.44,0.2252,0.2362,0.011,NO BET,HIGH RISK,0.1873,0.0036,No bet suggested.
-2026-06-25,FIFA World Cup,Ecuador vs Germany,Draw,3.88,0.2577,0.2525,-0.0052,NO BET,HIGH RISK,0.1873,0.0,No bet suggested.
-2026-06-23,FIFA World Cup,Panama vs Croatia,Draw,4.07,0.2457,0.245,-0.0007,NO BET,HIGH RISK,0.1843,0.0,No bet suggested.
-2026-06-12,FIFA World Cup,Canada vs Bosnia & Herzegovina,Draw,3.56,0.2809,0.2625,-0.0184,NO BET,HIGH RISK,0.1841,0.0,No bet suggested.
-2026-06-23,FIFA World Cup,Norway vs Senegal,Draw,3.46,0.289,0.2662,-0.0228,NO BET,HIGH RISK,0.1835,0.0,No bet suggested.
-2026-06-25,FIFA World Cup,Czech Republic vs Mexico,Draw,3.52,0.2841,0.2637,-0.0203,NO BET,HIGH RISK,0.1834,0.0,No bet suggested.
-2026-06-25,FIFA World Cup,Tunisia vs Netherlands,Draw,4.19,0.2387,0.24,0.0013,NO BET,HIGH RISK,0.1813,0.0004,No bet suggested.
-2026-06-20,FIFA World Cup,Netherlands vs Sweden,Draw,3.94,0.2538,0.2475,-0.0063,NO BET,HIGH RISK,0.1812,0.0,No bet suggested.
-2026-06-27,FIFA World Cup,Croatia vs Ghana,Draw,3.74,0.2674,0.2538,-0.0136,NO BET,HIGH RISK,0.1801,0.0,No bet suggested.
-2026-06-14,FIFA World Cup,Netherlands vs Japan,Draw,3.57,0.2801,0.26,-0.0201,NO BET,HIGH RISK,0.1799,0.0,No bet suggested.
-2026-06-19,FIFA World Cup,Scotland vs Morocco,Scotland,4.0,0.25,0.2443,-0.0057,NO BET,HIGH RISK,0.1787,0.0,No bet suggested.
-2026-06-24,FIFA World Cup,Morocco vs Haiti,Draw,5.1,0.1961,0.2362,0.0402,NO BET,VERY HIGH RISK,0.1764,0.0125,No bet suggested.
-2026-06-22,FIFA World Cup,New Zealand vs Egypt,Draw,3.71,0.2695,0.2512,-0.0183,NO BET,HIGH RISK,0.173,0.0,No bet suggested.
-2026-06-23,FIFA World Cup,Norway vs Senegal,Norway,2.08,0.4808,0.3419,-0.1389,NO BET,MEDIUM RISK,0.173,0.0,No bet suggested.
-2026-06-22,FIFA World Cup,Argentina vs Austria,Austria,5.31,0.1883,0.2304,0.0421,NO BET,VERY HIGH RISK,0.1724,0.013,No bet suggested.
-2026-06-17,FIFA World Cup,Ghana vs Panama,Draw,3.43,0.2915,0.2612,-0.0303,NO BET,HIGH RISK,0.171,0.0,No bet suggested.
-2026-06-22,FIFA World Cup,Argentina vs Austria,Draw,3.78,0.2646,0.2475,-0.0171,NO BET,HIGH RISK,0.1704,0.0,No bet suggested.
-2026-06-26,FIFA World Cup,Paraguay vs Australia,Draw,3.22,0.3106,0.27,-0.0406,NO BET,HIGH RISK,0.1694,0.0,No bet suggested.
-2026-06-19,FIFA World Cup,Mexico vs South Korea,Draw,3.44,0.2907,0.26,-0.0307,NO BET,HIGH RISK,0.1693,0.0,No bet suggested.
-2026-06-13,FIFA World Cup,USA vs Paraguay,Draw,3.38,0.2959,0.2625,-0.0334,NO BET,HIGH RISK,0.1691,0.0,No bet suggested.
-2026-06-15,FIFA World Cup,Sweden vs Tunisia,Draw,3.37,0.2967,0.2625,-0.0342,NO BET,HIGH RISK,0.1683,0.0,No bet suggested.
-2026-06-27,FIFA World Cup,DR Congo vs Uzbekistan,Draw,3.26,0.3067,0.2675,-0.0392,NO BET,HIGH RISK,0.1683,0.0,No bet suggested.
-2026-06-17,FIFA World Cup,Portugal vs DR Congo,DR Congo,11.09,0.0902,0.179,0.0888,NO BET,VERY HIGH RISK,0.1678,0.0244,No bet suggested.
-2026-06-26,FIFA World Cup,Turkey vs USA,Draw,3.45,0.2899,0.2588,-0.0311,NO BET,HIGH RISK,0.1676,0.0,No bet suggested.
-2026-06-20,FIFA World Cup,Netherlands vs Sweden,Sweden,5.08,0.1969,0.2304,0.0335,NO BET,VERY HIGH RISK,0.1639,0.0104,No bet suggested.
-2026-06-24,FIFA World Cup,Switzerland vs Canada,Draw,3.31,0.3021,0.2625,-0.0396,NO BET,HIGH RISK,0.1629,0.0,No bet suggested.
-2026-06-27,FIFA World Cup,Cape Verde vs Saudi Arabia,Draw,3.28,0.3049,0.2637,-0.0411,NO BET,HIGH RISK,0.1626,0.0,No bet suggested.
-2026-06-15,FIFA World Cup,Saudi Arabia vs Uruguay,Saudi Arabia,6.88,0.1453,0.2037,0.0584,NO BET,VERY HIGH RISK,0.1621,0.0171,No bet suggested.
-2026-06-25,FIFA World Cup,Japan vs Sweden,Draw,3.41,0.2933,0.2575,-0.0358,NO BET,HIGH RISK,0.1617,0.0,No bet suggested.
-2026-06-26,FIFA World Cup,Turkey vs USA,Turkey,2.7,0.3704,0.2959,-0.0745,NO BET,HIGH RISK,0.1613,0.0,No bet suggested.
-2026-06-27,FIFA World Cup,Colombia vs Portugal,Draw,3.32,0.3012,0.26,-0.0412,NO BET,HIGH RISK,0.1588,0.0,No bet suggested.
-2026-06-20,FIFA World Cup,Turkey vs Paraguay,Draw,3.17,0.3155,0.2662,-0.0492,NO BET,HIGH RISK,0.157,0.0,No bet suggested.
-2026-06-25,FIFA World Cup,South Africa vs South Korea,Draw,3.37,0.2967,0.2562,-0.0405,NO BET,HIGH RISK,0.1558,0.0,No bet suggested.
-2026-06-26,FIFA World Cup,Norway vs France,Draw,3.62,0.2762,0.2437,-0.0325,NO BET,HIGH RISK,0.1513,0.0,No bet suggested.
-2026-06-21,FIFA World Cup,Tunisia vs Japan,Draw,3.46,0.289,0.25,-0.039,NO BET,HIGH RISK,0.151,0.0,No bet suggested.
-2026-06-18,FIFA World Cup,Canada vs Qatar,Canada,1.32,0.7576,0.4542,-0.3034,NO BET,LOW RISK,0.1508,0.0,No bet suggested.
-2026-06-16,FIFA World Cup,Iran vs New Zealand,Draw,3.39,0.295,0.2525,-0.0425,NO BET,HIGH RISK,0.15,0.0,No bet suggested.
-2026-06-12,FIFA World Cup,South Korea vs Czech Republic,Draw,3.1,0.3226,0.2662,-0.0563,NO BET,HIGH RISK,0.1499,0.0,No bet suggested.
-2026-06-27,FIFA World Cup,Egypt vs Iran,Draw,3.05,0.3279,0.2687,-0.0591,NO BET,HIGH RISK,0.1496,0.0,No bet suggested.
-2026-06-15,FIFA World Cup,Spain vs Cape Verde,Cape Verde,26.71,0.0374,0.1407,0.1033,NO BET,VERY HIGH RISK,0.144,0.0268,No bet suggested.
-2026-06-28,FIFA World Cup,Algeria vs Austria,Draw,3.16,0.3165,0.26,-0.0565,NO BET,HIGH RISK,0.1435,0.0,No bet suggested.
-2026-06-23,FIFA World Cup,Portugal vs Uzbekistan,Uzbekistan,10.85,0.0922,0.1674,0.0752,NO BET,VERY HIGH RISK,0.1426,0.0207,No bet suggested.
-2026-06-24,FIFA World Cup,Morocco vs Haiti,Haiti,9.55,0.1047,0.1731,0.0684,NO BET,VERY HIGH RISK,0.1415,0.0191,No bet suggested.
-2026-06-18,FIFA World Cup,Czech Republic vs South Africa,Draw,3.29,0.304,0.2525,-0.0515,NO BET,HIGH RISK,0.141,0.0,No bet suggested.
-2026-06-17,FIFA World Cup,Argentina vs Algeria,Algeria,8.51,0.1175,0.179,0.0615,NO BET,VERY HIGH RISK,0.1404,0.0174,No bet suggested.
-2026-06-27,FIFA World Cup,New Zealand vs Belgium,New Zealand,9.42,0.1062,0.1731,0.067,NO BET,VERY HIGH RISK,0.1401,0.0187,No bet suggested.
-2026-06-22,FIFA World Cup,France vs Iraq,Iraq,22.93,0.0436,0.1407,0.0971,NO BET,VERY HIGH RISK,0.1378,0.0254,No bet suggested.
-2026-06-26,FIFA World Cup,Norway vs France,Norway,4.41,0.2268,0.2102,-0.0165,NO BET,HIGH RISK,0.1337,0.0,No bet suggested.
-2026-06-19,FIFA World Cup,Scotland vs Morocco,Draw,3.26,0.3067,0.25,-0.0567,NO BET,HIGH RISK,0.1333,0.0,No bet suggested.
-2026-06-14,FIFA World Cup,Germany vs Curaçao,Curaçao,47.0,0.0213,0.1263,0.105,NO BET,VERY HIGH RISK,0.1313,0.0268,No bet suggested.
-2026-06-25,FIFA World Cup,Tunisia vs Netherlands,Tunisia,6.38,0.1567,0.1911,0.0344,NO BET,VERY HIGH RISK,0.1255,0.0102,No bet suggested.
-2026-06-24,FIFA World Cup,Bosnia & Herzegovina vs Qatar,Bosnia & Herzegovina,1.54,0.6494,0.4008,-0.2485,NO BET,MEDIUM RISK,0.1223,0.0,No bet suggested.
-2026-06-27,FIFA World Cup,Panama vs England,Panama,8.57,0.1167,0.1674,0.0507,NO BET,VERY HIGH RISK,0.1181,0.0143,No bet suggested.
-2026-06-20,FIFA World Cup,Brazil vs Haiti,Haiti,28.0,0.0357,0.1263,0.0906,NO BET,VERY HIGH RISK,0.1169,0.0235,No bet suggested.
-2026-06-16,FIFA World Cup,Iraq vs Norway,Norway,1.21,0.8264,0.4716,-0.3548,NO BET,LOW RISK,0.1168,0.0,No bet suggested.
-2026-06-14,FIFA World Cup,Ivory Coast vs Ecuador,Draw,2.81,0.3559,0.2662,-0.0896,NO BET,HIGH RISK,0.1166,0.0,No bet suggested.
-2026-06-24,FIFA World Cup,Scotland vs Brazil,Scotland,6.45,0.155,0.185,0.0299,NO BET,VERY HIGH RISK,0.1149,0.0089,No bet suggested.
-2026-06-21,FIFA World Cup,Uruguay vs Cape Verde,Cape Verde,7.33,0.1364,0.1731,0.0367,NO BET,VERY HIGH RISK,0.1098,0.0106,No bet suggested.
-2026-06-14,FIFA World Cup,Australia vs Turkey,Turkey,1.77,0.565,0.3419,-0.2231,NO BET,MEDIUM RISK,0.0888,0.0,No bet suggested.
-2026-06-28,FIFA World Cup,Jordan vs Argentina,Jordan,13.5,0.0741,0.1174,0.0433,NO BET,VERY HIGH RISK,0.0606,0.0117,No bet suggested.
+date,stage,match,selection,decimal_odds,market_probability,model_probability,value_gap,signal,risk_label,confidence_score,kelly_stake_pct,bankroll_note,quality_label
+2026-06-14,FIFA World Cup,Australia vs Turkey,Australia,4.75,0.2105,0.3919,0.1813,STRONG VALUE,HIGH RISK,0.5132,0.0574,Small stake only. Do not overexpose bankroll.,PUBLIC_SIGNAL
+2026-06-25,FIFA World Cup,Czech Republic vs Mexico,Czech Republic,4.46,0.2242,0.3265,0.1023,STRONG VALUE,HIGH RISK,0.3687,0.033,Small stake only. Do not overexpose bankroll.,PUBLIC_SIGNAL
+2026-06-23,FIFA World Cup,Norway vs Senegal,Senegal,3.4,0.2941,0.3919,0.0977,POSSIBLE VALUE,MEDIUM RISK,0.4596,0.0346,Moderate caution. Follow fractional Kelly only.,PUBLIC_SIGNAL
+2026-06-20,FIFA World Cup,Turkey vs Paraguay,Paraguay,3.38,0.2959,0.3919,0.096,POSSIBLE VALUE,MEDIUM RISK,0.4578,0.0341,Moderate caution. Follow fractional Kelly only.,PUBLIC_SIGNAL
+2026-06-26,FIFA World Cup,Paraguay vs Australia,Australia,3.48,0.2874,0.365,0.0776,POSSIBLE VALUE,MEDIUM RISK,0.4126,0.0272,Moderate caution. Follow fractional Kelly only.,PUBLIC_SIGNAL
+2026-06-27,FIFA World Cup,Egypt vs Iran,Iran,3.41,0.2933,0.3573,0.0641,POSSIBLE VALUE,MEDIUM RISK,0.3914,0.0227,Moderate caution. Follow fractional Kelly only.,PUBLIC_SIGNAL
+2026-06-19,FIFA World Cup,USA vs Australia,Australia,4.56,0.2193,0.3188,0.0995,POSSIBLE VALUE,HIGH RISK,0.3583,0.0319,Small stake only. Do not overexpose bankroll.,PUBLIC_SIGNAL
+2026-06-12,FIFA World Cup,Canada vs Bosnia & Herzegovina,Bosnia & Herzegovina,4.5,0.2222,0.3188,0.0966,POSSIBLE VALUE,HIGH RISK,0.3553,0.031,Small stake only. Do not overexpose bankroll.,PUBLIC_SIGNAL
+2026-06-14,FIFA World Cup,Ivory Coast vs Ecuador,Ivory Coast,3.65,0.274,0.3419,0.0679,POSSIBLE VALUE,HIGH RISK,0.3498,0.0234,Small stake only. Do not overexpose bankroll.,PREMIUM_SIGNAL
+2026-06-17,FIFA World Cup,England vs Croatia,Croatia,4.85,0.2062,0.3035,0.0973,POSSIBLE VALUE,HIGH RISK,0.3407,0.0306,Small stake only. Do not overexpose bankroll.,PREMIUM_SIGNAL
+2026-06-15,FIFA World Cup,Sweden vs Tunisia,Tunisia,4.21,0.2375,0.3188,0.0812,POSSIBLE VALUE,HIGH RISK,0.34,0.0266,Small stake only. Do not overexpose bankroll.,PREMIUM_SIGNAL
+2026-06-19,FIFA World Cup,Mexico vs South Korea,South Korea,4.54,0.2203,0.3035,0.0832,POSSIBLE VALUE,HIGH RISK,0.3267,0.0267,Small stake only. Do not overexpose bankroll.,PREMIUM_SIGNAL
+2026-06-13,FIFA World Cup,USA vs Paraguay,Paraguay,3.94,0.2538,0.3188,0.065,POSSIBLE VALUE,HIGH RISK,0.3237,0.0218,Small stake only. Do not overexpose bankroll.,PREMIUM_SIGNAL
+2026-06-25,FIFA World Cup,Ecuador vs Germany,Ecuador,4.99,0.2004,0.2587,0.0583,POSSIBLE VALUE,HIGH RISK,0.257,0.0182,Small stake only. Do not overexpose bankroll.,PREMIUM_SIGNAL
+2026-06-24,FIFA World Cup,Bosnia & Herzegovina vs Qatar,Qatar,6.08,0.1645,0.3342,0.1697,STRONG VALUE,VERY HIGH RISK,0.4039,0.0508,Tiny stake only. High variance pick.,WATCHLIST_ONLY
+2026-06-27,FIFA World Cup,Uruguay vs Spain,Uruguay,5.33,0.1876,0.3188,0.1312,STRONG VALUE,VERY HIGH RISK,0.3499,0.0404,Tiny stake only. High variance pick.,WATCHLIST_ONLY
+2026-06-13,FIFA World Cup,Brazil vs Morocco,Morocco,5.77,0.1733,0.2959,0.1225,POSSIBLE VALUE,VERY HIGH RISK,0.3184,0.0371,Tiny stake only. High variance pick.,WATCHLIST_ONLY
+2026-06-23,FIFA World Cup,Jordan vs Algeria,Jordan,5.74,0.1742,0.2734,0.0991,POSSIBLE VALUE,VERY HIGH RISK,0.2725,0.03,Tiny stake only. High variance pick.,WATCHLIST_ONLY
+2026-06-18,FIFA World Cup,Switzerland vs Bosnia & Herzegovina,Bosnia & Herzegovina,5.62,0.1779,0.2734,0.0954,POSSIBLE VALUE,VERY HIGH RISK,0.2688,0.029,Tiny stake only. High variance pick.,WATCHLIST_ONLY
+2026-06-15,FIFA World Cup,Belgium vs Egypt,Egypt,5.18,0.1931,0.2734,0.0803,POSSIBLE VALUE,VERY HIGH RISK,0.2537,0.0249,Tiny stake only. High variance pick.,WATCHLIST_ONLY
+2026-06-27,FIFA World Cup,Croatia vs Ghana,Ghana,5.45,0.1835,0.266,0.0825,POSSIBLE VALUE,VERY HIGH RISK,0.2485,0.0253,Tiny stake only. High variance pick.,WATCHLIST_ONLY
+2026-06-26,FIFA World Cup,Norway vs France,France,1.8,0.5556,0.546,-0.0095,NO BET,LOW RISK,0.5365,0.0,No bet suggested.,NO_BET
+2026-06-19,FIFA World Cup,Scotland vs Morocco,Morocco,1.97,0.5076,0.5057,-0.002,NO BET,LOW RISK,0.5037,0.0,No bet suggested.,NO_BET
+2026-06-21,FIFA World Cup,Uruguay vs Cape Verde,Uruguay,1.43,0.6993,0.5906,-0.1087,NO BET,LOW RISK,0.482,0.0,No bet suggested.,NO_BET
+2026-06-28,FIFA World Cup,Jordan vs Argentina,Argentina,1.19,0.8403,0.6601,-0.1802,NO BET,LOW RISK,0.48,0.0,No bet suggested.,NO_BET
+2026-06-25,FIFA World Cup,Tunisia vs Netherlands,Netherlands,1.51,0.6623,0.5689,-0.0934,NO BET,LOW RISK,0.4755,0.0,No bet suggested.,NO_BET
+2026-06-18,FIFA World Cup,Czech Republic vs South Africa,Czech Republic,1.98,0.5051,0.4888,-0.0162,NO BET,LOW RISK,0.4726,0.0,No bet suggested.,NO_BET
+2026-06-24,FIFA World Cup,Scotland vs Brazil,Brazil,1.46,0.6849,0.5763,-0.1087,NO BET,LOW RISK,0.4676,0.0,No bet suggested.,NO_BET
+2026-06-26,FIFA World Cup,Turkey vs USA,USA,2.52,0.3968,0.4454,0.0486,NO BET,MEDIUM RISK,0.464,0.0201,No bet suggested.,NO_BET
+2026-06-16,FIFA World Cup,Iran vs New Zealand,Iran,1.9,0.5263,0.4888,-0.0375,NO BET,LOW RISK,0.4513,0.0,No bet suggested.,NO_BET
+2026-06-21,FIFA World Cup,Tunisia vs Japan,Japan,1.78,0.5618,0.5057,-0.0561,NO BET,LOW RISK,0.4495,0.0,No bet suggested.,NO_BET
+2026-06-17,FIFA World Cup,Argentina vs Algeria,Argentina,1.39,0.7194,0.5835,-0.1359,NO BET,LOW RISK,0.4476,0.0,No bet suggested.,NO_BET
+2026-06-20,FIFA World Cup,Netherlands vs Sweden,Netherlands,1.64,0.6098,0.5221,-0.0876,NO BET,LOW RISK,0.4345,0.0,No bet suggested.,NO_BET
+2026-06-22,FIFA World Cup,Argentina vs Austria,Argentina,1.64,0.6098,0.5221,-0.0876,NO BET,LOW RISK,0.4345,0.0,No bet suggested.,NO_BET
+2026-06-24,FIFA World Cup,Morocco vs Haiti,Morocco,1.33,0.7519,0.5906,-0.1612,NO BET,LOW RISK,0.4294,0.0,No bet suggested.,NO_BET
+2026-06-15,FIFA World Cup,Saudi Arabia vs Uruguay,Uruguay,1.47,0.6803,0.5538,-0.1265,NO BET,LOW RISK,0.4273,0.0,No bet suggested.,NO_BET
+2026-06-25,FIFA World Cup,South Africa vs South Korea,South Korea,1.99,0.5025,0.463,-0.0396,NO BET,LOW RISK,0.4234,0.0,No bet suggested.,NO_BET
+2026-06-27,FIFA World Cup,Cape Verde vs Saudi Arabia,Saudi Arabia,2.73,0.3663,0.4098,0.0435,NO BET,MEDIUM RISK,0.4233,0.0172,No bet suggested.,NO_BET
+2026-06-27,FIFA World Cup,Panama vs England,England,1.29,0.7752,0.5976,-0.1776,NO BET,LOW RISK,0.4201,0.0,No bet suggested.,NO_BET
+2026-06-22,FIFA World Cup,New Zealand vs Egypt,Egypt,1.7,0.5882,0.4973,-0.091,NO BET,LOW RISK,0.4063,0.0,No bet suggested.,NO_BET
+2026-06-23,FIFA World Cup,Panama vs Croatia,Croatia,1.49,0.6711,0.5382,-0.133,NO BET,LOW RISK,0.4052,0.0,No bet suggested.,NO_BET
+2026-06-28,FIFA World Cup,Algeria vs Austria,Austria,2.27,0.4405,0.4365,-0.004,NO BET,MEDIUM RISK,0.4026,0.0,No bet suggested.,NO_BET
+2026-06-27,FIFA World Cup,New Zealand vs Belgium,Belgium,1.28,0.7812,0.5906,-0.1906,NO BET,LOW RISK,0.4,0.0,No bet suggested.,NO_BET
+2026-06-12,FIFA World Cup,South Korea vs Czech Republic,Czech Republic,2.79,0.3584,0.3919,0.0334,NO BET,MEDIUM RISK,0.3953,0.013,No bet suggested.,NO_BET
+2026-06-25,FIFA World Cup,Japan vs Sweden,Japan,2.06,0.4854,0.4542,-0.0312,NO BET,MEDIUM RISK,0.393,0.0,No bet suggested.,NO_BET
+2026-06-23,FIFA World Cup,Portugal vs Uzbekistan,Portugal,1.24,0.8065,0.5976,-0.2088,NO BET,LOW RISK,0.3888,0.0,No bet suggested.,NO_BET
+2026-06-27,FIFA World Cup,Colombia vs Portugal,Portugal,2.16,0.463,0.4365,-0.0264,NO BET,MEDIUM RISK,0.3801,0.0,No bet suggested.,NO_BET
+2026-06-25,FIFA World Cup,Ecuador vs Germany,Germany,1.67,0.5988,0.4888,-0.11,NO BET,LOW RISK,0.3788,0.0,No bet suggested.,NO_BET
+2026-06-20,FIFA World Cup,Germany vs Ivory Coast,Germany,1.54,0.6494,0.5139,-0.1354,NO BET,LOW RISK,0.3785,0.0,No bet suggested.,NO_BET
+2026-06-18,FIFA World Cup,Canada vs Qatar,Qatar,9.69,0.1032,0.2883,0.1851,NO BET,VERY HIGH RISK,0.3734,0.0516,No bet suggested.,NO_BET
+2026-06-17,FIFA World Cup,Portugal vs DR Congo,Portugal,1.26,0.7937,0.5835,-0.2101,NO BET,LOW RISK,0.3734,0.0,No bet suggested.,NO_BET
+2026-06-16,FIFA World Cup,Iraq vs Norway,Iraq,12.79,0.0782,0.2734,0.1952,NO BET,VERY HIGH RISK,0.3685,0.0529,No bet suggested.,NO_BET
+2026-06-22,FIFA World Cup,France vs Iraq,France,1.12,0.8929,0.6306,-0.2623,NO BET,LOW RISK,0.3683,0.0,No bet suggested.,NO_BET
+2026-06-20,FIFA World Cup,Brazil vs Haiti,Brazil,1.07,0.9346,0.6487,-0.2859,NO BET,LOW RISK,0.3628,0.0,No bet suggested.,NO_BET
+2026-06-18,FIFA World Cup,Uzbekistan vs Colombia,Colombia,1.4,0.7143,0.5382,-0.1761,NO BET,LOW RISK,0.3621,0.0,No bet suggested.,NO_BET
+2026-06-24,FIFA World Cup,Colombia vs DR Congo,Colombia,1.46,0.6849,0.5221,-0.1628,NO BET,LOW RISK,0.3593,0.0,No bet suggested.,NO_BET
+2026-06-27,FIFA World Cup,Croatia vs Ghana,Croatia,1.66,0.6024,0.4803,-0.1221,NO BET,LOW RISK,0.3581,0.0,No bet suggested.,NO_BET
+2026-06-11,FIFA World Cup,Mexico vs South Africa,Mexico,1.42,0.7042,0.5302,-0.174,NO BET,LOW RISK,0.3562,0.0,No bet suggested.,NO_BET
+2026-06-16,FIFA World Cup,France vs Senegal,France,1.45,0.6897,0.5221,-0.1675,NO BET,LOW RISK,0.3546,0.0,No bet suggested.,NO_BET
+2026-06-27,FIFA World Cup,DR Congo vs Uzbekistan,Uzbekistan,3.15,0.3175,0.3496,0.0322,NO BET,MEDIUM RISK,0.3518,0.0118,No bet suggested.,NO_BET
+2026-06-15,FIFA World Cup,Spain vs Cape Verde,Spain,1.09,0.9174,0.6306,-0.2869,NO BET,LOW RISK,0.3437,0.0,No bet suggested.,NO_BET
+2026-06-15,FIFA World Cup,Belgium vs Egypt,Belgium,1.66,0.6024,0.4716,-0.1308,NO BET,LOW RISK,0.3409,0.0,No bet suggested.,NO_BET
+2026-06-14,FIFA World Cup,Germany vs Curaçao,Germany,1.04,0.9615,0.6487,-0.3128,NO BET,LOW RISK,0.3359,0.0,No bet suggested.,NO_BET
+2026-06-14,FIFA World Cup,Netherlands vs Japan,Netherlands,1.97,0.5076,0.4365,-0.0711,NO BET,MEDIUM RISK,0.3355,0.0,No bet suggested.,NO_BET
+2026-06-17,FIFA World Cup,Ghana vs Panama,Ghana,2.04,0.4902,0.4276,-0.0625,NO BET,MEDIUM RISK,0.3351,0.0,No bet suggested.,NO_BET
+2026-06-14,FIFA World Cup,Ivory Coast vs Ecuador,Ecuador,2.36,0.4237,0.3919,-0.0319,NO BET,MEDIUM RISK,0.33,0.0,No bet suggested.,NO_BET
+2026-06-23,FIFA World Cup,England vs Ghana,England,1.31,0.7634,0.546,-0.2173,NO BET,LOW RISK,0.3287,0.0,No bet suggested.,NO_BET
+2026-06-24,FIFA World Cup,Switzerland vs Canada,Switzerland,2.08,0.4808,0.4187,-0.062,NO BET,MEDIUM RISK,0.3267,0.0,No bet suggested.,NO_BET
+2026-06-17,FIFA World Cup,Austria vs Jordan,Austria,1.31,0.7634,0.5382,-0.2252,NO BET,LOW RISK,0.313,0.0,No bet suggested.,NO_BET
+2026-06-18,FIFA World Cup,Switzerland vs Bosnia & Herzegovina,Switzerland,1.58,0.6329,0.4716,-0.1613,NO BET,LOW RISK,0.3104,0.0,No bet suggested.,NO_BET
+2026-06-13,FIFA World Cup,Qatar vs Switzerland,Qatar,12.55,0.0797,0.2443,0.1647,NO BET,VERY HIGH RISK,0.309,0.0447,No bet suggested.,NO_BET
+2026-06-14,FIFA World Cup,Haiti vs Scotland,Haiti,6.52,0.1534,0.2808,0.1274,NO BET,VERY HIGH RISK,0.3082,0.0376,No bet suggested.,NO_BET
+2026-06-23,FIFA World Cup,Jordan vs Algeria,Algeria,1.57,0.6369,0.4716,-0.1653,NO BET,LOW RISK,0.3063,0.0,No bet suggested.,NO_BET
+2026-06-21,FIFA World Cup,Belgium vs Iran,Iran,7.88,0.1269,0.266,0.1391,NO BET,VERY HIGH RISK,0.3051,0.0398,No bet suggested.,NO_BET
+2026-06-27,FIFA World Cup,DR Congo vs Uzbekistan,DR Congo,2.31,0.4329,0.3829,-0.05,NO BET,MEDIUM RISK,0.3029,0.0,No bet suggested.,NO_BET
+2026-06-26,FIFA World Cup,Senegal vs Iraq,Senegal,1.44,0.6944,0.4973,-0.1972,NO BET,LOW RISK,0.3001,0.0,No bet suggested.,NO_BET
+2026-06-13,FIFA World Cup,USA vs Paraguay,USA,1.97,0.5076,0.4187,-0.0889,NO BET,MEDIUM RISK,0.2998,0.0,No bet suggested.,NO_BET
+2026-06-24,FIFA World Cup,Switzerland vs Canada,Canada,3.56,0.2809,0.3188,0.0379,NO BET,HIGH RISK,0.2967,0.0132,No bet suggested.,NO_BET
+2026-06-14,FIFA World Cup,Germany vs Curaçao,Draw,18.4,0.0543,0.225,0.1707,NO BET,VERY HIGH RISK,0.2957,0.0451,No bet suggested.,NO_BET
+2026-06-19,FIFA World Cup,Mexico vs South Korea,Mexico,1.82,0.5495,0.4365,-0.1129,NO BET,MEDIUM RISK,0.2936,0.0,No bet suggested.,NO_BET
+2026-06-17,FIFA World Cup,Ghana vs Panama,Panama,3.66,0.2732,0.3111,0.0379,NO BET,HIGH RISK,0.289,0.013,No bet suggested.,NO_BET
+2026-06-21,FIFA World Cup,Spain vs Saudi Arabia,Spain,1.1,0.9091,0.5976,-0.3115,NO BET,LOW RISK,0.2862,0.0,No bet suggested.,NO_BET
+2026-06-27,FIFA World Cup,Colombia vs Portugal,Colombia,3.42,0.2924,0.3035,0.0111,NO BET,MEDIUM RISK,0.2845,0.0039,No bet suggested.,NO_BET
+2026-06-15,FIFA World Cup,Sweden vs Tunisia,Sweden,1.91,0.5236,0.4187,-0.1048,NO BET,MEDIUM RISK,0.2839,0.0,No bet suggested.,NO_BET
+2026-06-27,FIFA World Cup,Egypt vs Iran,Egypt,2.3,0.4348,0.3739,-0.0608,NO BET,MEDIUM RISK,0.2831,0.0,No bet suggested.,NO_BET
+2026-06-21,FIFA World Cup,Ecuador vs Curaçao,Ecuador,1.21,0.8264,0.5538,-0.2727,NO BET,LOW RISK,0.2811,0.0,No bet suggested.,NO_BET
+2026-06-12,FIFA World Cup,South Korea vs Czech Republic,South Korea,2.67,0.3745,0.3419,-0.0326,NO BET,MEDIUM RISK,0.2793,0.0,No bet suggested.,NO_BET
+2026-06-28,FIFA World Cup,Algeria vs Austria,Algeria,3.35,0.2985,0.3035,0.005,NO BET,MEDIUM RISK,0.2784,0.0018,No bet suggested.,NO_BET
+2026-06-14,FIFA World Cup,Netherlands vs Japan,Japan,3.64,0.2747,0.3035,0.0287,NO BET,HIGH RISK,0.2722,0.0099,No bet suggested.,NO_BET
+2026-06-20,FIFA World Cup,Brazil vs Haiti,Draw,11.86,0.0843,0.225,0.1407,NO BET,VERY HIGH RISK,0.2657,0.0384,No bet suggested.,NO_BET
+2026-06-25,FIFA World Cup,Curaçao vs Ivory Coast,Curaçao,12.25,0.0816,0.2235,0.1419,NO BET,VERY HIGH RISK,0.2655,0.0386,No bet suggested.,NO_BET
+2026-06-15,FIFA World Cup,Spain vs Cape Verde,Draw,10.74,0.0931,0.2288,0.1356,NO BET,VERY HIGH RISK,0.2644,0.0374,No bet suggested.,NO_BET
+2026-06-21,FIFA World Cup,Spain vs Saudi Arabia,Draw,9.38,0.1066,0.235,0.1284,NO BET,VERY HIGH RISK,0.2634,0.0359,No bet suggested.,NO_BET
+2026-06-26,FIFA World Cup,Senegal vs Iraq,Iraq,7.16,0.1397,0.2515,0.1118,NO BET,VERY HIGH RISK,0.2633,0.0325,No bet suggested.,NO_BET
+2026-06-16,FIFA World Cup,Iraq vs Norway,Draw,6.81,0.1468,0.255,0.1082,NO BET,VERY HIGH RISK,0.2632,0.0317,No bet suggested.,NO_BET
+2026-06-17,FIFA World Cup,England vs Croatia,England,1.72,0.5814,0.4365,-0.1449,NO BET,MEDIUM RISK,0.2617,0.0,No bet suggested.,NO_BET
+2026-06-12,FIFA World Cup,Canada vs Bosnia & Herzegovina,Canada,1.81,0.5525,0.4187,-0.1338,NO BET,MEDIUM RISK,0.255,0.0,No bet suggested.,NO_BET
+2026-06-14,FIFA World Cup,Haiti vs Scotland,Scotland,1.49,0.6711,0.463,-0.2082,NO BET,LOW RISK,0.2548,0.0,No bet suggested.,NO_BET
+2026-06-25,FIFA World Cup,Curaçao vs Ivory Coast,Ivory Coast,1.24,0.8065,0.5302,-0.2762,NO BET,LOW RISK,0.254,0.0,No bet suggested.,NO_BET
+2026-06-25,FIFA World Cup,South Africa vs South Korea,South Africa,3.88,0.2577,0.2808,0.0231,NO BET,HIGH RISK,0.2439,0.0078,No bet suggested.,NO_BET
+2026-06-25,FIFA World Cup,Czech Republic vs Mexico,Mexico,1.83,0.5464,0.4098,-0.1367,NO BET,MEDIUM RISK,0.2431,0.0,No bet suggested.,NO_BET
+2026-06-13,FIFA World Cup,Qatar vs Switzerland,Draw,6.31,0.1585,0.25,0.0915,NO BET,VERY HIGH RISK,0.2415,0.0272,No bet suggested.,NO_BET
+2026-06-26,FIFA World Cup,Paraguay vs Australia,Paraguay,2.18,0.4587,0.365,-0.0937,NO BET,MEDIUM RISK,0.2413,0.0,No bet suggested.,NO_BET
+2026-06-21,FIFA World Cup,Belgium vs Iran,Belgium,1.39,0.7194,0.4803,-0.2392,NO BET,LOW RISK,0.2411,0.0,No bet suggested.,NO_BET
+2026-06-22,FIFA World Cup,New Zealand vs Egypt,New Zealand,4.92,0.2033,0.2515,0.0482,NO BET,HIGH RISK,0.2397,0.0151,No bet suggested.,NO_BET
+2026-06-13,FIFA World Cup,Brazil vs Morocco,Brazil,1.61,0.6211,0.4454,-0.1757,NO BET,MEDIUM RISK,0.2397,0.0,No bet suggested.,NO_BET
+2026-06-25,FIFA World Cup,Japan vs Sweden,Sweden,3.59,0.2786,0.2883,0.0097,NO BET,HIGH RISK,0.238,0.0034,No bet suggested.,NO_BET
+2026-06-27,FIFA World Cup,Cape Verde vs Saudi Arabia,Cape Verde,2.59,0.3861,0.3265,-0.0596,NO BET,MEDIUM RISK,0.2368,0.0,No bet suggested.,NO_BET
+2026-06-22,FIFA World Cup,France vs Iraq,Draw,8.24,0.1214,0.2288,0.1074,NO BET,VERY HIGH RISK,0.2361,0.0306,No bet suggested.,NO_BET
+2026-06-19,FIFA World Cup,USA vs Australia,USA,1.74,0.5747,0.4187,-0.156,NO BET,MEDIUM RISK,0.2327,0.0,No bet suggested.,NO_BET
+2026-06-21,FIFA World Cup,Ecuador vs Curaçao,Draw,6.55,0.1527,0.2425,0.0898,NO BET,VERY HIGH RISK,0.2323,0.0265,No bet suggested.,NO_BET
+2026-06-21,FIFA World Cup,Ecuador vs Curaçao,Curaçao,13.11,0.0763,0.2037,0.1274,NO BET,VERY HIGH RISK,0.2312,0.0345,No bet suggested.,NO_BET
+2026-06-21,FIFA World Cup,Belgium vs Iran,Draw,4.62,0.2165,0.2538,0.0373,NO BET,HIGH RISK,0.231,0.0119,No bet suggested.,NO_BET
+2026-06-17,FIFA World Cup,Austria vs Jordan,Jordan,9.29,0.1076,0.2168,0.1092,NO BET,VERY HIGH RISK,0.226,0.0306,No bet suggested.,NO_BET
+2026-06-25,FIFA World Cup,Curaçao vs Ivory Coast,Draw,5.96,0.1678,0.2462,0.0785,NO BET,VERY HIGH RISK,0.2247,0.0236,No bet suggested.,NO_BET
+2026-06-16,FIFA World Cup,Iran vs New Zealand,New Zealand,4.29,0.2331,0.2587,0.0256,NO BET,HIGH RISK,0.2243,0.0083,No bet suggested.,NO_BET
+2026-06-14,FIFA World Cup,Haiti vs Scotland,Draw,4.36,0.2294,0.2562,0.0269,NO BET,HIGH RISK,0.2231,0.0087,No bet suggested.,NO_BET
+2026-06-11,FIFA World Cup,Mexico vs South Africa,South Africa,8.05,0.1242,0.2235,0.0993,NO BET,VERY HIGH RISK,0.2229,0.0284,No bet suggested.,NO_BET
+2026-06-24,FIFA World Cup,Colombia vs DR Congo,DR Congo,7.22,0.1385,0.2304,0.0919,NO BET,VERY HIGH RISK,0.2223,0.0267,No bet suggested.,NO_BET
+2026-06-16,FIFA World Cup,France vs Senegal,Senegal,7.08,0.1412,0.2304,0.0891,NO BET,VERY HIGH RISK,0.2195,0.0259,No bet suggested.,NO_BET
+2026-06-21,FIFA World Cup,Tunisia vs Japan,Tunisia,4.73,0.2114,0.2443,0.0329,NO BET,HIGH RISK,0.2173,0.0104,No bet suggested.,NO_BET
+2026-06-26,FIFA World Cup,Senegal vs Iraq,Draw,4.44,0.2252,0.2512,0.026,NO BET,HIGH RISK,0.2173,0.0084,No bet suggested.,NO_BET
+2026-06-18,FIFA World Cup,Canada vs Qatar,Draw,5.03,0.1988,0.2575,0.0587,NO BET,VERY HIGH RISK,0.2162,0.0183,No bet suggested.,NO_BET
+2026-06-24,FIFA World Cup,Bosnia & Herzegovina vs Qatar,Draw,3.92,0.2551,0.265,0.0099,NO BET,HIGH RISK,0.2149,0.0033,No bet suggested.,NO_BET
+2026-06-16,FIFA World Cup,France vs Senegal,Draw,4.51,0.2217,0.2475,0.0258,NO BET,HIGH RISK,0.2133,0.0083,No bet suggested.,NO_BET
+2026-06-27,FIFA World Cup,Uruguay vs Spain,Draw,3.95,0.2532,0.2625,0.0093,NO BET,HIGH RISK,0.2118,0.0031,No bet suggested.,NO_BET
+2026-06-23,FIFA World Cup,England vs Ghana,Ghana,9.13,0.1095,0.2102,0.1007,NO BET,VERY HIGH RISK,0.2109,0.0283,No bet suggested.,NO_BET
+2026-06-18,FIFA World Cup,Uzbekistan vs Colombia,Draw,4.55,0.2198,0.245,0.0252,NO BET,HIGH RISK,0.2102,0.0081,No bet suggested.,NO_BET
+2026-06-18,FIFA World Cup,Uzbekistan vs Colombia,Uzbekistan,8.08,0.1238,0.2168,0.0931,NO BET,VERY HIGH RISK,0.2099,0.0266,No bet suggested.,NO_BET
+2026-06-18,FIFA World Cup,Czech Republic vs South Africa,South Africa,4.04,0.2475,0.2587,0.0112,NO BET,HIGH RISK,0.2098,0.0037,No bet suggested.,NO_BET
+2026-06-23,FIFA World Cup,Portugal vs Uzbekistan,Draw,6.23,0.1605,0.235,0.0745,NO BET,VERY HIGH RISK,0.2095,0.0222,No bet suggested.,NO_BET
+2026-06-17,FIFA World Cup,Austria vs Jordan,Draw,5.45,0.1835,0.245,0.0615,NO BET,VERY HIGH RISK,0.2065,0.0188,No bet suggested.,NO_BET
+2026-06-11,FIFA World Cup,Mexico vs South Africa,Draw,4.42,0.2262,0.2462,0.02,NO BET,HIGH RISK,0.2063,0.0065,No bet suggested.,NO_BET
+2026-06-27,FIFA World Cup,Panama vs England,Draw,6.06,0.165,0.235,0.07,NO BET,VERY HIGH RISK,0.205,0.021,No bet suggested.,NO_BET
+2026-06-17,FIFA World Cup,Portugal vs DR Congo,Draw,5.85,0.1709,0.2375,0.0666,NO BET,VERY HIGH RISK,0.2041,0.0201,No bet suggested.,NO_BET
+2026-06-24,FIFA World Cup,Scotland vs Brazil,Draw,4.68,0.2137,0.2388,0.0251,NO BET,HIGH RISK,0.2038,0.008,No bet suggested.,NO_BET
+2026-06-20,FIFA World Cup,Germany vs Ivory Coast,Draw,4.24,0.2358,0.2487,0.0129,NO BET,HIGH RISK,0.2017,0.0042,No bet suggested.,NO_BET
+2026-06-20,FIFA World Cup,Germany vs Ivory Coast,Ivory Coast,5.77,0.1733,0.2373,0.064,NO BET,VERY HIGH RISK,0.2013,0.0194,No bet suggested.,NO_BET
+2026-06-20,FIFA World Cup,Turkey vs Paraguay,Turkey,2.21,0.4525,0.3419,-0.1106,NO BET,MEDIUM RISK,0.2013,0.0,No bet suggested.,NO_BET
+2026-06-28,FIFA World Cup,Jordan vs Argentina,Draw,6.93,0.1443,0.2225,0.0782,NO BET,VERY HIGH RISK,0.2007,0.0228,No bet suggested.,NO_BET
+2026-06-13,FIFA World Cup,Brazil vs Morocco,Draw,3.86,0.2591,0.2588,-0.0003,NO BET,HIGH RISK,0.1984,0.0,No bet suggested.,NO_BET
+2026-06-13,FIFA World Cup,Qatar vs Switzerland,Switzerland,1.23,0.813,0.5057,-0.3074,NO BET,LOW RISK,0.1983,0.0,No bet suggested.,NO_BET
+2026-06-19,FIFA World Cup,USA vs Australia,Draw,3.74,0.2674,0.2625,-0.0049,NO BET,HIGH RISK,0.1976,0.0,No bet suggested.,NO_BET
+2026-06-23,FIFA World Cup,Jordan vs Algeria,Draw,3.96,0.2525,0.255,0.0025,NO BET,HIGH RISK,0.1975,0.0008,No bet suggested.,NO_BET
+2026-06-17,FIFA World Cup,Argentina vs Algeria,Draw,4.59,0.2179,0.2375,0.0196,NO BET,HIGH RISK,0.1971,0.0063,No bet suggested.,NO_BET
+2026-06-18,FIFA World Cup,Switzerland vs Bosnia & Herzegovina,Draw,3.95,0.2532,0.255,0.0018,NO BET,HIGH RISK,0.1968,0.0006,No bet suggested.,NO_BET
+2026-06-23,FIFA World Cup,England vs Ghana,Draw,5.24,0.1908,0.2437,0.0529,NO BET,VERY HIGH RISK,0.1967,0.0163,No bet suggested.,NO_BET
+2026-06-15,FIFA World Cup,Saudi Arabia vs Uruguay,Draw,4.34,0.2304,0.2425,0.0121,NO BET,HIGH RISK,0.1946,0.0039,No bet suggested.,NO_BET
+2026-06-27,FIFA World Cup,Uruguay vs Spain,Spain,1.63,0.6135,0.4187,-0.1948,NO BET,MEDIUM RISK,0.194,0.0,No bet suggested.,NO_BET
+2026-06-14,FIFA World Cup,Australia vs Turkey,Draw,3.59,0.2786,0.2662,-0.0123,NO BET,HIGH RISK,0.1939,0.0,No bet suggested.,NO_BET
+2026-06-24,FIFA World Cup,Colombia vs DR Congo,Draw,4.14,0.2415,0.2475,0.006,NO BET,HIGH RISK,0.1935,0.002,No bet suggested.,NO_BET
+2026-06-27,FIFA World Cup,New Zealand vs Belgium,Draw,5.58,0.1792,0.2362,0.057,NO BET,VERY HIGH RISK,0.1933,0.0174,No bet suggested.,NO_BET
+2026-06-17,FIFA World Cup,England vs Croatia,Draw,3.74,0.2674,0.26,-0.0074,NO BET,HIGH RISK,0.1926,0.0,No bet suggested.,NO_BET
+2026-06-15,FIFA World Cup,Belgium vs Egypt,Draw,3.88,0.2577,0.255,-0.0027,NO BET,HIGH RISK,0.1923,0.0,No bet suggested.,NO_BET
+2026-06-21,FIFA World Cup,Spain vs Saudi Arabia,Saudi Arabia,23.18,0.0431,0.1674,0.1242,NO BET,VERY HIGH RISK,0.1916,0.0325,No bet suggested.,NO_BET
+2026-06-23,FIFA World Cup,Panama vs Croatia,Panama,6.88,0.1453,0.2168,0.0715,NO BET,VERY HIGH RISK,0.1883,0.0209,No bet suggested.,NO_BET
+2026-06-21,FIFA World Cup,Uruguay vs Cape Verde,Draw,4.44,0.2252,0.2362,0.011,NO BET,HIGH RISK,0.1873,0.0036,No bet suggested.,NO_BET
+2026-06-25,FIFA World Cup,Ecuador vs Germany,Draw,3.88,0.2577,0.2525,-0.0052,NO BET,HIGH RISK,0.1873,0.0,No bet suggested.,NO_BET
+2026-06-23,FIFA World Cup,Panama vs Croatia,Draw,4.07,0.2457,0.245,-0.0007,NO BET,HIGH RISK,0.1843,0.0,No bet suggested.,NO_BET
+2026-06-12,FIFA World Cup,Canada vs Bosnia & Herzegovina,Draw,3.56,0.2809,0.2625,-0.0184,NO BET,HIGH RISK,0.1841,0.0,No bet suggested.,NO_BET
+2026-06-23,FIFA World Cup,Norway vs Senegal,Draw,3.46,0.289,0.2662,-0.0228,NO BET,HIGH RISK,0.1835,0.0,No bet suggested.,NO_BET
+2026-06-25,FIFA World Cup,Czech Republic vs Mexico,Draw,3.52,0.2841,0.2637,-0.0203,NO BET,HIGH RISK,0.1834,0.0,No bet suggested.,NO_BET
+2026-06-25,FIFA World Cup,Tunisia vs Netherlands,Draw,4.19,0.2387,0.24,0.0013,NO BET,HIGH RISK,0.1813,0.0004,No bet suggested.,NO_BET
+2026-06-20,FIFA World Cup,Netherlands vs Sweden,Draw,3.94,0.2538,0.2475,-0.0063,NO BET,HIGH RISK,0.1812,0.0,No bet suggested.,NO_BET
+2026-06-27,FIFA World Cup,Croatia vs Ghana,Draw,3.74,0.2674,0.2538,-0.0136,NO BET,HIGH RISK,0.1801,0.0,No bet suggested.,NO_BET
+2026-06-14,FIFA World Cup,Netherlands vs Japan,Draw,3.57,0.2801,0.26,-0.0201,NO BET,HIGH RISK,0.1799,0.0,No bet suggested.,NO_BET
+2026-06-19,FIFA World Cup,Scotland vs Morocco,Scotland,4.0,0.25,0.2443,-0.0057,NO BET,HIGH RISK,0.1787,0.0,No bet suggested.,NO_BET
+2026-06-24,FIFA World Cup,Morocco vs Haiti,Draw,5.1,0.1961,0.2362,0.0402,NO BET,VERY HIGH RISK,0.1764,0.0125,No bet suggested.,NO_BET
+2026-06-22,FIFA World Cup,New Zealand vs Egypt,Draw,3.71,0.2695,0.2512,-0.0183,NO BET,HIGH RISK,0.173,0.0,No bet suggested.,NO_BET
+2026-06-23,FIFA World Cup,Norway vs Senegal,Norway,2.08,0.4808,0.3419,-0.1389,NO BET,MEDIUM RISK,0.173,0.0,No bet suggested.,NO_BET
+2026-06-22,FIFA World Cup,Argentina vs Austria,Austria,5.31,0.1883,0.2304,0.0421,NO BET,VERY HIGH RISK,0.1724,0.013,No bet suggested.,NO_BET
+2026-06-17,FIFA World Cup,Ghana vs Panama,Draw,3.43,0.2915,0.2612,-0.0303,NO BET,HIGH RISK,0.171,0.0,No bet suggested.,NO_BET
+2026-06-22,FIFA World Cup,Argentina vs Austria,Draw,3.78,0.2646,0.2475,-0.0171,NO BET,HIGH RISK,0.1704,0.0,No bet suggested.,NO_BET
+2026-06-26,FIFA World Cup,Paraguay vs Australia,Draw,3.22,0.3106,0.27,-0.0406,NO BET,HIGH RISK,0.1694,0.0,No bet suggested.,NO_BET
+2026-06-19,FIFA World Cup,Mexico vs South Korea,Draw,3.44,0.2907,0.26,-0.0307,NO BET,HIGH RISK,0.1693,0.0,No bet suggested.,NO_BET
+2026-06-13,FIFA World Cup,USA vs Paraguay,Draw,3.38,0.2959,0.2625,-0.0334,NO BET,HIGH RISK,0.1691,0.0,No bet suggested.,NO_BET
+2026-06-15,FIFA World Cup,Sweden vs Tunisia,Draw,3.37,0.2967,0.2625,-0.0342,NO BET,HIGH RISK,0.1683,0.0,No bet suggested.,NO_BET
+2026-06-27,FIFA World Cup,DR Congo vs Uzbekistan,Draw,3.26,0.3067,0.2675,-0.0392,NO BET,HIGH RISK,0.1683,0.0,No bet suggested.,NO_BET
+2026-06-17,FIFA World Cup,Portugal vs DR Congo,DR Congo,11.09,0.0902,0.179,0.0888,NO BET,VERY HIGH RISK,0.1678,0.0244,No bet suggested.,NO_BET
+2026-06-26,FIFA World Cup,Turkey vs USA,Draw,3.45,0.2899,0.2588,-0.0311,NO BET,HIGH RISK,0.1676,0.0,No bet suggested.,NO_BET
+2026-06-20,FIFA World Cup,Netherlands vs Sweden,Sweden,5.08,0.1969,0.2304,0.0335,NO BET,VERY HIGH RISK,0.1639,0.0104,No bet suggested.,NO_BET
+2026-06-24,FIFA World Cup,Switzerland vs Canada,Draw,3.31,0.3021,0.2625,-0.0396,NO BET,HIGH RISK,0.1629,0.0,No bet suggested.,NO_BET
+2026-06-27,FIFA World Cup,Cape Verde vs Saudi Arabia,Draw,3.28,0.3049,0.2637,-0.0411,NO BET,HIGH RISK,0.1626,0.0,No bet suggested.,NO_BET
+2026-06-15,FIFA World Cup,Saudi Arabia vs Uruguay,Saudi Arabia,6.88,0.1453,0.2037,0.0584,NO BET,VERY HIGH RISK,0.1621,0.0171,No bet suggested.,NO_BET
+2026-06-25,FIFA World Cup,Japan vs Sweden,Draw,3.41,0.2933,0.2575,-0.0358,NO BET,HIGH RISK,0.1617,0.0,No bet suggested.,NO_BET
+2026-06-26,FIFA World Cup,Turkey vs USA,Turkey,2.7,0.3704,0.2959,-0.0745,NO BET,HIGH RISK,0.1613,0.0,No bet suggested.,NO_BET
+2026-06-27,FIFA World Cup,Colombia vs Portugal,Draw,3.32,0.3012,0.26,-0.0412,NO BET,HIGH RISK,0.1588,0.0,No bet suggested.,NO_BET
+2026-06-20,FIFA World Cup,Turkey vs Paraguay,Draw,3.17,0.3155,0.2662,-0.0492,NO BET,HIGH RISK,0.157,0.0,No bet suggested.,NO_BET
+2026-06-25,FIFA World Cup,South Africa vs South Korea,Draw,3.37,0.2967,0.2562,-0.0405,NO BET,HIGH RISK,0.1558,0.0,No bet suggested.,NO_BET
+2026-06-26,FIFA World Cup,Norway vs France,Draw,3.62,0.2762,0.2437,-0.0325,NO BET,HIGH RISK,0.1513,0.0,No bet suggested.,NO_BET
+2026-06-21,FIFA World Cup,Tunisia vs Japan,Draw,3.46,0.289,0.25,-0.039,NO BET,HIGH RISK,0.151,0.0,No bet suggested.,NO_BET
+2026-06-18,FIFA World Cup,Canada vs Qatar,Canada,1.32,0.7576,0.4542,-0.3034,NO BET,LOW RISK,0.1508,0.0,No bet suggested.,NO_BET
+2026-06-16,FIFA World Cup,Iran vs New Zealand,Draw,3.39,0.295,0.2525,-0.0425,NO BET,HIGH RISK,0.15,0.0,No bet suggested.,NO_BET
+2026-06-12,FIFA World Cup,South Korea vs Czech Republic,Draw,3.1,0.3226,0.2662,-0.0563,NO BET,HIGH RISK,0.1499,0.0,No bet suggested.,NO_BET
+2026-06-27,FIFA World Cup,Egypt vs Iran,Draw,3.05,0.3279,0.2687,-0.0591,NO BET,HIGH RISK,0.1496,0.0,No bet suggested.,NO_BET
+2026-06-15,FIFA World Cup,Spain vs Cape Verde,Cape Verde,26.71,0.0374,0.1407,0.1033,NO BET,VERY HIGH RISK,0.144,0.0268,No bet suggested.,NO_BET
+2026-06-28,FIFA World Cup,Algeria vs Austria,Draw,3.16,0.3165,0.26,-0.0565,NO BET,HIGH RISK,0.1435,0.0,No bet suggested.,NO_BET
+2026-06-23,FIFA World Cup,Portugal vs Uzbekistan,Uzbekistan,10.85,0.0922,0.1674,0.0752,NO BET,VERY HIGH RISK,0.1426,0.0207,No bet suggested.,NO_BET
+2026-06-24,FIFA World Cup,Morocco vs Haiti,Haiti,9.55,0.1047,0.1731,0.0684,NO BET,VERY HIGH RISK,0.1415,0.0191,No bet suggested.,NO_BET
+2026-06-18,FIFA World Cup,Czech Republic vs South Africa,Draw,3.29,0.304,0.2525,-0.0515,NO BET,HIGH RISK,0.141,0.0,No bet suggested.,NO_BET
+2026-06-17,FIFA World Cup,Argentina vs Algeria,Algeria,8.51,0.1175,0.179,0.0615,NO BET,VERY HIGH RISK,0.1404,0.0174,No bet suggested.,NO_BET
+2026-06-27,FIFA World Cup,New Zealand vs Belgium,New Zealand,9.42,0.1062,0.1731,0.067,NO BET,VERY HIGH RISK,0.1401,0.0187,No bet suggested.,NO_BET
+2026-06-22,FIFA World Cup,France vs Iraq,Iraq,22.93,0.0436,0.1407,0.0971,NO BET,VERY HIGH RISK,0.1378,0.0254,No bet suggested.,NO_BET
+2026-06-26,FIFA World Cup,Norway vs France,Norway,4.41,0.2268,0.2102,-0.0165,NO BET,HIGH RISK,0.1337,0.0,No bet suggested.,NO_BET
+2026-06-19,FIFA World Cup,Scotland vs Morocco,Draw,3.26,0.3067,0.25,-0.0567,NO BET,HIGH RISK,0.1333,0.0,No bet suggested.,NO_BET
+2026-06-14,FIFA World Cup,Germany vs Curaçao,Curaçao,47.0,0.0213,0.1263,0.105,NO BET,VERY HIGH RISK,0.1313,0.0268,No bet suggested.,NO_BET
+2026-06-25,FIFA World Cup,Tunisia vs Netherlands,Tunisia,6.38,0.1567,0.1911,0.0344,NO BET,VERY HIGH RISK,0.1255,0.0102,No bet suggested.,NO_BET
+2026-06-24,FIFA World Cup,Bosnia & Herzegovina vs Qatar,Bosnia & Herzegovina,1.54,0.6494,0.4008,-0.2485,NO BET,MEDIUM RISK,0.1223,0.0,No bet suggested.,NO_BET
+2026-06-27,FIFA World Cup,Panama vs England,Panama,8.57,0.1167,0.1674,0.0507,NO BET,VERY HIGH RISK,0.1181,0.0143,No bet suggested.,NO_BET
+2026-06-20,FIFA World Cup,Brazil vs Haiti,Haiti,28.0,0.0357,0.1263,0.0906,NO BET,VERY HIGH RISK,0.1169,0.0235,No bet suggested.,NO_BET
+2026-06-16,FIFA World Cup,Iraq vs Norway,Norway,1.21,0.8264,0.4716,-0.3548,NO BET,LOW RISK,0.1168,0.0,No bet suggested.,NO_BET
+2026-06-14,FIFA World Cup,Ivory Coast vs Ecuador,Draw,2.81,0.3559,0.2662,-0.0896,NO BET,HIGH RISK,0.1166,0.0,No bet suggested.,NO_BET
+2026-06-24,FIFA World Cup,Scotland vs Brazil,Scotland,6.45,0.155,0.185,0.0299,NO BET,VERY HIGH RISK,0.1149,0.0089,No bet suggested.,NO_BET
+2026-06-21,FIFA World Cup,Uruguay vs Cape Verde,Cape Verde,7.33,0.1364,0.1731,0.0367,NO BET,VERY HIGH RISK,0.1098,0.0106,No bet suggested.,NO_BET
+2026-06-14,FIFA World Cup,Australia vs Turkey,Turkey,1.77,0.565,0.3419,-0.2231,NO BET,MEDIUM RISK,0.0888,0.0,No bet suggested.,NO_BET
+2026-06-28,FIFA World Cup,Jordan vs Argentina,Jordan,13.5,0.0741,0.1174,0.0433,NO BET,VERY HIGH RISK,0.0606,0.0117,No bet suggested.,NO_BET

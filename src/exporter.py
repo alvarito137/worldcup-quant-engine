@@ -53,6 +53,7 @@ def export_premium_picks(picks):
             "confidence_score",
             "kelly_stake_pct",
             "bankroll_note",
+            "quality_label",
         ]
     ]
 
