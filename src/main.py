@@ -13,6 +13,7 @@ from performance_tracker import update_pick_history
 from performance_summary_generator import generate_performance_summary
 from sales_copy_generator import generate_sales_copy
 from pricing_strategy_generator import generate_pricing_strategy
+from model_audit_generator import generate_model_audit_report
 
 
 def main():
@@ -33,6 +34,7 @@ def main():
     generate_performance_summary()
     generate_sales_copy()
     generate_pricing_strategy()
+    generate_model_audit_report(picks)
     
 
 

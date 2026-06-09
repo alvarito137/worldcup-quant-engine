@@ -8,23 +8,23 @@ This is not a guaranteed pick. It is a data signal.
 
 ## Signal
 
-Match: **Paraguay vs Australia**
+Match: **Australia vs Turkey**
 
 Selection: **Australia**
 
-Market probability: **28.74%**
+Market probability: **21.05%**
 
-Model probability: **40.85%**
+Model probability: **39.19%**
 
-Value gap: **12.11%**
+Value gap: **18.13%**
 
-Risk: **MEDIUM RISK**
+Risk: **HIGH RISK**
 
 ## Simple Explanation
 
-The market odds imply Australia has around 28.74% chance.
+The market odds imply Australia has around 21.05% chance.
 
-My model estimates it closer to 40.85%.
+My model estimates it closer to 39.19%.
 
 That difference is the value gap. It does not mean the pick will win. It means the price may be different from the model estimate.
 

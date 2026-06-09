@@ -31,14 +31,14 @@ def calculate_match_probabilities(team_a_rating: float, team_b_rating: float) ->
     raw_team_a_strength = sigmoid(rating_diff / 220)
 
     # Base draw probability.
-    base_draw_probability = 0.25
+    base_draw_probability = 0.22
 
     # Draw is higher when teams are close.
-    closeness = max(0, 1 - abs(rating_diff) / 450)
-    draw_probability = base_draw_probability + (0.07 * closeness)
+    closeness = max(0, 1 - abs(rating_diff) / 400)
+    draw_probability = base_draw_probability + (0.05 * closeness)
 
     # Draw should not become too high.
-    draw_probability = min(draw_probability, 0.32)
+    draw_probability = min(draw_probability, 0.27)
 
     remaining_probability = 1 - draw_probability
 

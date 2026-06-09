@@ -6,21 +6,21 @@ This brief compares market-implied probabilities against a simple internal model
 
 ## Main Takeaway
 
-The strongest signal today is **Australia** in **Paraguay vs Australia**.
+The strongest signal today is **Australia** in **Australia vs Turkey**.
 
-The market implies a probability of **28.74%**, while the model estimates **40.85%**.
+The market implies a probability of **21.05%**, while the model estimates **39.19%**.
 
-That creates a value gap of **12.11%**.
+That creates a value gap of **18.13%**.
 
-Risk label: **MEDIUM RISK**. Confidence score: **49.96%**.
+Risk label: **HIGH RISK**. Confidence score: **51.32%**.
 
 ## Top Value Signals
 
-1. **Australia** — Paraguay vs Australia | Odds: 3.48 | Value gap: 12.11% | Risk: MEDIUM RISK | Confidence: 49.96%
-2. **Iran** — Egypt vs Iran | Odds: 3.41 | Value gap: 10.67% | Risk: MEDIUM RISK | Confidence: 47.66%
-3. **Australia** — Australia vs Turkey | Odds: 4.75 | Value gap: 15.51% | Risk: HIGH RISK | Confidence: 46.07%
-4. **Qatar** — Bosnia & Herzegovina vs Qatar | Odds: 6.08 | Value gap: 17.55% | Risk: VERY HIGH RISK | Confidence: 41.55%
-5. **Senegal** — Norway vs Senegal | Odds: 3.4 | Value gap: 7.15% | Risk: MEDIUM RISK | Confidence: 40.72%
+1. **Australia** — Australia vs Turkey | Odds: 4.75 | Value gap: 18.13% | Risk: HIGH RISK | Confidence: 51.32%
+2. **Senegal** — Norway vs Senegal | Odds: 3.4 | Value gap: 9.77% | Risk: MEDIUM RISK | Confidence: 45.96%
+3. **Paraguay** — Turkey vs Paraguay | Odds: 3.38 | Value gap: 9.60% | Risk: MEDIUM RISK | Confidence: 45.78%
+4. **Australia** — Paraguay vs Australia | Odds: 3.48 | Value gap: 7.76% | Risk: MEDIUM RISK | Confidence: 41.26%
+5. **Qatar** — Bosnia & Herzegovina vs Qatar | Odds: 6.08 | Value gap: 16.97% | Risk: VERY HIGH RISK | Confidence: 40.39%
 
 ## Bankroll Note
 

@@ -73,26 +73,37 @@ def get_signal(
     value_gap: float,
     model_probability: float,
     market_probability: float,
-    decimal_odds: float
+    decimal_odds: float,
+    selection: str
 ) -> str:
     """
     Converts value gap into a betting signal.
 
-    Includes conservative filters to avoid overrating huge underdogs.
+    Includes conservative filters to avoid overrating huge underdogs and draw traps.
     """
 
+    # Draws are high variance. Be stricter.
+    if selection == "Draw":
+        if value_gap >= 0.12 and model_probability >= 0.26 and decimal_odds <= 6.50:
+            return "POSSIBLE VALUE"
+        return "NO BET"
+
     # Avoid extreme longshot traps.
-    if decimal_odds >= 10 and model_probability < 0.25:
+    if decimal_odds >= 10:
+        return "NO BET"
+
+    # Avoid high odds unless model probability is strong enough.
+    if decimal_odds >= 6 and model_probability < 0.30:
         return "NO BET"
 
     # Avoid picks where the market strongly disagrees and model confidence is not high.
-    if market_probability < 0.10 and model_probability < 0.28:
+    if market_probability < 0.12 and model_probability < 0.30:
         return "NO BET"
 
-    if value_gap >= 0.10 and model_probability >= 0.25:
+    if value_gap >= 0.10 and model_probability >= 0.30:
         return "STRONG VALUE"
 
-    if value_gap >= 0.05 and model_probability >= 0.20:
+    if value_gap >= 0.05 and model_probability >= 0.25:
         return "POSSIBLE VALUE"
 
     return "NO BET"
@@ -228,11 +239,12 @@ def build_picks() -> pd.DataFrame:
             )
 
             signal = get_signal(
-               value_gap=value_gap,
+                value_gap=value_gap,
                 model_probability=model_probability,
                 market_probability=market_probability,
-               decimal_odds=decimal_odds
-)
+                decimal_odds=decimal_odds,
+              selection=selection
+            )
             risk_label = get_risk_label(
                 decimal_odds=decimal_odds,
                 model_probability=model_probability,
