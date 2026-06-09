@@ -40,6 +40,7 @@ def generate_markdown_report(picks):
                 f"| Value gap: {row['value_gap']:.2%} "
                 f"| Signal: {row['signal']} "
                 f"| Risk: {row['risk_label']} "
+                f"| Quality: {row['quality_label']} "
                 f"| Confidence score: {row['confidence_score']:.2%} "
                 f"| Kelly 25% stake: {row['kelly_stake_pct']:.2%} of bankroll"
             )
@@ -60,6 +61,7 @@ def generate_markdown_report(picks):
                 f"market {row['implied_probability']:.2%}, "
                 f"value gap {row['value_gap']:.2%}, "
                 f"{row['signal']}, risk: {row['risk_label']}, "
+                f"quality: {row['quality_label']}, "
                 f"confidence: {row['confidence_score']:.2%}"
             )
 

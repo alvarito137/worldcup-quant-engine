@@ -15,7 +15,9 @@ def generate_newsletter(picks):
     - reports/newsletter.md
     """
 
-    value_picks = picks[picks["signal"] != "NO BET"].copy()
+    value_picks = picks[
+    picks["quality_label"].isin(["PUBLIC_SIGNAL", "PREMIUM_SIGNAL"])
+      ].copy()
     value_picks = value_picks.sort_values(
         by=["confidence_score", "value_gap"],
         ascending=[False, False]

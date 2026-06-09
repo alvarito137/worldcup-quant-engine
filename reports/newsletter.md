@@ -20,7 +20,7 @@ Risk label: **HIGH RISK**. Confidence score: **51.32%**.
 2. **Senegal** — Norway vs Senegal | Odds: 3.4 | Value gap: 9.77% | Risk: MEDIUM RISK | Confidence: 45.96%
 3. **Paraguay** — Turkey vs Paraguay | Odds: 3.38 | Value gap: 9.60% | Risk: MEDIUM RISK | Confidence: 45.78%
 4. **Australia** — Paraguay vs Australia | Odds: 3.48 | Value gap: 7.76% | Risk: MEDIUM RISK | Confidence: 41.26%
-5. **Qatar** — Bosnia & Herzegovina vs Qatar | Odds: 6.08 | Value gap: 16.97% | Risk: VERY HIGH RISK | Confidence: 40.39%
+5. **Iran** — Egypt vs Iran | Odds: 3.41 | Value gap: 6.41% | Risk: MEDIUM RISK | Confidence: 39.14%
 
 ## Bankroll Note
 

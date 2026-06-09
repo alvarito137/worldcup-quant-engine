@@ -4,6 +4,7 @@ import numpy as np
 from dotenv import load_dotenv
 
 from model import calculate_match_probabilities
+from quality_gate import classify_pick_quality
 
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -276,20 +277,30 @@ def build_picks() -> pd.DataFrame:
 
     picks = pd.DataFrame(all_rows)
 
+    picks["quality_label"] = picks.apply(classify_pick_quality, axis=1)
+
     signal_rank = {
         "STRONG VALUE": 1,
         "POSSIBLE VALUE": 2,
         "NO BET": 3,
     }
 
+    quality_rank = {
+    "PUBLIC_SIGNAL": 1,
+    "PREMIUM_SIGNAL": 2,
+    "WATCHLIST_ONLY": 3,
+    "NO_BET": 4,
+    }
+
     picks["signal_rank"] = picks["signal"].map(signal_rank)
+    picks["quality_rank"] = picks["quality_label"].map(quality_rank)
 
     picks = picks.sort_values(
-        by=["signal_rank", "confidence_score", "value_gap"],
-        ascending=[True, False, False]
-    )
+    by=["quality_rank", "signal_rank", "confidence_score", "value_gap"],
+    ascending=[True, True, False, False]
+  )
 
-    picks = picks.drop(columns=["signal_rank"])
+    picks = picks.drop(columns=["signal_rank", "quality_rank"])
 
     os.makedirs(PROCESSED_DIR, exist_ok=True)
     picks.to_csv(PICKS_OUTPUT_PATH, index=False)

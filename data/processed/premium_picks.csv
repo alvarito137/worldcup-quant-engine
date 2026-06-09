@@ -1,8 +1,6 @@
 date,stage,match,selection,decimal_odds,market_probability,model_probability,value_gap,signal,risk_label,confidence_score,kelly_stake_pct,bankroll_note
 2026-06-14,FIFA World Cup,Australia vs Turkey,Australia,4.75,0.2105,0.3919,0.1813,STRONG VALUE,HIGH RISK,0.5132,0.0574,Small stake only. Do not overexpose bankroll.
-2026-06-24,FIFA World Cup,Bosnia & Herzegovina vs Qatar,Qatar,6.08,0.1645,0.3342,0.1697,STRONG VALUE,VERY HIGH RISK,0.4039,0.0508,Tiny stake only. High variance pick.
 2026-06-25,FIFA World Cup,Czech Republic vs Mexico,Czech Republic,4.46,0.2242,0.3265,0.1023,STRONG VALUE,HIGH RISK,0.3687,0.033,Small stake only. Do not overexpose bankroll.
-2026-06-27,FIFA World Cup,Uruguay vs Spain,Uruguay,5.33,0.1876,0.3188,0.1312,STRONG VALUE,VERY HIGH RISK,0.3499,0.0404,Tiny stake only. High variance pick.
 2026-06-23,FIFA World Cup,Norway vs Senegal,Senegal,3.4,0.2941,0.3919,0.0977,POSSIBLE VALUE,MEDIUM RISK,0.4596,0.0346,Moderate caution. Follow fractional Kelly only.
 2026-06-20,FIFA World Cup,Turkey vs Paraguay,Paraguay,3.38,0.2959,0.3919,0.096,POSSIBLE VALUE,MEDIUM RISK,0.4578,0.0341,Moderate caution. Follow fractional Kelly only.
 2026-06-26,FIFA World Cup,Paraguay vs Australia,Australia,3.48,0.2874,0.365,0.0776,POSSIBLE VALUE,MEDIUM RISK,0.4126,0.0272,Moderate caution. Follow fractional Kelly only.
@@ -14,10 +12,12 @@ date,stage,match,selection,decimal_odds,market_probability,model_probability,val
 2026-06-15,FIFA World Cup,Sweden vs Tunisia,Tunisia,4.21,0.2375,0.3188,0.0812,POSSIBLE VALUE,HIGH RISK,0.34,0.0266,Small stake only. Do not overexpose bankroll.
 2026-06-19,FIFA World Cup,Mexico vs South Korea,South Korea,4.54,0.2203,0.3035,0.0832,POSSIBLE VALUE,HIGH RISK,0.3267,0.0267,Small stake only. Do not overexpose bankroll.
 2026-06-13,FIFA World Cup,USA vs Paraguay,Paraguay,3.94,0.2538,0.3188,0.065,POSSIBLE VALUE,HIGH RISK,0.3237,0.0218,Small stake only. Do not overexpose bankroll.
+2026-06-25,FIFA World Cup,Ecuador vs Germany,Ecuador,4.99,0.2004,0.2587,0.0583,POSSIBLE VALUE,HIGH RISK,0.257,0.0182,Small stake only. Do not overexpose bankroll.
+2026-06-24,FIFA World Cup,Bosnia & Herzegovina vs Qatar,Qatar,6.08,0.1645,0.3342,0.1697,STRONG VALUE,VERY HIGH RISK,0.4039,0.0508,Tiny stake only. High variance pick.
+2026-06-27,FIFA World Cup,Uruguay vs Spain,Uruguay,5.33,0.1876,0.3188,0.1312,STRONG VALUE,VERY HIGH RISK,0.3499,0.0404,Tiny stake only. High variance pick.
 2026-06-13,FIFA World Cup,Brazil vs Morocco,Morocco,5.77,0.1733,0.2959,0.1225,POSSIBLE VALUE,VERY HIGH RISK,0.3184,0.0371,Tiny stake only. High variance pick.
 2026-06-23,FIFA World Cup,Jordan vs Algeria,Jordan,5.74,0.1742,0.2734,0.0991,POSSIBLE VALUE,VERY HIGH RISK,0.2725,0.03,Tiny stake only. High variance pick.
 2026-06-18,FIFA World Cup,Switzerland vs Bosnia & Herzegovina,Bosnia & Herzegovina,5.62,0.1779,0.2734,0.0954,POSSIBLE VALUE,VERY HIGH RISK,0.2688,0.029,Tiny stake only. High variance pick.
-2026-06-25,FIFA World Cup,Ecuador vs Germany,Ecuador,4.99,0.2004,0.2587,0.0583,POSSIBLE VALUE,HIGH RISK,0.257,0.0182,Small stake only. Do not overexpose bankroll.
 2026-06-15,FIFA World Cup,Belgium vs Egypt,Egypt,5.18,0.1931,0.2734,0.0803,POSSIBLE VALUE,VERY HIGH RISK,0.2537,0.0249,Tiny stake only. High variance pick.
 2026-06-27,FIFA World Cup,Croatia vs Ghana,Ghana,5.45,0.1835,0.266,0.0825,POSSIBLE VALUE,VERY HIGH RISK,0.2485,0.0253,Tiny stake only. High variance pick.
 2026-06-26,FIFA World Cup,Norway vs France,France,1.8,0.5556,0.546,-0.0095,NO BET,LOW RISK,0.5365,0.0,No bet suggested.

@@ -15,7 +15,9 @@ def generate_telegram_alerts(picks):
     - reports/telegram_alerts.md
     """
 
-    value_picks = picks[picks["signal"] != "NO BET"].copy()
+    value_picks = picks[
+    picks["quality_label"].isin(["PUBLIC_SIGNAL", "PREMIUM_SIGNAL"])
+     ].copy()
 
     value_picks = value_picks.sort_values(
         by=["confidence_score", "value_gap"],
@@ -60,6 +62,7 @@ def generate_telegram_alerts(picks):
             lines.append(f"Model probability: {row['model_probability']:.2%}")
             lines.append(f"Value gap: {row['value_gap']:.2%}")
             lines.append(f"Risk: {row['risk_label']}")
+            lines.append(f"Quality: {row['quality_label']}")
             lines.append(f"Confidence score: {row['confidence_score']:.2%}")
             lines.append(f"Kelly 25% stake: {row['kelly_stake_pct']:.2%} of bankroll")
             lines.append("")

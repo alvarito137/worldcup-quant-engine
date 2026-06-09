@@ -14,7 +14,7 @@ def generate_free_sample(picks):
     This is designed for social media, Substack, Reddit, or lead capture.
     """
 
-    value_picks = picks[picks["signal"] != "NO BET"].copy()
+    value_picks = picks[picks["quality_label"] == "PUBLIC_SIGNAL"].copy()
     value_picks = value_picks.sort_values(
         by=["confidence_score", "value_gap"],
         ascending=[False, False]

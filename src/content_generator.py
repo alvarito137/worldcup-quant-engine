@@ -15,8 +15,8 @@ def generate_content_scripts(picks):
     - reports/tiktok_scripts.md
     """
 
-    top_picks = picks[picks["signal"] != "NO BET"].head(3)
-
+    top_picks = picks[picks["quality_label"] == "PUBLIC_SIGNAL"].head(3)
+    
     lines = []
     lines.append("# TikTok / YouTube Shorts Scripts")
     lines.append("")
