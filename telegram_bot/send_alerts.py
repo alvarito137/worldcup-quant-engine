@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-ALERTS_PATH = os.path.join(BASE_DIR, "reports", "telegram_alerts.md")
+ALERTS_PATH = os.path.join(BASE_DIR, "reports", "telegram_free_intelligence.md")
 
 load_dotenv()
 

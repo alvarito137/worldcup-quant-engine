@@ -1,0 +1,19 @@
+league_id,league_name,league_type,country_name,available_seasons
+1,World Cup,Cup,World,"2010,2014,2018,2022,2026"
+8,World Cup - Women,Cup,World,"2011,2015,2019,2023"
+15,FIFA Club World Cup,Cup,World,"2011,2013,2014,2015,2016,2017,2019,2020,2021,2022,2023,2025"
+37,World Cup - Qualification Intercontinental Play-offs,Cup,World,"2014,2018,2022,2026"
+490,World Cup - U20,Cup,World,"2017,2019,2023,2025"
+31,World Cup - Qualification CONCACAF,Cup,World,"2018,2022,2026"
+32,World Cup - Qualification Europe,Cup,World,"2018,2020,2024"
+33,World Cup - Qualification Oceania,Cup,World,"2018,2022,2026"
+34,World Cup - Qualification South America,Cup,World,"2018,2022,2026"
+29,World Cup - Qualification Africa,Cup,World,"2018,2022,2023"
+30,World Cup - Qualification Asia,Cup,World,"2018,2022,2026"
+587,World Cup - U17,Cup,World,"2019,2023,2025,2026"
+920,World Cup - U20 - Women,Cup,World,"2022,2024"
+927,World Cup - Women - Qualification Concacaf,Cup,World,"2022,2026"
+950,World Cup - U17 - Women,Cup,World,"2022,2024,2025,2026"
+880,World Cup - Women - Qualification Europe,Cup,World,"2023,2027"
+1186,FIFA Club World Cup - Play-In,Cup,World,2025
+1213,Kings World Cup Nations,Cup,World,2026
