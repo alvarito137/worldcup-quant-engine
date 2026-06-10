@@ -163,7 +163,7 @@ def add_team_block(lines, label, stats):
     )
 
 
-def add_h2h_block(lines, h2h):
+def add_h2h_block(lines, h2h, home_team, away_team):
     lines.append("🤝 Previous meetings between both teams")
 
     if h2h is None or int(h2h["h2h_matches_found"]) == 0:
@@ -172,9 +172,9 @@ def add_h2h_block(lines, h2h):
 
     lines.append(f"Games found: {int(h2h['h2h_matches_found'])}")
     lines.append(
-        f"Results: {int(h2h['home_team_h2h_wins'])} home wins / "
-        f"{int(h2h['away_team_h2h_wins'])} away wins / "
-        f"{int(h2h['h2h_draws'])} draws"
+        f"Results: {home_team} wins {int(h2h['home_team_h2h_wins'])} / "
+        f"{away_team} wins {int(h2h['away_team_h2h_wins'])} / "
+        f"Draws {int(h2h['h2h_draws'])}"
     )
     lines.append(f"Average goals: {float(h2h['h2h_avg_goals']):.2f}")
     lines.append(
@@ -196,10 +196,10 @@ def add_probability_block(lines, home_team, away_team, home_stats, away_stats):
     lines.append(f"Profile: {profile}")
     lines.append("")
 
-    lines.append("Estimated goal projection:")
-    lines.append(f"{home_team}: {probabilities['home_xg']:.2f} expected goals")
-    lines.append(f"{away_team}: {probabilities['away_xg']:.2f} expected goals")
-    lines.append(f"Total expected goals: {probabilities['expected_total_goals']:.2f}")
+    lines.append("Projected goals:")
+    lines.append(f"{home_team}: {probabilities['home_xg']:.2f}")
+    lines.append(f"{away_team}: {probabilities['away_xg']:.2f}")
+    lines.append(f"Projected total goals: {probabilities['expected_total_goals']:.2f}")
     lines.append("")
 
     lines.append("Other probabilities:")
@@ -253,7 +253,7 @@ def generate_free_telegram_intelligence():
         lines.append("⚽ World Cup Free Betting Intelligence")
         lines.append("")
         lines.append("Top 3 simple betting watchlist for today.")
-        lines.append("Based on recent form, goals scored/conceded, H2H and sportsbook lines.")
+        lines.append("Based on recent form, goals scored/conceded, previous meetings and betting lines.")
         lines.append("")
         lines.append("No guaranteed bets. Educational only. Bet responsibly.")
         lines.append("")
@@ -277,7 +277,7 @@ def generate_free_telegram_intelligence():
             add_team_block(lines, away_team, away_stats)
             lines.append("")
 
-            add_h2h_block(lines, h2h)
+            add_h2h_block(lines, h2h, home_team, away_team)
             lines.append("")
 
             add_probability_block(
