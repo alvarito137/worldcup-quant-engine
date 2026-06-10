@@ -4,82 +4,264 @@ import pandas as pd
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
+RAW_DIR = os.path.join(BASE_DIR, "data", "raw")
 PROCESSED_DIR = os.path.join(BASE_DIR, "data", "processed")
 REPORTS_DIR = os.path.join(BASE_DIR, "reports")
 
-INPUT_PATH = os.path.join(PROCESSED_DIR, "market_angles_with_odds.csv")
+ANGLES_INPUT_PATH = os.path.join(PROCESSED_DIR, "market_angles_with_odds.csv")
+RECENT_STATS_PATH = os.path.join(RAW_DIR, "api_football_team_recent_stats.csv")
+H2H_STATS_PATH = os.path.join(RAW_DIR, "api_football_h2h_stats.csv")
+
 OUTPUT_PATH = os.path.join(REPORTS_DIR, "telegram_free_intelligence.md")
 
 
-def generate_free_telegram_intelligence():
-    if not os.path.exists(INPUT_PATH):
-        raise FileNotFoundError(
-            f"Missing {INPUT_PATH}. Run python src/market_odds_matcher.py first."
+def format_record(row):
+    return f"{int(row['wins'])}W-{int(row['draws'])}D-{int(row['losses'])}L"
+
+
+def format_percent(value):
+    try:
+        return f"{float(value):.0%}"
+    except Exception:
+        return "N/A"
+
+
+def get_profile_text(profile):
+    if profile == "CONSERVATIVE":
+        return "Safer watch"
+    if profile == "BALANCED":
+        return "Balanced watch"
+    if profile == "AGGRESSIVE":
+        return "Caution watch"
+    return "Watch"
+
+
+def get_simple_market_text(row):
+    """
+    Converts technical model angle into simple betting language.
+    """
+
+    selection = str(row["selection"])
+    matched_selection = str(row["matched_selection"])
+    matched_point = row["matched_point"]
+
+    if pd.isna(matched_point):
+        available_line = matched_selection
+    else:
+        available_line = f"{matched_selection} {matched_point}"
+
+    if "Under" in selection:
+        return f"Goals market: Watch {available_line} goals"
+
+    if "Over" in selection:
+        return f"Goals market: Watch {available_line} goals"
+
+    if "BTTS Yes" in selection:
+        return "Both Teams To Score: Watch YES"
+
+    if "BTTS No" in selection:
+        return "Both Teams To Score: Watch NO"
+
+    if "+" in selection or "-" in selection:
+        return f"Handicap/Spread: Watch {selection}"
+
+    return f"Market to watch: {selection}"
+
+
+def get_plain_english_reason(row, home_stats, away_stats, h2h_stats):
+    """
+    Writes a simple explanation for normal users.
+    """
+
+    selection = str(row["selection"])
+    line_note = str(row["line_note"])
+
+    home_team = row["home_team"]
+    away_team = row["away_team"]
+
+    home_ga = float(home_stats["avg_goals_against"])
+    away_ga = float(away_stats["avg_goals_against"])
+
+    home_gf = float(home_stats["avg_goals_for"])
+    away_gf = float(away_stats["avg_goals_for"])
+
+    projected_reason = str(row["reason"])
+
+    if "Under" in selection:
+        return (
+            f"The model leans toward a lower-scoring game. "
+            f"{home_team} concede about {home_ga:.2f} goals per match recently, "
+            f"while {away_team} concede about {away_ga:.2f}. "
+            f"The available sportsbook line is stricter than the original model angle, "
+            f"so this is a watchlist spot, not a lock."
         )
 
-    df = pd.read_csv(INPUT_PATH)
+    if "Over" in selection:
+        return (
+            f"The model sees enough attacking activity for a goals angle. "
+            f"{home_team} average {home_gf:.2f} goals scored recently, "
+            f"while {away_team} average {away_gf:.2f}. "
+            f"The available line is more demanding than the original model angle, "
+            f"so risk is higher."
+        )
 
-    if df.empty:
+    if "BTTS" in selection:
+        return (
+            f"This angle comes from recent scoring and conceding trends. "
+            f"{home_team} and {away_team} both show enough goal activity to monitor this market."
+        )
+
+    if "+" in selection or "-" in selection:
+        return (
+            f"This handicap angle is based on the projected margin between both teams. "
+            f"The model does not expect the gap to be as wide as the market may suggest."
+        )
+
+    return projected_reason
+
+
+def find_team_stats(recent_stats, team_name):
+    row = recent_stats[recent_stats["team"] == team_name]
+
+    if row.empty:
+        return None
+
+    return row.iloc[0]
+
+
+def find_h2h_stats(h2h_stats, home_team, away_team):
+    row = h2h_stats[
+        (h2h_stats["home_team"] == home_team)
+        & (h2h_stats["away_team"] == away_team)
+    ]
+
+    if row.empty:
+        return None
+
+    return row.iloc[0]
+
+
+def add_team_block(lines, label, stats):
+    lines.append(f"{label}: {format_record(stats)}")
+    lines.append(
+        f"Goals: {int(stats['goals_for'])} scored / {int(stats['goals_against'])} conceded"
+    )
+    lines.append(
+        f"Avg: {float(stats['avg_goals_for']):.2f} scored / {float(stats['avg_goals_against']):.2f} conceded"
+    )
+    lines.append(
+        f"Over 2.5 trend: {format_percent(stats['over_2_5_rate'])}"
+    )
+    lines.append(
+        f"Both teams scored trend: {format_percent(stats['btts_rate'])}"
+    )
+
+
+def add_h2h_block(lines, h2h):
+    lines.append("🤝 Last direct meetings")
+
+    if h2h is None or int(h2h["h2h_matches_found"]) == 0:
+        lines.append("Not enough recent head-to-head data found.")
+        return
+
+    lines.append(f"Matches found: {int(h2h['h2h_matches_found'])}")
+    lines.append(
+        f"Wins: {int(h2h['home_team_h2h_wins'])} home / {int(h2h['away_team_h2h_wins'])} away / {int(h2h['h2h_draws'])} draws"
+    )
+    lines.append(f"Avg goals in H2H: {float(h2h['h2h_avg_goals']):.2f}")
+    lines.append(f"H2H Over 2.5 trend: {format_percent(h2h['h2h_over_2_5_rate'])}")
+    lines.append(f"H2H BTTS trend: {format_percent(h2h['h2h_btts_rate'])}")
+
+
+def generate_free_telegram_intelligence():
+    if not os.path.exists(ANGLES_INPUT_PATH):
+        raise FileNotFoundError(
+            f"Missing {ANGLES_INPUT_PATH}. Run python src/market_odds_matcher.py first."
+        )
+
+    if not os.path.exists(RECENT_STATS_PATH):
+        raise FileNotFoundError(
+            f"Missing {RECENT_STATS_PATH}. Run python data_sources/fetch_api_football_context.py first."
+        )
+
+    if not os.path.exists(H2H_STATS_PATH):
+        raise FileNotFoundError(
+            f"Missing {H2H_STATS_PATH}. Run python data_sources/fetch_api_football_context.py first."
+        )
+
+    angles = pd.read_csv(ANGLES_INPUT_PATH)
+    recent_stats = pd.read_csv(RECENT_STATS_PATH)
+    h2h_stats = pd.read_csv(H2H_STATS_PATH)
+
+    angles = angles[angles["odds_found"] == True].copy()
+
+    if angles.empty:
         lines = [
             "⚽ World Cup Free Betting Intelligence",
             "",
-            "No data-backed markets found today.",
+            "No clear market watchlist today.",
             "",
             "No guaranteed bets. Educational only. Bet responsibly.",
         ]
     else:
-        df = df[df["odds_found"] == True].copy()
-
-        df = df.sort_values(
-            by=["adjusted_confidence_score", "best_decimal_odds"],
-            ascending=[False, False]
+        angles = angles.sort_values(
+            by=["adjusted_confidence_score"],
+            ascending=False
         )
 
-        top = df.head(3)
+        top = angles.head(3)
 
         lines = []
         lines.append("⚽ World Cup Free Betting Intelligence")
         lines.append("")
-        lines.append("Top 3 market watchlist based on recent form, goals profile and sportsbook lines.")
-        lines.append("These are not official picks. No guaranteed bets. Educational only.")
-        lines.append("Bet responsibly.")
+        lines.append("Top 3 simple betting watchlist for today.")
+        lines.append("Based on recent form, goals scored/conceded, H2H and sportsbook lines.")
+        lines.append("")
+        lines.append("No guaranteed bets. Educational only. Bet responsibly.")
         lines.append("")
 
         for i, (_, row) in enumerate(top.iterrows(), start=1):
-            lines.append(f"{i}) {row['match']}")
-            lines.append(f"Market: {row['market_type']}")
-            lines.append(f"Model angle: {row['selection']}")
+            home_team = row["home_team"]
+            away_team = row["away_team"]
 
-            if pd.isna(row["matched_point"]):
-                lines.append(f"Available line: {row['matched_selection']}")
-            else:
-                lines.append(
-                    f"Available line: {row['matched_selection']} {row['matched_point']}"
-                )
+            home_stats = find_team_stats(recent_stats, home_team)
+            away_stats = find_team_stats(recent_stats, away_team)
+            h2h = find_h2h_stats(h2h_stats, home_team, away_team)
 
-            lines.append(f"Best odds: {row['best_decimal_odds']}")
-            lines.append(f"Best bookmaker: {row['best_bookmaker']}")
-            profile_text = row["adjusted_profile"]
+            if home_stats is None or away_stats is None:
+                continue
 
-            if profile_text == "AGGRESSIVE":
-             profile_text = "Higher variance watch"
-            elif profile_text == "BALANCED":
-             profile_text = "Balanced watch"
-            elif profile_text == "CONSERVATIVE":
-             profile_text = "Conservative watch"
-
-            lines.append(f"Profile: {profile_text}")
-            lines.append(f"Adjusted model confidence: {row['adjusted_confidence_score']:.1%}")
-            lines.append(f"Note: {row['line_note']}")
+            lines.append(f"{i}) {home_team} vs {away_team}")
+            lines.append("")
+            lines.append("📊 Last 10 matches")
+            add_team_block(lines, home_team, home_stats)
+            lines.append("")
+            add_team_block(lines, away_team, away_stats)
             lines.append("")
 
-        lines.append("Premium report includes:")
-        lines.append("- all matches")
-        lines.append("- full odds comparison")
-        lines.append("- H2H context")
-        lines.append("- recent form")
+            add_h2h_block(lines, h2h)
+            lines.append("")
+
+            lines.append("🎯 Market Watch")
+            lines.append(get_simple_market_text(row))
+            lines.append(f"Available odds around: {row['best_decimal_odds']}")
+            lines.append(f"Profile: {get_profile_text(row['adjusted_profile'])}")
+            lines.append(f"Model confidence: {float(row['adjusted_confidence_score']):.1%}")
+            lines.append("")
+
+            lines.append("🧠 Simple read")
+            lines.append(get_plain_english_reason(row, home_stats, away_stats, h2h))
+            lines.append("")
+            lines.append("━━━━━━━━━━━━━━")
+            lines.append("")
+
+        lines.append("Premium version includes:")
+        lines.append("- all matches today/tomorrow")
+        lines.append("- full market list")
+        lines.append("- odds comparison")
         lines.append("- CSV access")
-        lines.append("- daily Telegram alerts")
+        lines.append("- deeper H2H and form notes")
+        lines.append("- future lineup/player alerts")
         lines.append("")
         lines.append("No model can guarantee outcomes.")
 
