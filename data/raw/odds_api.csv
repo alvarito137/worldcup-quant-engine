@@ -1,14 +1,14 @@
 match_id,selection,decimal_odds
 1,Draw,4.49
-1,Mexico,1.41
-1,South Africa,8.37
+1,Mexico,1.4
+1,South Africa,8.44
 2,Czech Republic,2.84
 2,Draw,3.11
 2,South Korea,2.64
 3,Bosnia & Herzegovina,4.55
 3,Canada,1.81
 3,Draw,3.58
-4,Draw,3.37
+4,Draw,3.38
 4,Paraguay,3.95
 4,USA,1.97
 5,Draw,6.54
@@ -21,7 +21,7 @@ match_id,selection,decimal_odds
 7,Haiti,5.93
 7,Scotland,1.55
 8,Australia,5.08
-8,Draw,3.7
+8,Draw,3.69
 8,Turkey,1.7
 9,Curaçao,41.6
 9,Draw,17.7
@@ -35,7 +35,7 @@ match_id,selection,decimal_odds
 12,Draw,3.37
 12,Sweden,1.92
 12,Tunisia,4.25
-13,Cape Verde,27.43
+13,Cape Verde,27.86
 13,Draw,10.87
 13,Spain,1.08
 14,Belgium,1.65
@@ -59,7 +59,7 @@ match_id,selection,decimal_odds
 20,Austria,1.32
 20,Draw,5.43
 20,Jordan,9.07
-21,DR Congo,10.93
+21,DR Congo,10.96
 21,Draw,5.72
 21,Portugal,1.27
 22,Croatia,4.81
@@ -79,7 +79,7 @@ match_id,selection,decimal_odds
 26,Switzerland,1.59
 27,Canada,1.31
 27,Draw,5.11
-27,Qatar,10.0
+27,Qatar,10.07
 28,Draw,3.48
 28,Mexico,1.81
 28,South Korea,4.57
@@ -87,7 +87,7 @@ match_id,selection,decimal_odds
 29,Draw,3.74
 29,USA,1.75
 30,Draw,3.28
-30,Morocco,1.96
+30,Morocco,1.95
 30,Scotland,4.06
 31,Brazil,1.07
 31,Draw,11.79
@@ -102,13 +102,13 @@ match_id,selection,decimal_odds
 34,Germany,1.55
 34,Ivory Coast,5.64
 35,Curaçao,13.32
-35,Draw,6.66
+35,Draw,6.7
 35,Ecuador,1.2
 36,Draw,3.54
 36,Japan,1.71
 36,Tunisia,5.19
-37,Draw,9.45
-37,Saudi Arabia,23.29
+37,Draw,9.49
+37,Saudi Arabia,23.43
 37,Spain,1.1
 38,Belgium,1.39
 38,Draw,4.6
@@ -150,13 +150,13 @@ match_id,selection,decimal_odds
 50,Draw,3.32
 50,Switzerland,2.08
 51,Brazil,1.45
-51,Draw,4.76
+51,Draw,4.77
 51,Scotland,6.44
 52,Draw,5.14
 52,Haiti,9.63
 52,Morocco,1.33
 53,Czech Republic,4.48
-53,Draw,3.52
+53,Draw,3.53
 53,Mexico,1.83
 54,Draw,3.38
 54,South Africa,3.88
@@ -171,7 +171,7 @@ match_id,selection,decimal_odds
 57,Japan,2.09
 57,Sweden,3.56
 58,Draw,4.27
-58,Netherlands,1.51
+58,Netherlands,1.5
 58,Tunisia,6.54
 59,Australia,3.54
 59,Draw,3.24
@@ -190,9 +190,9 @@ match_id,selection,decimal_odds
 63,Saudi Arabia,2.75
 64,Draw,3.94
 64,Spain,1.63
-64,Uruguay,5.45
+64,Uruguay,5.46
 65,Belgium,1.28
-65,Draw,5.59
+65,Draw,5.63
 65,New Zealand,9.85
 66,Draw,3.05
 66,Egypt,2.25
@@ -202,7 +202,7 @@ match_id,selection,decimal_odds
 67,Ghana,5.53
 68,Draw,5.97
 68,England,1.29
-68,Panama,9.14
+68,Panama,9.18
 69,Colombia,3.5
 69,Draw,3.33
 69,Portugal,2.14

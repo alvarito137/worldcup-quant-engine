@@ -8,7 +8,7 @@ This report is for informational and educational purposes only. It is not financ
 
 - **Australia** in Australia vs Turkey | Odds: 5.08 | Market probability: 19.69% | Model probability: 39.19% | Value gap: 19.50% | Signal: STRONG VALUE | Risk: VERY HIGH RISK | Quality: WATCHLIST_ONLY | Confidence score: 48.69% | Kelly 25% stake: 6.07% of bankroll
 - **Qatar** in Bosnia & Herzegovina vs Qatar | Odds: 6.19 | Market probability: 16.16% | Model probability: 33.42% | Value gap: 17.26% | Signal: STRONG VALUE | Risk: VERY HIGH RISK | Quality: WATCHLIST_ONLY | Confidence score: 40.68% | Kelly 25% stake: 5.15% of bankroll
-- **Uruguay** in Uruguay vs Spain | Odds: 5.45 | Market probability: 18.35% | Model probability: 31.88% | Value gap: 13.53% | Signal: STRONG VALUE | Risk: VERY HIGH RISK | Quality: WATCHLIST_ONLY | Confidence score: 35.41% | Kelly 25% stake: 4.14% of bankroll
+- **Uruguay** in Uruguay vs Spain | Odds: 5.46 | Market probability: 18.32% | Model probability: 31.88% | Value gap: 13.56% | Signal: STRONG VALUE | Risk: VERY HIGH RISK | Quality: WATCHLIST_ONLY | Confidence score: 35.44% | Kelly 25% stake: 4.15% of bankroll
 - **Haiti** in Haiti vs Scotland | Odds: 5.93 | Market probability: 16.86% | Model probability: 28.08% | Value gap: 11.22% | Signal: POSSIBLE VALUE | Risk: VERY HIGH RISK | Quality: WATCHLIST_ONLY | Confidence score: 29.30% | Kelly 25% stake: 3.37% of bankroll
 - **Morocco** in Brazil vs Morocco | Odds: 5.43 | Market probability: 18.42% | Model probability: 29.59% | Value gap: 11.17% | Signal: POSSIBLE VALUE | Risk: VERY HIGH RISK | Quality: WATCHLIST_ONLY | Confidence score: 30.75% | Kelly 25% stake: 3.42% of bankroll
 - **Czech Republic** in Czech Republic vs Mexico | Odds: 4.48 | Market probability: 22.32% | Model probability: 32.65% | Value gap: 10.33% | Signal: STRONG VALUE | Risk: HIGH RISK | Quality: PUBLIC_SIGNAL | Confidence score: 36.97% | Kelly 25% stake: 3.32% of bankroll
@@ -33,8 +33,8 @@ This report is for informational and educational purposes only. It is not financ
 
 ### Mexico vs South Africa — 2026-06-11
 
-- Mexico: odds 1.41, model 53.02%, market 70.92%, value gap -17.90%, NO BET, risk: LOW RISK, quality: NO_BET, confidence: 35.12%
-- South Africa: odds 8.37, model 22.35%, market 11.95%, value gap 10.41%, NO BET, risk: VERY HIGH RISK, quality: NO_BET, confidence: 22.76%
+- Mexico: odds 1.4, model 53.02%, market 71.43%, value gap -18.41%, NO BET, risk: LOW RISK, quality: NO_BET, confidence: 34.61%
+- South Africa: odds 8.44, model 22.35%, market 11.85%, value gap 10.51%, NO BET, risk: VERY HIGH RISK, quality: NO_BET, confidence: 22.86%
 - Draw: odds 4.49, model 24.62%, market 22.27%, value gap 2.35%, NO BET, risk: HIGH RISK, quality: NO_BET, confidence: 20.98%
 
 ### South Korea vs Czech Republic — 2026-06-12
@@ -53,7 +53,7 @@ This report is for informational and educational purposes only. It is not financ
 
 - Paraguay: odds 3.95, model 31.88%, market 25.32%, value gap 6.56%, POSSIBLE VALUE, risk: HIGH RISK, quality: PREMIUM_SIGNAL, confidence: 32.44%
 - USA: odds 1.97, model 41.87%, market 50.76%, value gap -8.89%, NO BET, risk: MEDIUM RISK, quality: NO_BET, confidence: 29.98%
-- Draw: odds 3.37, model 26.25%, market 29.67%, value gap -3.42%, NO BET, risk: HIGH RISK, quality: NO_BET, confidence: 16.83%
+- Draw: odds 3.38, model 26.25%, market 29.59%, value gap -3.34%, NO BET, risk: HIGH RISK, quality: NO_BET, confidence: 16.91%
 
 ### Qatar vs Switzerland — 2026-06-13
 
@@ -76,7 +76,7 @@ This report is for informational and educational purposes only. It is not financ
 ### Australia vs Turkey — 2026-06-14
 
 - Australia: odds 5.08, model 39.19%, market 19.69%, value gap 19.50%, STRONG VALUE, risk: VERY HIGH RISK, quality: WATCHLIST_ONLY, confidence: 48.69%
-- Draw: odds 3.7, model 26.62%, market 27.03%, value gap -0.40%, NO BET, risk: HIGH RISK, quality: NO_BET, confidence: 20.22%
+- Draw: odds 3.69, model 26.62%, market 27.10%, value gap -0.48%, NO BET, risk: HIGH RISK, quality: NO_BET, confidence: 20.15%
 - Turkey: odds 1.7, model 34.19%, market 58.82%, value gap -24.63%, NO BET, risk: MEDIUM RISK, quality: NO_BET, confidence: 6.56%
 
 ### Germany vs Curaçao — 2026-06-14
@@ -107,7 +107,7 @@ This report is for informational and educational purposes only. It is not financ
 
 - Spain: odds 1.08, model 63.06%, market 92.59%, value gap -29.54%, NO BET, risk: LOW RISK, quality: NO_BET, confidence: 33.52%
 - Draw: odds 10.87, model 22.88%, market 9.20%, value gap 13.68%, NO BET, risk: VERY HIGH RISK, quality: NO_BET, confidence: 26.55%
-- Cape Verde: odds 27.43, model 14.07%, market 3.65%, value gap 10.42%, NO BET, risk: VERY HIGH RISK, quality: NO_BET, confidence: 14.49%
+- Cape Verde: odds 27.86, model 14.07%, market 3.59%, value gap 10.48%, NO BET, risk: VERY HIGH RISK, quality: NO_BET, confidence: 14.55%
 
 ### Belgium vs Egypt — 2026-06-15
 
@@ -155,7 +155,7 @@ This report is for informational and educational purposes only. It is not financ
 
 - Portugal: odds 1.27, model 58.35%, market 78.74%, value gap -20.39%, NO BET, risk: LOW RISK, quality: NO_BET, confidence: 37.96%
 - Draw: odds 5.72, model 23.75%, market 17.48%, value gap 6.27%, NO BET, risk: VERY HIGH RISK, quality: NO_BET, confidence: 20.02%
-- DR Congo: odds 10.93, model 17.90%, market 9.15%, value gap 8.75%, NO BET, risk: VERY HIGH RISK, quality: NO_BET, confidence: 16.65%
+- DR Congo: odds 10.96, model 17.90%, market 9.12%, value gap 8.77%, NO BET, risk: VERY HIGH RISK, quality: NO_BET, confidence: 16.67%
 
 ### England vs Croatia — 2026-06-17
 
@@ -189,7 +189,7 @@ This report is for informational and educational purposes only. It is not financ
 
 ### Canada vs Qatar — 2026-06-18
 
-- Qatar: odds 10.0, model 28.83%, market 10.00%, value gap 18.83%, NO BET, risk: VERY HIGH RISK, quality: NO_BET, confidence: 37.66%
+- Qatar: odds 10.07, model 28.83%, market 9.93%, value gap 18.90%, NO BET, risk: VERY HIGH RISK, quality: NO_BET, confidence: 37.73%
 - Draw: odds 5.11, model 25.75%, market 19.57%, value gap 6.18%, NO BET, risk: VERY HIGH RISK, quality: NO_BET, confidence: 21.93%
 - Canada: odds 1.31, model 45.42%, market 76.34%, value gap -30.92%, NO BET, risk: LOW RISK, quality: NO_BET, confidence: 14.50%
 
@@ -207,7 +207,7 @@ This report is for informational and educational purposes only. It is not financ
 
 ### Scotland vs Morocco — 2026-06-19
 
-- Morocco: odds 1.96, model 50.57%, market 51.02%, value gap -0.45%, NO BET, risk: LOW RISK, quality: NO_BET, confidence: 50.11%
+- Morocco: odds 1.95, model 50.57%, market 51.28%, value gap -0.72%, NO BET, risk: LOW RISK, quality: NO_BET, confidence: 49.85%
 - Scotland: odds 4.06, model 24.43%, market 24.63%, value gap -0.20%, NO BET, risk: HIGH RISK, quality: NO_BET, confidence: 18.24%
 - Draw: odds 3.28, model 25.00%, market 30.49%, value gap -5.49%, NO BET, risk: HIGH RISK, quality: NO_BET, confidence: 13.51%
 
@@ -238,7 +238,7 @@ This report is for informational and educational purposes only. It is not financ
 ### Ecuador vs Curaçao — 2026-06-21
 
 - Ecuador: odds 1.2, model 55.38%, market 83.33%, value gap -27.96%, NO BET, risk: LOW RISK, quality: NO_BET, confidence: 27.42%
-- Draw: odds 6.66, model 24.25%, market 15.02%, value gap 9.23%, NO BET, risk: VERY HIGH RISK, quality: NO_BET, confidence: 23.48%
+- Draw: odds 6.7, model 24.25%, market 14.93%, value gap 9.32%, NO BET, risk: VERY HIGH RISK, quality: NO_BET, confidence: 23.57%
 - Curaçao: odds 13.32, model 20.37%, market 7.51%, value gap 12.86%, NO BET, risk: VERY HIGH RISK, quality: NO_BET, confidence: 23.24%
 
 ### Tunisia vs Japan — 2026-06-21
@@ -250,8 +250,8 @@ This report is for informational and educational purposes only. It is not financ
 ### Spain vs Saudi Arabia — 2026-06-21
 
 - Spain: odds 1.1, model 59.76%, market 90.91%, value gap -31.15%, NO BET, risk: LOW RISK, quality: NO_BET, confidence: 28.62%
-- Draw: odds 9.45, model 23.50%, market 10.58%, value gap 12.92%, NO BET, risk: VERY HIGH RISK, quality: NO_BET, confidence: 26.42%
-- Saudi Arabia: odds 23.29, model 16.74%, market 4.29%, value gap 12.44%, NO BET, risk: VERY HIGH RISK, quality: NO_BET, confidence: 19.18%
+- Draw: odds 9.49, model 23.50%, market 10.54%, value gap 12.96%, NO BET, risk: VERY HIGH RISK, quality: NO_BET, confidence: 26.46%
+- Saudi Arabia: odds 23.43, model 16.74%, market 4.27%, value gap 12.47%, NO BET, risk: VERY HIGH RISK, quality: NO_BET, confidence: 19.21%
 
 ### Belgium vs Iran — 2026-06-21
 
@@ -334,7 +334,7 @@ This report is for informational and educational purposes only. It is not financ
 ### Scotland vs Brazil — 2026-06-24
 
 - Brazil: odds 1.45, model 57.63%, market 68.97%, value gap -11.34%, NO BET, risk: LOW RISK, quality: NO_BET, confidence: 46.29%
-- Draw: odds 4.76, model 23.88%, market 21.01%, value gap 2.87%, NO BET, risk: HIGH RISK, quality: NO_BET, confidence: 20.74%
+- Draw: odds 4.77, model 23.88%, market 20.96%, value gap 2.91%, NO BET, risk: HIGH RISK, quality: NO_BET, confidence: 20.79%
 - Scotland: odds 6.44, model 18.50%, market 15.53%, value gap 2.97%, NO BET, risk: VERY HIGH RISK, quality: NO_BET, confidence: 11.47%
 
 ### Morocco vs Haiti — 2026-06-24
@@ -347,7 +347,7 @@ This report is for informational and educational purposes only. It is not financ
 
 - Czech Republic: odds 4.48, model 32.65%, market 22.32%, value gap 10.33%, STRONG VALUE, risk: HIGH RISK, quality: PUBLIC_SIGNAL, confidence: 36.97%
 - Mexico: odds 1.83, model 40.98%, market 54.64%, value gap -13.67%, NO BET, risk: MEDIUM RISK, quality: NO_BET, confidence: 24.31%
-- Draw: odds 3.52, model 26.37%, market 28.41%, value gap -2.03%, NO BET, risk: HIGH RISK, quality: NO_BET, confidence: 18.34%
+- Draw: odds 3.53, model 26.37%, market 28.33%, value gap -1.95%, NO BET, risk: HIGH RISK, quality: NO_BET, confidence: 18.42%
 
 ### South Africa vs South Korea — 2026-06-25
 
@@ -375,7 +375,7 @@ This report is for informational and educational purposes only. It is not financ
 
 ### Tunisia vs Netherlands — 2026-06-25
 
-- Netherlands: odds 1.51, model 56.89%, market 66.23%, value gap -9.34%, NO BET, risk: LOW RISK, quality: NO_BET, confidence: 47.55%
+- Netherlands: odds 1.5, model 56.89%, market 66.67%, value gap -9.78%, NO BET, risk: LOW RISK, quality: NO_BET, confidence: 47.11%
 - Draw: odds 4.27, model 24.00%, market 23.42%, value gap 0.58%, NO BET, risk: HIGH RISK, quality: NO_BET, confidence: 18.58%
 - Tunisia: odds 6.54, model 19.11%, market 15.29%, value gap 3.82%, NO BET, risk: VERY HIGH RISK, quality: NO_BET, confidence: 12.93%
 
@@ -411,14 +411,14 @@ This report is for informational and educational purposes only. It is not financ
 
 ### Uruguay vs Spain — 2026-06-27
 
-- Uruguay: odds 5.45, model 31.88%, market 18.35%, value gap 13.53%, STRONG VALUE, risk: VERY HIGH RISK, quality: WATCHLIST_ONLY, confidence: 35.41%
+- Uruguay: odds 5.46, model 31.88%, market 18.32%, value gap 13.56%, STRONG VALUE, risk: VERY HIGH RISK, quality: WATCHLIST_ONLY, confidence: 35.44%
 - Draw: odds 3.94, model 26.25%, market 25.38%, value gap 0.87%, NO BET, risk: HIGH RISK, quality: NO_BET, confidence: 21.12%
 - Spain: odds 1.63, model 41.87%, market 61.35%, value gap -19.48%, NO BET, risk: MEDIUM RISK, quality: NO_BET, confidence: 19.40%
 
 ### New Zealand vs Belgium — 2026-06-27
 
 - Belgium: odds 1.28, model 59.06%, market 78.12%, value gap -19.06%, NO BET, risk: LOW RISK, quality: NO_BET, confidence: 40.00%
-- Draw: odds 5.59, model 23.62%, market 17.89%, value gap 5.74%, NO BET, risk: VERY HIGH RISK, quality: NO_BET, confidence: 19.36%
+- Draw: odds 5.63, model 23.62%, market 17.76%, value gap 5.86%, NO BET, risk: VERY HIGH RISK, quality: NO_BET, confidence: 19.49%
 - New Zealand: odds 9.85, model 17.31%, market 10.15%, value gap 7.16%, NO BET, risk: VERY HIGH RISK, quality: NO_BET, confidence: 14.47%
 
 ### Egypt vs Iran — 2026-06-27
@@ -437,7 +437,7 @@ This report is for informational and educational purposes only. It is not financ
 
 - England: odds 1.29, model 59.76%, market 77.52%, value gap -17.76%, NO BET, risk: LOW RISK, quality: NO_BET, confidence: 42.01%
 - Draw: odds 5.97, model 23.50%, market 16.75%, value gap 6.75%, NO BET, risk: VERY HIGH RISK, quality: NO_BET, confidence: 20.25%
-- Panama: odds 9.14, model 16.74%, market 10.94%, value gap 5.80%, NO BET, risk: VERY HIGH RISK, quality: NO_BET, confidence: 12.53%
+- Panama: odds 9.18, model 16.74%, market 10.89%, value gap 5.84%, NO BET, risk: VERY HIGH RISK, quality: NO_BET, confidence: 12.58%
 
 ### Colombia vs Portugal — 2026-06-27
 
