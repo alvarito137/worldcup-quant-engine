@@ -8,21 +8,21 @@ This is not a guaranteed pick. It is a data signal.
 
 ## Signal
 
-Match: **Australia vs Turkey**
+Match: **Turkey vs Paraguay**
 
-Selection: **Australia**
+Selection: **Paraguay**
 
-Market probability: **21.05%**
+Market probability: **29.50%**
 
 Model probability: **39.19%**
 
-Value gap: **18.13%**
+Value gap: **9.69%**
 
-Risk: **HIGH RISK**
+Risk: **MEDIUM RISK**
 
 ## Simple Explanation
 
-The market odds imply Australia has around 21.05% chance.
+The market odds imply Paraguay has around 29.50% chance.
 
 My model estimates it closer to 39.19%.
 

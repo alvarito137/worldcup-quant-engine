@@ -2,29 +2,29 @@
 
 ## Today's Public Signal
 
-Match: **Australia vs Turkey**
+Match: **Turkey vs Paraguay**
 
-Signal: **Australia**
+Signal: **Paraguay**
 
-The market implies around **21.05%**.
+The market implies around **29.50%**.
 
 The model estimates around **39.19%**.
 
-Value gap: **18.13%**.
+Value gap: **9.69%**.
 
-Risk label: **HIGH RISK**.
+Risk label: **MEDIUM RISK**.
 
 This is not a guaranteed pick. It is a data signal based on price vs probability.
 
 ## Short Post Version
 
-My World Cup model found a public signal in Australia vs Turkey.
+My World Cup model found a public signal in Turkey vs Paraguay.
 
-Selection: Australia
-Market probability: 21.1%
+Selection: Paraguay
+Market probability: 29.5%
 Model probability: 39.2%
-Value gap: 18.1%
-Risk: HIGH RISK
+Value gap: 9.7%
+Risk: MEDIUM RISK
 
 Not a guarantee. Just a data signal. Betting involves risk.
 

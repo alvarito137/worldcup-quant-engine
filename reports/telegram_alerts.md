@@ -12,18 +12,18 @@ Found 14 potential value signal(s).
 
 ## Alert 1
 
-🚨 STRONG VALUE
+🚨 POSSIBLE VALUE
 
-Match: Australia vs Turkey
-Selection: Australia
-Odds: 4.75
-Market probability: 21.05%
-Model probability: 39.19%
-Value gap: 18.13%
-Risk: HIGH RISK
-Quality: PUBLIC_SIGNAL
-Confidence score: 51.32%
-Kelly 25% stake: 5.74% of bankroll
+Match: Turkey vs USA
+Selection: USA
+Odds: 2.56
+Market probability: 39.06%
+Model probability: 44.54%
+Value gap: 5.48%
+Risk: MEDIUM RISK
+Quality: PREMIUM_SIGNAL
+Confidence score: 47.02%
+Kelly 25% stake: 2.25% of bankroll
 
 Reminder: value does not mean certainty. This is only a data signal.
 
@@ -31,16 +31,16 @@ Reminder: value does not mean certainty. This is only a data signal.
 
 🚨 POSSIBLE VALUE
 
-Match: Norway vs Senegal
-Selection: Senegal
-Odds: 3.4
-Market probability: 29.41%
+Match: Turkey vs Paraguay
+Selection: Paraguay
+Odds: 3.39
+Market probability: 29.50%
 Model probability: 39.19%
-Value gap: 9.77%
+Value gap: 9.69%
 Risk: MEDIUM RISK
 Quality: PUBLIC_SIGNAL
-Confidence score: 45.96%
-Kelly 25% stake: 3.46% of bankroll
+Confidence score: 45.87%
+Kelly 25% stake: 3.43% of bankroll
 
 Reminder: value does not mean certainty. This is only a data signal.
 
@@ -48,16 +48,16 @@ Reminder: value does not mean certainty. This is only a data signal.
 
 🚨 POSSIBLE VALUE
 
-Match: Turkey vs Paraguay
-Selection: Paraguay
-Odds: 3.38
-Market probability: 29.59%
+Match: Norway vs Senegal
+Selection: Senegal
+Odds: 3.33
+Market probability: 30.03%
 Model probability: 39.19%
-Value gap: 9.60%
+Value gap: 9.16%
 Risk: MEDIUM RISK
 Quality: PUBLIC_SIGNAL
-Confidence score: 45.78%
-Kelly 25% stake: 3.41% of bankroll
+Confidence score: 45.34%
+Kelly 25% stake: 3.27% of bankroll
 
 Reminder: value does not mean certainty. This is only a data signal.
 
@@ -67,14 +67,14 @@ Reminder: value does not mean certainty. This is only a data signal.
 
 Match: Paraguay vs Australia
 Selection: Australia
-Odds: 3.48
-Market probability: 28.74%
+Odds: 3.54
+Market probability: 28.25%
 Model probability: 36.50%
-Value gap: 7.76%
-Risk: MEDIUM RISK
+Value gap: 8.25%
+Risk: HIGH RISK
 Quality: PUBLIC_SIGNAL
-Confidence score: 41.26%
-Kelly 25% stake: 2.72% of bankroll
+Confidence score: 38.75%
+Kelly 25% stake: 2.88% of bankroll
 
 Reminder: value does not mean certainty. This is only a data signal.
 
@@ -84,13 +84,13 @@ Reminder: value does not mean certainty. This is only a data signal.
 
 Match: Egypt vs Iran
 Selection: Iran
-Odds: 3.41
-Market probability: 29.33%
+Odds: 3.58
+Market probability: 27.93%
 Model probability: 35.73%
-Value gap: 6.41%
-Risk: MEDIUM RISK
+Value gap: 7.80%
+Risk: HIGH RISK
 Quality: PUBLIC_SIGNAL
-Confidence score: 39.14%
-Kelly 25% stake: 2.27% of bankroll
+Confidence score: 37.53%
+Kelly 25% stake: 2.71% of bankroll
 
 Reminder: value does not mean certainty. This is only a data signal.

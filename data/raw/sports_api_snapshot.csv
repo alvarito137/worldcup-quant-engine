@@ -8,7 +8,7 @@ americanfootball_nfl_super_bowl_winner,American Football,NFL Super Bowl Winner,S
 americanfootball_ufl,American Football,UFL,United Football League,True,False
 aussierules_afl,Aussie Rules,AFL,Aussie Football,True,False
 baseball_kbo,Baseball,KBO,KBO League,True,False
-baseball_milb,Baseball,MiLB,Minor League Baseball,True,False
+baseball_milb,Baseball,MiLB,Minor League Baseball,False,False
 baseball_mlb,Baseball,MLB,Major League Baseball,True,False
 baseball_mlb_preseason,Baseball,MLB Preseason,Major League Baseball,False,False
 baseball_mlb_world_series_winner,Baseball,MLB World Series Winner,World Series Winner 2026,True,True
@@ -36,7 +36,7 @@ cricket_international_t20,Cricket,International Twenty20,International Twenty20,
 cricket_ipl,Cricket,IPL,Indian Premier League,False,False
 cricket_odi,Cricket,One Day Internationals,One Day Internationals,True,False
 cricket_psl,Cricket,Pakistan Super League,Pakistan Super League,False,False
-cricket_t20_blast,Cricket,T20 Blast,T20 Blast,True,False
+cricket_t20_blast,Cricket,T20 Blast,T20 Blast,False,False
 cricket_t20_world_cup,Cricket,T20 World Cup,T20 World Cup,False,False
 cricket_test_match,Cricket,Test Matches,International Test Matches,True,False
 cricket_the_hundred,Cricket,The Hundred,The Hundred,False,False
@@ -44,7 +44,7 @@ golf_masters_tournament_winner,Golf,Masters Tournament Winner,2027 Winner,False,
 golf_pga_championship_winner,Golf,PGA Championship Winner,2027 Winner,False,True
 golf_the_open_championship_winner,Golf,The Open Winner,2026 Winner,True,True
 golf_us_open_winner,Golf,US Open Winner,2026 Winner,True,True
-handball_germany_bundesliga,Handball,Handball-Bundesliga,German HBL,True,False
+handball_germany_bundesliga,Handball,Handball-Bundesliga,German HBL,False,False
 icehockey_ahl,Ice Hockey,AHL,American Hockey League,True,False
 icehockey_liiga,Ice Hockey,Liiga,Finnish SM League,False,False
 icehockey_mestis,Ice Hockey,Mestis,Finnish Mestis League,False,False
@@ -54,7 +54,7 @@ icehockey_nhl_preseason,Ice Hockey,NHL Preseason,US Ice Hockey,False,False
 icehockey_sweden_allsvenskan,Ice Hockey,HockeyAllsvenskan,Swedish Hockey Allsvenskan,False,False
 icehockey_sweden_hockey_league,Ice Hockey,SHL,Swedish Hockey League,False,False
 lacrosse_ncaa,Lacrosse,NCAA Lacrosse,College Lacrosse,False,False
-lacrosse_pll,Lacrosse,PLL,Premier Lacrosse League,True,False
+lacrosse_pll,Lacrosse,PLL,Premier Lacrosse League,False,False
 mma_mixed_martial_arts,Mixed Martial Arts,MMA,Mixed Martial Arts,True,False
 politics_us_presidential_election_winner,Politics,US Presidential Elections Winner,2028 US Presidential Election Winner,True,True
 rugbyleague_nrl,Rugby League,NRL,Aussie Rugby League,True,False
@@ -94,7 +94,7 @@ soccer_france_ligue_two,Soccer,Ligue 2 - France,French Soccer,False,False
 soccer_germany_bundesliga,Soccer,Bundesliga - Germany,German Soccer,False,False
 soccer_germany_bundesliga2,Soccer,Bundesliga 2 - Germany,German Soccer,False,False
 soccer_germany_bundesliga_women,Soccer,Frauen-Bundesliga,German Soccer,False,False
-soccer_germany_dfb_pokal,Soccer,DFB-Pokal,German Soccer,False,False
+soccer_germany_dfb_pokal,Soccer,DFB-Pokal,German Soccer,True,False
 soccer_germany_liga3,Soccer,3. Liga - Germany,German Soccer,False,False
 soccer_greece_super_league,Soccer,Super League - Greece,Greek Soccer,False,False
 soccer_italy_coppa_italia,Soccer,Coppa Italia,Italian Soccer,False,False
@@ -133,7 +133,7 @@ tennis_atp_canadian_open,Tennis,ATP Canadian Open,Men's Singles,False,False
 tennis_atp_china_open,Tennis,ATP China Open,Men's Singles,False,False
 tennis_atp_cincinnati_open,Tennis,ATP Cincinnati Open,Men's Singles,False,False
 tennis_atp_dubai,Tennis,ATP Dubai,Men's Singles,False,False
-tennis_atp_french_open,Tennis,ATP French Open,Men's Singles,True,False
+tennis_atp_french_open,Tennis,ATP French Open,Men's Singles,False,False
 tennis_atp_hamburg_open,Tennis,ATP Hamburg Open,Men's Singles,False,False
 tennis_atp_indian_wells,Tennis,ATP Indian Wells,Men's Singles,False,False
 tennis_atp_italian_open,Tennis,ATP Italian Open,Men's Singles,False,False
@@ -158,6 +158,7 @@ tennis_wta_italian_open,Tennis,WTA Italian Open,Women's Singles,False,False
 tennis_wta_madrid_open,Tennis,WTA Madrid Open,Women's Singles,False,False
 tennis_wta_miami_open,Tennis,WTA Miami Open,Women's Singles,False,False
 tennis_wta_qatar_open,Tennis,WTA Qatar Open,Women's Singles,False,False
+tennis_wta_queens_club_champ,Tennis,WTA Queen's Club Championships,Women's Singles,True,False
 tennis_wta_strasbourg,Tennis,WTA Internationaux de Strasbourg,Women's Singles,False,False
 tennis_wta_stuttgart_open,Tennis,WTA Stuttgart Open,Women's Singles,False,False
 tennis_wta_us_open,Tennis,WTA US Open,Women's Singles,False,False
