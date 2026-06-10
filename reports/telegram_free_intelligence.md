@@ -1,7 +1,7 @@
 ⚽ World Cup Free Betting Intelligence
 
 Top 3 simple betting watchlist for today.
-Based on recent form, goals scored/conceded, H2H and sportsbook lines.
+Based on recent form, goals scored/conceded, previous meetings and betting lines.
 
 No guaranteed bets. Educational only. Bet responsibly.
 
@@ -22,7 +22,7 @@ Games where both teams scored: 70%
 
 🤝 Previous meetings between both teams
 Games found: 1
-Results: 0 home wins / 0 away wins / 1 draws
+Results: Mexico wins 0 / South Africa wins 0 / Draws 1
 Average goals: 2.00
 Games over 2.5 goals: 0%
 Games where both teams scored: 100%
@@ -32,10 +32,10 @@ Most likely market: Under 3.5 Goals
 Estimated probability: 82%
 Profile: Strong statistical lean
 
-Estimated goal projection:
-Mexico: 1.35 expected goals
-South Africa: 0.85 expected goals
-Total expected goals: 2.20
+Projected goals:
+Mexico: 1.35
+South Africa: 0.85
+Projected total goals: 2.20
 
 Other probabilities:
 Under 2.5 goals: 62%

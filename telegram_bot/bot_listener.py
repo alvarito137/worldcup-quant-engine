@@ -48,6 +48,7 @@ def handle_start(chat_id):
         "Commands:\n"
         "/start - Start the bot\n"
         "/free - Get the latest free watchlist"
+        "/premium - See premium intelligence info"
     )
 
     send_message(chat_id, message)
@@ -72,6 +73,33 @@ def handle_free(chat_id):
 
     send_message(chat_id, message)
 
+def handle_premium(chat_id):
+    message = (
+        "⚽ World Cup Premium Intelligence\n\n"
+        "The free bot gives you a simple top watchlist.\n\n"
+        "Premium gives you the full daily betting intelligence report.\n\n"
+        "Included:\n"
+        "✅ All matches today/tomorrow\n"
+        "✅ Full probability table for each match\n"
+        "✅ Goals markets: Over/Under\n"
+        "✅ Both teams to score probabilities\n"
+        "✅ Team goal projections\n"
+        "✅ Market watchlist\n"
+        "✅ Odds comparison\n"
+        "✅ CSV access\n"
+        "✅ Premium Telegram alerts\n"
+        "✅ Future lineup/player alerts\n\n"
+        "Early access:\n"
+        "$29 beta pass\n\n"
+        "Important:\n"
+        "This is statistical analysis, not guaranteed betting advice.\n"
+        "No model can guarantee outcomes. Bet responsibly.\n\n"
+        "To join:\n"
+        "Reply with: I want Premium"
+    )
+
+    send_message(chat_id, message)
+
 
 def handle_update(update):
     message = update.get("message")
@@ -90,6 +118,8 @@ def handle_update(update):
         handle_start(chat_id)
     elif text == "/free":
         handle_free(chat_id)
+    elif text == "/premium":
+        handle_premium(chat_id)
     else:
         send_message(
             chat_id,
