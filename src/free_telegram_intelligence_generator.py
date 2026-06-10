@@ -1,5 +1,11 @@
 import os
 import pandas as pd
+from probability_engine import (
+    build_probability_summary,
+    get_best_statistical_angle,
+    get_probability_profile,
+    format_probability,
+)
 
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -172,6 +178,32 @@ def add_h2h_block(lines, h2h):
     lines.append(f"H2H Over 2.5 trend: {format_percent(h2h['h2h_over_2_5_rate'])}")
     lines.append(f"H2H BTTS trend: {format_percent(h2h['h2h_btts_rate'])}")
 
+def add_probability_block(lines, home_team, away_team, home_stats, away_stats):
+    probabilities = build_probability_summary(home_stats, away_stats)
+
+    best_market, best_probability = get_best_statistical_angle(probabilities)
+    profile = get_probability_profile(best_probability)
+
+    lines.append("🧠 Statistical AI Read")
+    lines.append(f"Most likely market: {best_market}")
+    lines.append(f"Estimated probability: {format_probability(best_probability)}")
+    lines.append(f"Profile: {profile}")
+    lines.append("")
+
+    lines.append("Estimated goal projection:")
+    lines.append(f"{home_team}: {probabilities['home_xg']:.2f} expected goals")
+    lines.append(f"{away_team}: {probabilities['away_xg']:.2f} expected goals")
+    lines.append(f"Total expected goals: {probabilities['expected_total_goals']:.2f}")
+    lines.append("")
+
+    lines.append("Other probabilities:")
+    lines.append(f"Under 2.5 goals: {format_probability(probabilities['under_2_5'])}")
+    lines.append(f"Over 2.5 goals: {format_probability(probabilities['over_2_5'])}")
+    lines.append(f"Over 1.5 goals: {format_probability(probabilities['over_1_5'])}")
+    lines.append(f"BTTS Yes: {format_probability(probabilities['btts_yes'])}")
+    lines.append(f"BTTS No: {format_probability(probabilities['btts_no'])}")
+    lines.append("")
+
 
 def generate_free_telegram_intelligence():
     if not os.path.exists(ANGLES_INPUT_PATH):
@@ -242,18 +274,24 @@ def generate_free_telegram_intelligence():
             add_h2h_block(lines, h2h)
             lines.append("")
 
-            lines.append("🎯 Market Watch")
-            lines.append(get_simple_market_text(row))
-            lines.append(f"Available odds around: {row['best_decimal_odds']}")
-            lines.append(f"Profile: {get_profile_text(row['adjusted_profile'])}")
-            lines.append(f"Model confidence: {float(row['adjusted_confidence_score']):.1%}")
-            lines.append("")
+            add_probability_block(
+    lines=lines,
+    home_team=home_team,
+    away_team=away_team,
+    home_stats=home_stats,
+    away_stats=away_stats,
+)
 
-            lines.append("🧠 Simple read")
-            lines.append(get_plain_english_reason(row, home_stats, away_stats, h2h))
-            lines.append("")
-            lines.append("━━━━━━━━━━━━━━")
-            lines.append("")
+        lines.append("🎯 Market Watch")
+        lines.append(get_simple_market_text(row))
+        lines.append(f"Available odds around: {row['best_decimal_odds']}")
+        lines.append(f"Market profile: {get_profile_text(row['adjusted_profile'])}")
+        lines.append(f"Market confidence: {float(row['adjusted_confidence_score']):.1%}")
+        lines.append("")
+
+        lines.append("🧠 Simple read")
+        lines.append(get_plain_english_reason(row, home_stats, away_stats, h2h))
+        lines.append("")
 
         lines.append("Premium version includes:")
         lines.append("- all matches today/tomorrow")

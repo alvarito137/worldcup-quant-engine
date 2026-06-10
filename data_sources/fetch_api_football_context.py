@@ -2,6 +2,7 @@ import os
 import requests
 import pandas as pd
 from dotenv import load_dotenv
+from datetime import datetime, timezone, timedelta
 
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -269,6 +270,52 @@ def fetch_h2h_for_match(home_team_id, away_team_id, home_team_name, away_team_na
         away_team_name=away_team_name
     )
 
+def filter_fixtures_today_tomorrow(fixtures, window_days=2):
+    """
+    Filters fixtures for today and tomorrow based on UTC date.
+
+    If no matches are found, it falls back to the next 5 upcoming fixtures.
+    """
+
+    fixtures = fixtures.copy()
+
+    fixtures["date_parsed"] = pd.to_datetime(
+        fixtures["date"],
+        utc=True,
+        errors="coerce"
+    )
+
+    now = datetime.now(timezone.utc)
+
+    start = now.replace(hour=0, minute=0, second=0, microsecond=0)
+    end = start + timedelta(days=window_days)
+
+    filtered = fixtures[
+        (fixtures["date_parsed"] >= start)
+        & (fixtures["date_parsed"] < end)
+    ].copy()
+
+    if filtered.empty:
+        print("No fixtures found for today/tomorrow.")
+        print("Fallback: using next 5 upcoming fixtures.")
+
+        future_fixtures = fixtures[
+            fixtures["date_parsed"] >= now
+        ].copy()
+
+        future_fixtures = future_fixtures.sort_values(
+            by="date_parsed",
+            ascending=True
+        )
+
+        return future_fixtures.head(5).drop(columns=["date_parsed"])
+
+    filtered = filtered.sort_values(
+        by="date_parsed",
+        ascending=True
+    )
+
+    return filtered.drop(columns=["date_parsed"])
 
 def main():
     if not os.path.exists(FIXTURES_INPUT_PATH):
@@ -278,8 +325,19 @@ def main():
 
     fixtures = pd.read_csv(FIXTURES_INPUT_PATH)
 
-    # Use only first 5 fixtures for testing to avoid burning too many API requests.
-    test_fixtures = fixtures.head(5)
+    # Use today's and tomorrow's fixtures for the real daily report.
+    test_fixtures = filter_fixtures_today_tomorrow(
+    fixtures=fixtures,
+    window_days=2
+)
+
+    print("")
+    print("Fixtures selected for today's report:")
+    print(
+     test_fixtures[
+        ["date", "home_team", "away_team"]
+    ].to_string(index=False)
+)
 
     teams = []
 
