@@ -159,24 +159,30 @@ def add_team_block(lines, label, stats):
         f"Over 2.5 trend: {format_percent(stats['over_2_5_rate'])}"
     )
     lines.append(
-        f"Both teams scored trend: {format_percent(stats['btts_rate'])}"
+        f"Games where both teams scored: {format_percent(stats['btts_rate'])}"
     )
 
 
 def add_h2h_block(lines, h2h):
-    lines.append("🤝 Last direct meetings")
+    lines.append("🤝 Previous meetings between both teams")
 
     if h2h is None or int(h2h["h2h_matches_found"]) == 0:
-        lines.append("Not enough recent head-to-head data found.")
+        lines.append("Not enough recent direct-meeting data found.")
         return
 
-    lines.append(f"Matches found: {int(h2h['h2h_matches_found'])}")
+    lines.append(f"Games found: {int(h2h['h2h_matches_found'])}")
     lines.append(
-        f"Wins: {int(h2h['home_team_h2h_wins'])} home / {int(h2h['away_team_h2h_wins'])} away / {int(h2h['h2h_draws'])} draws"
+        f"Results: {int(h2h['home_team_h2h_wins'])} home wins / "
+        f"{int(h2h['away_team_h2h_wins'])} away wins / "
+        f"{int(h2h['h2h_draws'])} draws"
     )
-    lines.append(f"Avg goals in H2H: {float(h2h['h2h_avg_goals']):.2f}")
-    lines.append(f"H2H Over 2.5 trend: {format_percent(h2h['h2h_over_2_5_rate'])}")
-    lines.append(f"H2H BTTS trend: {format_percent(h2h['h2h_btts_rate'])}")
+    lines.append(f"Average goals: {float(h2h['h2h_avg_goals']):.2f}")
+    lines.append(
+        f"Games over 2.5 goals: {format_percent(h2h['h2h_over_2_5_rate'])}"
+    )
+    lines.append(
+        f"Games where both teams scored: {format_percent(h2h['h2h_btts_rate'])}"
+    )
 
 def add_probability_block(lines, home_team, away_team, home_stats, away_stats):
     probabilities = build_probability_summary(home_stats, away_stats)
@@ -184,7 +190,7 @@ def add_probability_block(lines, home_team, away_team, home_stats, away_stats):
     best_market, best_probability = get_best_statistical_angle(probabilities)
     profile = get_probability_profile(best_probability)
 
-    lines.append("🧠 Statistical AI Read")
+    lines.append("🧠 Most likely by stats")
     lines.append(f"Most likely market: {best_market}")
     lines.append(f"Estimated probability: {format_probability(best_probability)}")
     lines.append(f"Profile: {profile}")
@@ -200,8 +206,8 @@ def add_probability_block(lines, home_team, away_team, home_stats, away_stats):
     lines.append(f"Under 2.5 goals: {format_probability(probabilities['under_2_5'])}")
     lines.append(f"Over 2.5 goals: {format_probability(probabilities['over_2_5'])}")
     lines.append(f"Over 1.5 goals: {format_probability(probabilities['over_1_5'])}")
-    lines.append(f"BTTS Yes: {format_probability(probabilities['btts_yes'])}")
-    lines.append(f"BTTS No: {format_probability(probabilities['btts_no'])}")
+    lines.append(f"Both teams score - Yes: {format_probability(probabilities['btts_yes'])}")
+    lines.append(f"Both teams score - No: {format_probability(probabilities['btts_no'])}")
     lines.append("")
 
 
@@ -286,11 +292,18 @@ def generate_free_telegram_intelligence():
         lines.append(get_simple_market_text(row))
         lines.append(f"Available odds around: {row['best_decimal_odds']}")
         lines.append(f"Market profile: {get_profile_text(row['adjusted_profile'])}")
-        lines.append(f"Market confidence: {float(row['adjusted_confidence_score']):.1%}")
+        lines.append(f"Confidence on this available line: {float(row['adjusted_confidence_score']):.1%}")
+        lines.append("")
+        lines.append(
+    "Note: The statistical model likes the safer goals direction, but the available betting line may be stricter."
+)
         lines.append("")
 
         lines.append("🧠 Simple read")
         lines.append(get_plain_english_reason(row, home_stats, away_stats, h2h))
+        lines.append("")
+
+        lines.append("━━━━━━━━━━━━━━")
         lines.append("")
 
         lines.append("Premium version includes:")
