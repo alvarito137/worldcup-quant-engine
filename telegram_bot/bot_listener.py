@@ -37,20 +37,30 @@ def send_message(chat_id, text):
 def handle_start(chat_id):
     message = (
         "⚽ Welcome to World Cup Betting Intelligence\n\n"
-        "This bot shares data-backed football market watchlists.\n\n"
+        "This bot shares data-backed football match analysis for people who want to understand games before betting responsibly.\n\n"
         "Free version includes:\n"
-        "- Top 3 markets to watch\n"
-        "- Sportsbook lines\n"
-        "- Best available odds\n"
-        "- Risk/profile notes\n\n"
+        "- Main match watchlist of the day\n"
+        "- Last 10 matches for each team\n"
+        "- Goals scored and conceded\n"
+        "- Previous meetings between both teams\n"
+        "- Estimated probabilities\n"
+        "- Betting line to watch\n\n"
+        "Premium version includes:\n"
+        "- All matches today/tomorrow\n"
+        "- Full probability tables\n"
+        "- Odds comparison\n"
+        "- Deeper match analysis\n"
+        "- Private premium Telegram access\n"
+        "- Future lineup/player alerts\n\n"
         "Important:\n"
         "These are not guaranteed bets. Educational only. Bet responsibly.\n\n"
         "Commands:\n"
         "/start - Start the bot\n"
-        "/free - Get the latest free watchlist"
+        "/free - Get the latest free match watchlist\n"
         "/premium - See premium intelligence info"
     )
 
+        
     send_message(chat_id, message)
 
 
@@ -119,16 +129,22 @@ def handle_update(update):
     if not chat_id:
         return
 
-    if text == "/start":
+    # Telegram sometimes sends commands like /start@YourBotName
+    command = text.split()[0].split("@")[0].lower()
+
+    if command == "/start":
         handle_start(chat_id)
-    elif text == "/free":
+
+    elif command == "/free":
         handle_free(chat_id)
-    elif text == "/premium":
+
+    elif command == "/premium":
         handle_premium(chat_id)
+
     else:
         send_message(
             chat_id,
-            "Command not recognized. Use /start or /free."
+            "Command not recognized. Use /start, /free or /premium."
         )
 
 

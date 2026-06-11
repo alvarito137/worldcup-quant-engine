@@ -23,7 +23,7 @@ Available market: **totals**
 Matched line: **Under 2.5**
 Exact line match: **False**
 Line note: **Closest available line is more aggressive than the model angle.**
-Average odds: **1.701**
+Average odds: **1.697**
 Best odds: **1.71**
 Best bookmaker: **BetOnline.ag**
 Bookmakers found: **7**
@@ -43,10 +43,10 @@ Available market: **totals**
 Matched line: **Under 2.5**
 Exact line match: **False**
 Line note: **Closest available line is more aggressive than the model angle.**
-Average odds: **1.69**
-Best odds: **1.71**
-Best bookmaker: **BetUS**
-Bookmakers found: **6**
+Average odds: **1.707**
+Best odds: **1.74**
+Best bookmaker: **BetMGM**
+Bookmakers found: **7**
 
 Reason: Projected total goals: 2.2. Recent goal profile suggests controlled scoring.
 
@@ -83,9 +83,9 @@ Available market: **totals**
 Matched line: **Under 2.5**
 Exact line match: **False**
 Line note: **Closest available line is more aggressive than the model angle.**
-Average odds: **1.672**
-Best odds: **1.7**
-Best bookmaker: **BetRivers**
+Average odds: **1.658**
+Best odds: **1.67**
+Best bookmaker: **BetOnline.ag**
 Bookmakers found: **4**
 
 Reason: Projected total goals: 2.7. Recent goal profile suggests controlled scoring.
@@ -163,7 +163,7 @@ Available market: **totals**
 Matched line: **Over 2.5**
 Exact line match: **False**
 Line note: **Closest available line is more aggressive than the model angle.**
-Average odds: **1.863**
+Average odds: **1.866**
 Best odds: **1.91**
 Best bookmaker: **BetMGM**
 Bookmakers found: **7**

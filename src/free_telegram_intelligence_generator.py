@@ -17,6 +17,7 @@ REPORTS_DIR = os.path.join(BASE_DIR, "reports")
 ANGLES_INPUT_PATH = os.path.join(PROCESSED_DIR, "market_angles_with_odds.csv")
 RECENT_STATS_PATH = os.path.join(RAW_DIR, "api_football_team_recent_stats.csv")
 H2H_STATS_PATH = os.path.join(RAW_DIR, "api_football_h2h_stats.csv")
+FIXTURES_PATH = os.path.join(RAW_DIR, "api_football_fixtures.csv")
 
 OUTPUT_PATH = os.path.join(REPORTS_DIR, "telegram_free_intelligence.md")
 
@@ -210,6 +211,86 @@ def add_probability_block(lines, home_team, away_team, home_stats, away_stats):
     lines.append(f"Both teams score - No: {format_probability(probabilities['btts_no'])}")
     lines.append("")
 
+def attach_fixture_dates(angles, fixtures):
+    fixtures = fixtures.copy()
+
+    fixtures["match"] = (
+        fixtures["home_team"].astype(str)
+        + " vs "
+        + fixtures["away_team"].astype(str)
+    )
+
+    fixtures["fixture_date"] = pd.to_datetime(
+        fixtures["date"],
+        utc=True,
+        errors="coerce"
+    )
+
+    fixture_dates = fixtures[["match", "fixture_date"]].drop_duplicates()
+
+    angles = angles.merge(
+        fixture_dates,
+        on="match",
+        how="left"
+    )
+
+    return angles
+
+
+def select_main_free_match(angles):
+    """
+    Selects the first scheduled match of the day with a real available betting line.
+    If there is no match today, it selects the closest upcoming match.
+    """
+
+    angles = angles.copy()
+
+    angles = angles[
+        (angles["odds_found"] == True)
+        & (angles["best_decimal_odds"].notna())
+        & (angles["matched_selection"].notna())
+        & (angles["fixture_date"].notna())
+    ].copy()
+
+    if angles.empty:
+        return angles
+
+    angles["fixture_date"] = pd.to_datetime(
+        angles["fixture_date"],
+        utc=True,
+        errors="coerce"
+    )
+
+    now = pd.Timestamp.utcnow()
+
+    today_start = now.normalize()
+    today_end = today_start + pd.Timedelta(days=1)
+
+    today_matches = angles[
+        (angles["fixture_date"] >= today_start)
+        & (angles["fixture_date"] < today_end)
+    ].copy()
+
+    if not today_matches.empty:
+        return today_matches.sort_values(
+            by=["fixture_date", "adjusted_confidence_score"],
+            ascending=[True, False]
+        ).head(1)
+
+    upcoming = angles[
+        angles["fixture_date"] >= now
+    ].copy()
+
+    if not upcoming.empty:
+        return upcoming.sort_values(
+            by=["fixture_date", "adjusted_confidence_score"],
+            ascending=[True, False]
+        ).head(1)
+
+    return angles.sort_values(
+        by=["fixture_date", "adjusted_confidence_score"],
+        ascending=[True, False]
+    ).head(1)
 
 def generate_free_telegram_intelligence():
     if not os.path.exists(ANGLES_INPUT_PATH):
@@ -230,6 +311,7 @@ def generate_free_telegram_intelligence():
     angles = pd.read_csv(ANGLES_INPUT_PATH)
     recent_stats = pd.read_csv(RECENT_STATS_PATH)
     h2h_stats = pd.read_csv(H2H_STATS_PATH)
+    fixtures = pd.read_csv(FIXTURES_PATH)
 
     angles = angles[angles["odds_found"] == True].copy()
 
@@ -247,12 +329,31 @@ def generate_free_telegram_intelligence():
             ascending=False
         )
 
-        top = angles.head(3)
+        angles = angles[
+           (angles["odds_found"] == True)
+         & (angles["best_decimal_odds"].notna())
+         & (angles["matched_selection"].notna())
+          ].copy()
+ 
+        angles = attach_fixture_dates(angles, fixtures)
+
+        top = select_main_free_match(angles)
+
+        print("")
+        print("Free match selected:")
+        if not top.empty:
+         print(
+        top[
+            ["match", "fixture_date", "selection", "best_decimal_odds"]
+        ].to_string(index=False)
+    )
+        else:
+         print("No free match selected.")
 
         lines = []
         lines.append("⚽ World Cup Free Betting Intelligence")
         lines.append("")
-        lines.append("Top 3 simple betting watchlist for today.")
+        lines.append("Main match betting watchlist for today.")
         lines.append("Based on recent form, goals scored/conceded, previous meetings and betting lines.")
         lines.append("")
         lines.append("No guaranteed bets. Educational only. Bet responsibly.")
