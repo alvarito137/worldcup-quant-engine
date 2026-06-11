@@ -270,11 +270,12 @@ def fetch_h2h_for_match(home_team_id, away_team_id, home_team_name, away_team_na
         away_team_name=away_team_name
     )
 
-def filter_fixtures_today_tomorrow(fixtures, window_days=2):
+def filter_fixtures_next_hours(fixtures, hours=72):
     """
-    Filters fixtures for today and tomorrow based on UTC date.
+    Filters upcoming fixtures in the next X hours.
 
-    If no matches are found, it falls back to the next 5 upcoming fixtures.
+    This is better than calendar today/tomorrow because World Cup matches
+    may happen across different time zones.
     """
 
     fixtures = fixtures.copy()
@@ -286,17 +287,15 @@ def filter_fixtures_today_tomorrow(fixtures, window_days=2):
     )
 
     now = datetime.now(timezone.utc)
-
-    start = now.replace(hour=0, minute=0, second=0, microsecond=0)
-    end = start + timedelta(days=window_days)
+    end = now + timedelta(hours=hours)
 
     filtered = fixtures[
-        (fixtures["date_parsed"] >= start)
-        & (fixtures["date_parsed"] < end)
+        (fixtures["date_parsed"] >= now)
+        & (fixtures["date_parsed"] <= end)
     ].copy()
 
     if filtered.empty:
-        print("No fixtures found for today/tomorrow.")
+        print(f"No fixtures found in the next {hours} hours.")
         print("Fallback: using next 5 upcoming fixtures.")
 
         future_fixtures = fixtures[
@@ -326,9 +325,9 @@ def main():
     fixtures = pd.read_csv(FIXTURES_INPUT_PATH)
 
     # Use today's and tomorrow's fixtures for the real daily report.
-    test_fixtures = filter_fixtures_today_tomorrow(
+    test_fixtures = filter_fixtures_next_hours(
     fixtures=fixtures,
-    window_days=2
+    hours=72
 )
 
     print("")
