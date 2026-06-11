@@ -76,29 +76,34 @@ def handle_free(chat_id):
 def handle_premium(chat_id):
     message = (
         "⚽ World Cup Premium Intelligence\n\n"
-        "The free bot gives you a simple top watchlist.\n\n"
+        "The free bot gives you a simple daily watchlist.\n\n"
         "Premium gives you the full daily betting intelligence report.\n\n"
         "Included:\n"
         "✅ All matches today/tomorrow\n"
         "✅ Full probability table for each match\n"
         "✅ Goals markets: Over/Under\n"
-        "✅ Both teams to score probabilities\n"
+        "✅ Both teams score probabilities\n"
         "✅ Team goal projections\n"
         "✅ Market watchlist\n"
         "✅ Odds comparison\n"
         "✅ CSV access\n"
-        "✅ Premium Telegram alerts\n"
+        "✅ Private premium Telegram channel\n"
         "✅ Future lineup/player alerts\n\n"
-        "Early access:\n"
-        "$29 beta pass\n\n"
+        "Early beta access:\n"
+        "$30 CAD one-time pass\n\n"
+        "How to join:\n"
+        "1. Pay using the secure Stripe link\n"
+        "2. Send your payment email here\n"
+        "3. You will get access to the private premium Telegram channel\n\n"
         "Important:\n"
+        "Payment link:\n"
+        "https://buy.stripe.com/4gMcN57gY3kJ2w8g9xgEg00\n\n"
         "This is statistical analysis, not guaranteed betting advice.\n"
-        "No model can guarantee outcomes. Bet responsibly.\n\n"
-        "To join:\n"
-        "Reply with: I want Premium"
+        "No model can guarantee outcomes. Bet responsibly."
     )
 
     send_message(chat_id, message)
+
 
 
 def handle_update(update):
