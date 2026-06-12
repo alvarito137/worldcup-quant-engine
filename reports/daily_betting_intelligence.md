@@ -19,14 +19,14 @@ Confidence: **70.5%**
 
 Reason: Projected total goals: 2.15. Recent goal profile suggests controlled scoring.
 
-### 2. Mexico vs South Africa
+### 2. Ivory Coast vs Ecuador
 
 Market: **Total Goals**
 Selection: **Under 3.5 Goals**
 Profile: **BALANCED**
-Confidence: **70.0%**
+Confidence: **69.5%**
 
-Reason: Projected total goals: 2.2. Recent goal profile suggests controlled scoring.
+Reason: Projected total goals: 2.25. Recent goal profile suggests controlled scoring.
 
 ### 3. Qatar vs Switzerland
 
@@ -37,16 +37,25 @@ Confidence: **67.6%**
 
 Reason: Projected total goals: 2.44. Recent goal profile suggests controlled scoring.
 
-### 4. South Korea vs Czech Republic
+### 4. Netherlands vs Japan
 
 Market: **Total Goals**
 Selection: **Under 3.5 Goals**
 Profile: **BALANCED**
-Confidence: **65.0%**
+Confidence: **67.0%**
 
-Reason: Projected total goals: 2.7. Recent goal profile suggests controlled scoring.
+Reason: Projected total goals: 2.5. Recent goal profile suggests controlled scoring.
 
-### 5. Australia vs Türkiye
+### 5. Germany vs Curaçao
+
+Market: **Total Goals**
+Selection: **Over 1.5 Goals**
+Profile: **CONSERVATIVE**
+Confidence: **77.4%**
+
+Reason: Projected total goals: 3.45. Both teams combine for enough attacking volume.
+
+### 6. Australia vs Türkiye
 
 Market: **Total Goals**
 Selection: **Over 1.5 Goals**
@@ -55,7 +64,7 @@ Confidence: **72.6%**
 
 Reason: Projected total goals: 3.05. Both teams combine for enough attacking volume.
 
-### 6. Brazil vs Morocco
+### 7. Brazil vs Morocco
 
 Market: **Total Goals**
 Selection: **Over 1.5 Goals**
@@ -64,7 +73,25 @@ Confidence: **72.6%**
 
 Reason: Projected total goals: 3.05. Both teams combine for enough attacking volume.
 
-### 7. USA vs Paraguay
+### 8. Spain vs Cape Verde Islands
+
+Market: **Total Goals**
+Selection: **Over 1.5 Goals**
+Profile: **BALANCED**
+Confidence: **72.1%**
+
+Reason: Projected total goals: 3.01. Both teams combine for enough attacking volume.
+
+### 9. Sweden vs Tunisia
+
+Market: **Total Goals**
+Selection: **Over 1.5 Goals**
+Profile: **BALANCED**
+Confidence: **72.0%**
+
+Reason: Projected total goals: 3.0. Both teams combine for enough attacking volume.
+
+### 10. USA vs Paraguay
 
 Market: **Total Goals**
 Selection: **Over 1.5 Goals**
@@ -72,15 +99,6 @@ Profile: **BALANCED**
 Confidence: **70.2%**
 
 Reason: Projected total goals: 2.85. Both teams combine for enough attacking volume.
-
-### 8. Haiti vs Scotland
-
-Market: **Total Goals**
-Selection: **Over 1.5 Goals**
-Profile: **BALANCED**
-Confidence: **69.6%**
-
-Reason: Projected total goals: 2.8. Both teams combine for enough attacking volume.
 
 ## Responsible Betting Note
 

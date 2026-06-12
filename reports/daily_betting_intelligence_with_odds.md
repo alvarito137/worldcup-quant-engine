@@ -23,32 +23,32 @@ Available market: **totals**
 Matched line: **Under 2.5**
 Exact line match: **False**
 Line note: **Closest available line is more aggressive than the model angle.**
-Average odds: **1.697**
-Best odds: **1.71**
-Best bookmaker: **BetOnline.ag**
-Bookmakers found: **7**
+Average odds: **1.662**
+Best odds: **1.67**
+Best bookmaker: **BetMGM**
+Bookmakers found: **5**
 
 Reason: Projected total goals: 2.15. Recent goal profile suggests controlled scoring.
 
-### 2. Mexico vs South Africa
+### 2. Ivory Coast vs Ecuador
 
 Market: **Total Goals**
 Model angle: **Under 3.5 Goals**
 Original profile: **BALANCED**
-Original confidence: **70.0%**
+Original confidence: **69.5%**
 Adjusted profile: **AGGRESSIVE**
-Adjusted confidence: **58.0%**
+Adjusted confidence: **57.5%**
 
 Available market: **totals**
-Matched line: **Under 2.5**
+Matched line: **Under 2.0**
 Exact line match: **False**
 Line note: **Closest available line is more aggressive than the model angle.**
-Average odds: **1.707**
+Average odds: **1.728**
 Best odds: **1.74**
-Best bookmaker: **BetMGM**
-Bookmakers found: **7**
+Best bookmaker: **MyBookie.ag**
+Bookmakers found: **4**
 
-Reason: Projected total goals: 2.2. Recent goal profile suggests controlled scoring.
+Reason: Projected total goals: 2.25. Recent goal profile suggests controlled scoring.
 
 ### 3. Qatar vs Switzerland
 
@@ -63,34 +63,54 @@ Available market: **totals**
 Matched line: **Under 3.0**
 Exact line match: **False**
 Line note: **Closest available line is more aggressive than the model angle.**
-Average odds: **1.7**
-Best odds: **1.74**
-Best bookmaker: **BetUS**
+Average odds: **1.765**
+Best odds: **1.79**
+Best bookmaker: **MyBookie.ag**
 Bookmakers found: **2**
 
 Reason: Projected total goals: 2.44. Recent goal profile suggests controlled scoring.
 
-### 4. South Korea vs Czech Republic
+### 4. Netherlands vs Japan
 
 Market: **Total Goals**
 Model angle: **Under 3.5 Goals**
 Original profile: **BALANCED**
-Original confidence: **65.0%**
+Original confidence: **67.0%**
 Adjusted profile: **AGGRESSIVE**
-Adjusted confidence: **53.0%**
+Adjusted confidence: **55.0%**
 
 Available market: **totals**
 Matched line: **Under 2.5**
 Exact line match: **False**
 Line note: **Closest available line is more aggressive than the model angle.**
-Average odds: **1.658**
-Best odds: **1.67**
-Best bookmaker: **BetOnline.ag**
-Bookmakers found: **4**
+Average odds: **1.877**
+Best odds: **1.91**
+Best bookmaker: **BetMGM**
+Bookmakers found: **7**
 
-Reason: Projected total goals: 2.7. Recent goal profile suggests controlled scoring.
+Reason: Projected total goals: 2.5. Recent goal profile suggests controlled scoring.
 
-### 5. Australia vs Türkiye
+### 5. Germany vs Curaçao
+
+Market: **Total Goals**
+Model angle: **Over 1.5 Goals**
+Original profile: **CONSERVATIVE**
+Original confidence: **77.4%**
+Adjusted profile: **BALANCED**
+Adjusted confidence: **65.4%**
+
+Available market: **totals**
+Matched line: **Over 4.0**
+Exact line match: **False**
+Line note: **Closest available line is more aggressive than the model angle.**
+Average odds: **1.74**
+Best odds: **1.74**
+Best bookmaker: **MyBookie.ag**
+Bookmakers found: **1**
+
+Reason: Projected total goals: 3.45. Both teams combine for enough attacking volume.
+
+### 6. Australia vs Türkiye
 
 Market: **Total Goals**
 Model angle: **Over 1.5 Goals**
@@ -103,14 +123,14 @@ Available market: **totals**
 Matched line: **Over 2.5**
 Exact line match: **False**
 Line note: **Closest available line is more aggressive than the model angle.**
-Average odds: **1.997**
+Average odds: **2.009**
 Best odds: **2.05**
 Best bookmaker: **BetMGM**
 Bookmakers found: **7**
 
 Reason: Projected total goals: 3.05. Both teams combine for enough attacking volume.
 
-### 6. Brazil vs Morocco
+### 7. Brazil vs Morocco
 
 Market: **Total Goals**
 Model angle: **Over 1.5 Goals**
@@ -120,17 +140,37 @@ Adjusted profile: **BALANCED**
 Adjusted confidence: **60.6%**
 
 Available market: **totals**
-Matched line: **Over 2.25**
+Matched line: **Over 2.5**
 Exact line match: **False**
 Line note: **Closest available line is more aggressive than the model angle.**
-Average odds: **1.8**
-Best odds: **1.8**
-Best bookmaker: **Bovada**
-Bookmakers found: **1**
+Average odds: **2.066**
+Best odds: **2.1**
+Best bookmaker: **BetUS**
+Bookmakers found: **7**
 
 Reason: Projected total goals: 3.05. Both teams combine for enough attacking volume.
 
-### 7. USA vs Paraguay
+### 8. Sweden vs Tunisia
+
+Market: **Total Goals**
+Model angle: **Over 1.5 Goals**
+Original profile: **BALANCED**
+Original confidence: **72.0%**
+Adjusted profile: **BALANCED**
+Adjusted confidence: **60.0%**
+
+Available market: **totals**
+Matched line: **Over 2.0**
+Exact line match: **False**
+Line note: **Closest available line is more aggressive than the model angle.**
+Average odds: **1.71**
+Best odds: **1.71**
+Best bookmaker: **BetOnline.ag**
+Bookmakers found: **3**
+
+Reason: Projected total goals: 3.0. Both teams combine for enough attacking volume.
+
+### 9. USA vs Paraguay
 
 Market: **Total Goals**
 Model angle: **Over 1.5 Goals**
@@ -143,14 +183,14 @@ Available market: **totals**
 Matched line: **Over 2.0**
 Exact line match: **False**
 Line note: **Closest available line is more aggressive than the model angle.**
-Average odds: **1.715**
-Best odds: **1.72**
+Average odds: **1.836**
+Best odds: **1.85**
 Best bookmaker: **BetOnline.ag**
-Bookmakers found: **4**
+Bookmakers found: **5**
 
 Reason: Projected total goals: 2.85. Both teams combine for enough attacking volume.
 
-### 8. Haiti vs Scotland
+### 10. Haiti vs Scotland
 
 Market: **Total Goals**
 Model angle: **Over 1.5 Goals**
@@ -163,9 +203,9 @@ Available market: **totals**
 Matched line: **Over 2.5**
 Exact line match: **False**
 Line note: **Closest available line is more aggressive than the model angle.**
-Average odds: **1.866**
-Best odds: **1.91**
-Best bookmaker: **BetMGM**
+Average odds: **1.88**
+Best odds: **1.93**
+Best bookmaker: **Bovada**
 Bookmakers found: **7**
 
 Reason: Projected total goals: 2.8. Both teams combine for enough attacking volume.

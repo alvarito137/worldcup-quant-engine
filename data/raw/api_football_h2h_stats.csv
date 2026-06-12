@@ -1,9 +1,12 @@
 home_team_id,away_team_id,home_team,away_team,h2h_matches_found,home_team_h2h_wins,away_team_h2h_wins,h2h_draws,h2h_avg_goals,h2h_over_2_5_rate,h2h_btts_rate
-16,1531,Mexico,South Africa,1,0,0,1,2.0,0.0,1.0
-17,770,South Korea,Czech Republic,0,0,0,0,0.0,0.0,0.0
 5529,1113,Canada,Bosnia & Herzegovina,0,0,0,0,0.0,0.0,0.0
 2384,2380,USA,Paraguay,3,3,0,0,1.67,0.33,0.33
 1569,15,Qatar,Switzerland,1,1,0,0,1.0,0.0,0.0
 6,31,Brazil,Morocco,1,0,1,0,3.0,1.0,1.0
 2386,1108,Haiti,Scotland,0,0,0,0,0.0,0.0,0.0
 20,777,Australia,Türkiye,0,0,0,0,0.0,0.0,0.0
+25,5530,Germany,Curaçao,0,0,0,0,0.0,0.0,0.0
+1118,12,Netherlands,Japan,1,1,0,0,1.0,0.0,0.0
+1501,2382,Ivory Coast,Ecuador,0,0,0,0,0.0,0.0,0.0
+5,28,Sweden,Tunisia,0,0,0,0,0.0,0.0,0.0
+9,1533,Spain,Cape Verde Islands,0,0,0,0,0.0,0.0,0.0

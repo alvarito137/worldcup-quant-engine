@@ -1,5 +1,7 @@
 import os
 import pandas as pd
+from zoneinfo import ZoneInfo
+from dotenv import load_dotenv
 from probability_engine import (
     build_probability_summary,
     get_best_statistical_angle,
@@ -9,6 +11,10 @@ from probability_engine import (
 
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+ENV_PATH = os.path.join(BASE_DIR, ".env")
+load_dotenv(ENV_PATH)
+
+REPORT_TIMEZONE = os.getenv("REPORT_TIMEZONE", "America/Toronto")
 
 RAW_DIR = os.path.join(BASE_DIR, "data", "raw")
 PROCESSED_DIR = os.path.join(BASE_DIR, "data", "processed")
@@ -292,6 +298,23 @@ def select_main_free_match(angles):
         ascending=[True, False]
     ).head(1)
 
+def format_kickoff_time(fixture_date):
+    if pd.isna(fixture_date):
+        return None
+
+    utc_time = pd.to_datetime(
+        fixture_date,
+        utc=True,
+        errors="coerce"
+    )
+
+    if pd.isna(utc_time):
+        return None
+
+    local_time = utc_time.tz_convert(ZoneInfo(REPORT_TIMEZONE))
+
+    return local_time.strftime("%b %d, %I:%M %p %Z")
+
 def generate_free_telegram_intelligence():
     if not os.path.exists(ANGLES_INPUT_PATH):
         raise FileNotFoundError(
@@ -370,7 +393,14 @@ def generate_free_telegram_intelligence():
             if home_stats is None or away_stats is None:
                 continue
 
-            lines.append(f"{i}) {home_team} vs {away_team}")
+            lines.append(f"⚽ {home_team} vs {away_team}")
+
+            if "fixture_date" in row and pd.notna(row["fixture_date"]):
+             kickoff_time = format_kickoff_time(row["fixture_date"])
+
+            if kickoff_time:
+             lines.append(f"Kickoff: {kickoff_time}")
+
             lines.append("")
             lines.append("📊 Last 10 matches")
             add_team_block(lines, home_team, home_stats)

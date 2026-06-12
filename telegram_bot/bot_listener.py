@@ -1,15 +1,24 @@
 import os
 import time
+import json
+import sys
+import subprocess
 import requests
+from datetime import datetime
+from zoneinfo import ZoneInfo
 from dotenv import load_dotenv
 
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ENV_PATH = os.path.join(BASE_DIR, ".env")
+REPORTS_DIR = os.path.join(BASE_DIR, "reports")
+FREE_REPORT_PATH = os.path.join(REPORTS_DIR, "telegram_free_intelligence.md")
+FREE_REPORT_META_PATH = os.path.join(REPORTS_DIR, "free_report_meta.json")
 
 load_dotenv(ENV_PATH)
 
 TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
+REPORT_TIMEZONE = os.getenv("REPORT_TIMEZONE", "America/Toronto")
 
 if not TELEGRAM_BOT_TOKEN:
     raise ValueError("Missing TELEGRAM_BOT_TOKEN in .env")
@@ -63,54 +72,120 @@ def handle_start(chat_id):
         
     send_message(chat_id, message)
 
+def get_today_key():
+    timezone = ZoneInfo(REPORT_TIMEZONE)
+    return datetime.now(timezone).strftime("%Y-%m-%d")
+
+
+def is_free_report_fresh():
+    if not os.path.exists(FREE_REPORT_PATH):
+        return False
+
+    if not os.path.exists(FREE_REPORT_META_PATH):
+        return False
+
+    try:
+        with open(FREE_REPORT_META_PATH, "r", encoding="utf-8") as file:
+            meta = json.load(file)
+
+        return meta.get("report_date") == get_today_key()
+
+    except Exception:
+        return False
+
+
+def save_free_report_meta():
+    os.makedirs(REPORTS_DIR, exist_ok=True)
+
+    meta = {
+        "report_date": get_today_key(),
+        "generated_at": datetime.now(ZoneInfo(REPORT_TIMEZONE)).isoformat(),
+    }
+
+    with open(FREE_REPORT_META_PATH, "w", encoding="utf-8") as file:
+        json.dump(meta, file, indent=2)
+
+
+def run_pipeline_step(name, command):
+    print("")
+    print("=" * 70)
+    print(f"Running: {name}")
+    print("=" * 70)
+
+    result = subprocess.run(
+        command,
+        cwd=BASE_DIR,
+        text=True
+    )
+
+    if result.returncode != 0:
+        raise RuntimeError(f"Pipeline step failed: {name}")
+
+
+def regenerate_free_report():
+    python = sys.executable
+
+    steps = [
+        (
+            "Fetch API-Football fixtures",
+            [python, "data_sources/fetch_api_football.py"],
+        ),
+        (
+            "Fetch recent stats and H2H",
+            [python, "data_sources/fetch_api_football_context.py"],
+        ),
+        (
+            "Fetch market odds",
+            [python, "data_sources/fetch_market_odds.py"],
+        ),
+        (
+            "Generate market angles",
+            [python, "src/market_angle_engine.py"],
+        ),
+        (
+            "Match angles with odds",
+            [python, "src/market_odds_matcher.py"],
+        ),
+        (
+            "Generate free Telegram report",
+            [python, "src/free_telegram_intelligence_generator.py"],
+        ),
+    ]
+
+    for name, command in steps:
+        run_pipeline_step(name, command)
+
+    save_free_report_meta()
+
 
 def handle_free(chat_id):
-    report_path = os.path.join(
-        BASE_DIR,
-        "reports",
-        "telegram_free_intelligence.md"
-    )
+    try:
+        if not is_free_report_fresh():
+            send_message(
+                chat_id,
+                "Generating today's free match watchlist... ⚽📊"
+            )
 
-    if not os.path.exists(report_path):
+            regenerate_free_report()
+
+        if not os.path.exists(FREE_REPORT_PATH):
+            send_message(
+                chat_id,
+                "No free report generated yet. Please try again later."
+            )
+            return
+
+        with open(FREE_REPORT_PATH, "r", encoding="utf-8") as file:
+            message = file.read()
+
+        send_message(chat_id, message)
+
+    except Exception as error:
+        print(f"Free report error: {error}")
         send_message(
             chat_id,
-            "No free report generated yet. Please try again later."
+            "I could not generate today's free report right now. Please try again later."
         )
-        return
-
-    with open(report_path, "r", encoding="utf-8") as file:
-        message = file.read()
-
-    send_message(chat_id, message)
-
-def handle_premium(chat_id):
-    message = (
-        "⚽ World Cup Premium Intelligence\n\n"
-        "The free bot gives you a simple daily watchlist.\n\n"
-        "Premium gives you the full daily betting intelligence report.\n\n"
-        "Included:\n"
-        "✅ All matches today/tomorrow\n"
-        "✅ Full probability table for each match\n"
-        "✅ Goals markets: Over/Under\n"
-        "✅ Both teams score probabilities\n"
-        "✅ Team goal projections\n"
-        "✅ Market watchlist\n"
-        "✅ Odds comparison\n"
-        "✅ CSV access\n"
-        "✅ Private premium Telegram channel\n"
-        "✅ Future lineup/player alerts\n\n"
-        "Early beta access:\n"
-        "$30 CAD one-time pass\n\n"
-        "How to join:\n"
-        "1. Pay using the secure Stripe link\n"
-        "2. Send your payment email here\n"
-        "3. You will get access to the private premium Telegram channel\n\n"
-        "Important:\n"
-        "Payment link:\n"
-        "https://buy.stripe.com/4gMcN57gY3kJ2w8g9xgEg00\n\n"
-        "This is statistical analysis, not guaranteed betting advice.\n"
-        "No model can guarantee outcomes. Bet responsibly."
-    )
 
     send_message(chat_id, message)
 
