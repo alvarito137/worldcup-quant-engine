@@ -10,67 +10,47 @@ If the exact model line is not available, the report may show the closest availa
 
 ## Top Markets To Watch
 
-### 1. Canada vs Bosnia & Herzegovina
+### 1. Saudi Arabia vs Uruguay
 
 Market: **Total Goals**
 Model angle: **Under 3.5 Goals**
 Original profile: **BALANCED**
-Original confidence: **70.5%**
+Original confidence: **71.5%**
 Adjusted profile: **AGGRESSIVE**
-Adjusted confidence: **58.5%**
+Adjusted confidence: **59.5%**
 
 Available market: **totals**
 Matched line: **Under 2.5**
 Exact line match: **False**
 Line note: **Closest available line is more aggressive than the model angle.**
-Average odds: **1.662**
-Best odds: **1.67**
+Average odds: **1.758**
+Best odds: **1.78**
+Best bookmaker: **BetOnline.ag**
+Bookmakers found: **6**
+
+Reason: Projected total goals: 2.05. Recent goal profile suggests controlled scoring.
+
+### 2. Iran vs New Zealand
+
+Market: **Total Goals**
+Model angle: **Under 3.5 Goals**
+Original profile: **BALANCED**
+Original confidence: **67.7%**
+Adjusted profile: **AGGRESSIVE**
+Adjusted confidence: **55.7%**
+
+Available market: **totals**
+Matched line: **Under 2.5**
+Exact line match: **False**
+Line note: **Closest available line is more aggressive than the model angle.**
+Average odds: **1.57**
+Best odds: **1.57**
 Best bookmaker: **BetMGM**
-Bookmakers found: **5**
-
-Reason: Projected total goals: 2.15. Recent goal profile suggests controlled scoring.
-
-### 2. Ivory Coast vs Ecuador
-
-Market: **Total Goals**
-Model angle: **Under 3.5 Goals**
-Original profile: **BALANCED**
-Original confidence: **69.5%**
-Adjusted profile: **AGGRESSIVE**
-Adjusted confidence: **57.5%**
-
-Available market: **totals**
-Matched line: **Under 2.0**
-Exact line match: **False**
-Line note: **Closest available line is more aggressive than the model angle.**
-Average odds: **1.728**
-Best odds: **1.74**
-Best bookmaker: **MyBookie.ag**
-Bookmakers found: **4**
-
-Reason: Projected total goals: 2.25. Recent goal profile suggests controlled scoring.
-
-### 3. Qatar vs Switzerland
-
-Market: **Total Goals**
-Model angle: **Under 3.5 Goals**
-Original profile: **BALANCED**
-Original confidence: **67.6%**
-Adjusted profile: **AGGRESSIVE**
-Adjusted confidence: **55.6%**
-
-Available market: **totals**
-Matched line: **Under 3.0**
-Exact line match: **False**
-Line note: **Closest available line is more aggressive than the model angle.**
-Average odds: **1.765**
-Best odds: **1.79**
-Best bookmaker: **MyBookie.ag**
 Bookmakers found: **2**
 
-Reason: Projected total goals: 2.44. Recent goal profile suggests controlled scoring.
+Reason: Projected total goals: 2.43. Recent goal profile suggests controlled scoring.
 
-### 4. Netherlands vs Japan
+### 3. Czechia vs South Africa
 
 Market: **Total Goals**
 Model angle: **Under 3.5 Goals**
@@ -83,34 +63,94 @@ Available market: **totals**
 Matched line: **Under 2.5**
 Exact line match: **False**
 Line note: **Closest available line is more aggressive than the model angle.**
-Average odds: **1.877**
-Best odds: **1.91**
-Best bookmaker: **BetMGM**
-Bookmakers found: **7**
+Average odds: **1.762**
+Best odds: **1.8**
+Best bookmaker: **BetOnline.ag**
+Bookmakers found: **6**
 
 Reason: Projected total goals: 2.5. Recent goal profile suggests controlled scoring.
 
-### 5. Germany vs Curaçao
+### 4. Portugal vs Congo DR
+
+Market: **Total Goals**
+Model angle: **Under 3.5 Goals**
+Original profile: **BALANCED**
+Original confidence: **66.0%**
+Adjusted profile: **AGGRESSIVE**
+Adjusted confidence: **54.0%**
+
+Available market: **totals**
+Matched line: **Under 2.75**
+Exact line match: **False**
+Line note: **Closest available line is more aggressive than the model angle.**
+Average odds: **1.93**
+Best odds: **1.93**
+Best bookmaker: **Bovada**
+Bookmakers found: **1**
+
+Reason: Projected total goals: 2.6. Recent goal profile suggests controlled scoring.
+
+### 5. Argentina vs Algeria
+
+Market: **Total Goals**
+Model angle: **Under 3.5 Goals**
+Original profile: **BALANCED**
+Original confidence: **65.1%**
+Adjusted profile: **AGGRESSIVE**
+Adjusted confidence: **53.1%**
+
+Available market: **totals**
+Matched line: **Under 2.5**
+Exact line match: **False**
+Line note: **Closest available line is more aggressive than the model angle.**
+Average odds: **1.869**
+Best odds: **1.91**
+Best bookmaker: **BetUS**
+Bookmakers found: **7**
+
+Reason: Projected total goals: 2.69. Recent goal profile suggests controlled scoring.
+
+### 6. Switzerland vs Bosnia & Herzegovina
+
+Market: **Total Goals**
+Model angle: **Under 3.5 Goals**
+Original profile: **BALANCED**
+Original confidence: **65.0%**
+Adjusted profile: **AGGRESSIVE**
+Adjusted confidence: **53.0%**
+
+Available market: **totals**
+Matched line: **Under 2.5**
+Exact line match: **False**
+Line note: **Closest available line is more aggressive than the model angle.**
+Average odds: **1.758**
+Best odds: **1.8**
+Best bookmaker: **LowVig.ag**
+Bookmakers found: **6**
+
+Reason: Projected total goals: 2.7. Recent goal profile suggests controlled scoring.
+
+### 7. Austria vs Jordan
 
 Market: **Total Goals**
 Model angle: **Over 1.5 Goals**
-Original profile: **CONSERVATIVE**
-Original confidence: **77.4%**
+Original profile: **BALANCED**
+Original confidence: **73.2%**
 Adjusted profile: **BALANCED**
-Adjusted confidence: **65.4%**
+Adjusted confidence: **61.2%**
 
 Available market: **totals**
-Matched line: **Over 4.0**
+Matched line: **Over 2.5**
 Exact line match: **False**
 Line note: **Closest available line is more aggressive than the model angle.**
-Average odds: **1.74**
-Best odds: **1.74**
-Best bookmaker: **MyBookie.ag**
-Bookmakers found: **1**
+Average odds: **1.667**
+Best odds: **1.71**
+Best bookmaker: **BetMGM**
+Bookmakers found: **3**
 
-Reason: Projected total goals: 3.45. Both teams combine for enough attacking volume.
+Reason: Projected total goals: 3.1. Both teams combine for enough attacking volume.
 
-### 6. Australia vs Türkiye
+### 8. Uzbekistan vs Colombia
 
 Market: **Total Goals**
 Model angle: **Over 1.5 Goals**
@@ -123,34 +163,14 @@ Available market: **totals**
 Matched line: **Over 2.5**
 Exact line match: **False**
 Line note: **Closest available line is more aggressive than the model angle.**
-Average odds: **2.009**
-Best odds: **2.05**
+Average odds: **1.94**
+Best odds: **1.98**
 Best bookmaker: **BetMGM**
 Bookmakers found: **7**
 
 Reason: Projected total goals: 3.05. Both teams combine for enough attacking volume.
 
-### 7. Brazil vs Morocco
-
-Market: **Total Goals**
-Model angle: **Over 1.5 Goals**
-Original profile: **BALANCED**
-Original confidence: **72.6%**
-Adjusted profile: **BALANCED**
-Adjusted confidence: **60.6%**
-
-Available market: **totals**
-Matched line: **Over 2.5**
-Exact line match: **False**
-Line note: **Closest available line is more aggressive than the model angle.**
-Average odds: **2.066**
-Best odds: **2.1**
-Best bookmaker: **BetUS**
-Bookmakers found: **7**
-
-Reason: Projected total goals: 3.05. Both teams combine for enough attacking volume.
-
-### 8. Sweden vs Tunisia
+### 9. Iraq vs Norway
 
 Market: **Total Goals**
 Model angle: **Over 1.5 Goals**
@@ -160,55 +180,35 @@ Adjusted profile: **BALANCED**
 Adjusted confidence: **60.0%**
 
 Available market: **totals**
-Matched line: **Over 2.0**
+Matched line: **Over 2.5**
 Exact line match: **False**
 Line note: **Closest available line is more aggressive than the model angle.**
-Average odds: **1.71**
-Best odds: **1.71**
-Best bookmaker: **BetOnline.ag**
-Bookmakers found: **3**
+Average odds: **1.61**
+Best odds: **1.61**
+Best bookmaker: **BetMGM**
+Bookmakers found: **1**
 
 Reason: Projected total goals: 3.0. Both teams combine for enough attacking volume.
 
-### 9. USA vs Paraguay
+### 10. France vs Senegal
 
 Market: **Total Goals**
 Model angle: **Over 1.5 Goals**
 Original profile: **BALANCED**
-Original confidence: **70.2%**
+Original confidence: **71.4%**
 Adjusted profile: **AGGRESSIVE**
-Adjusted confidence: **58.2%**
-
-Available market: **totals**
-Matched line: **Over 2.0**
-Exact line match: **False**
-Line note: **Closest available line is more aggressive than the model angle.**
-Average odds: **1.836**
-Best odds: **1.85**
-Best bookmaker: **BetOnline.ag**
-Bookmakers found: **5**
-
-Reason: Projected total goals: 2.85. Both teams combine for enough attacking volume.
-
-### 10. Haiti vs Scotland
-
-Market: **Total Goals**
-Model angle: **Over 1.5 Goals**
-Original profile: **BALANCED**
-Original confidence: **69.6%**
-Adjusted profile: **AGGRESSIVE**
-Adjusted confidence: **57.6%**
+Adjusted confidence: **59.4%**
 
 Available market: **totals**
 Matched line: **Over 2.5**
 Exact line match: **False**
 Line note: **Closest available line is more aggressive than the model angle.**
-Average odds: **1.88**
-Best odds: **1.93**
+Average odds: **1.91**
+Best odds: **1.95**
 Best bookmaker: **Bovada**
 Bookmakers found: **7**
 
-Reason: Projected total goals: 2.8. Both teams combine for enough attacking volume.
+Reason: Projected total goals: 2.95. Both teams combine for enough attacking volume.
 
 ## Responsible Betting Note
 

@@ -1,18 +1,18 @@
 fixture_id,date,timezone,venue_name,venue_city,status_long,status_short,league_id,league_name,season,round,home_team_id,home_team,away_team_id,away_team,home_goals,away_goals,winner_home,winner_away,halftime_home,halftime_away,fulltime_home,fulltime_away
+1489377,2026-06-15T19:00:00+00:00,UTC,Lumen Field,Seattle,Halftime,HT,1,World Cup,2026,Group Stage - 1,1,Belgium,32,Egypt,0.0,1.0,False,True,0.0,1.0,,
 1489369,2026-06-11T19:00:00+00:00,UTC,Estadio Azteca,Mexico City,Match Finished,FT,1,World Cup,2026,Group Stage - 1,16,Mexico,1531,South Africa,2.0,0.0,True,False,1.0,0.0,2.0,0.0
-1538999,2026-06-12T02:00:00+00:00,UTC,Estadio Akron,Guadalajara,Match Finished,FT,1,World Cup,2026,Group Stage - 1,17,South Korea,770,Czech Republic,2.0,1.0,True,False,0.0,0.0,2.0,1.0
-1539000,2026-06-12T19:00:00+00:00,UTC,BMO Field,Toronto,Not Started,NS,1,World Cup,2026,Group Stage - 1,5529,Canada,1113,Bosnia & Herzegovina,,,,,,,,
-1489370,2026-06-13T01:00:00+00:00,UTC,SoFi Stadium,Los Angeles,Not Started,NS,1,World Cup,2026,Group Stage - 1,2384,USA,2380,Paraguay,,,,,,,,
-1489373,2026-06-13T19:00:00+00:00,UTC,Levi's Stadium,San Francisco Bay Area,Not Started,NS,1,World Cup,2026,Group Stage - 1,1569,Qatar,15,Switzerland,,,,,,,,
-1489371,2026-06-13T22:00:00+00:00,UTC,MetLife Stadium,New York New Jersey,Not Started,NS,1,World Cup,2026,Group Stage - 1,6,Brazil,31,Morocco,,,,,,,,
-1489372,2026-06-14T01:00:00+00:00,UTC,Gillette Stadium,Boston,Not Started,NS,1,World Cup,2026,Group Stage - 1,2386,Haiti,1108,Scotland,,,,,,,,
-1539001,2026-06-14T04:00:00+00:00,UTC,BC Place,Vancouver,Not Started,NS,1,World Cup,2026,Group Stage - 1,20,Australia,777,Türkiye,,,,,,,,
-1489374,2026-06-14T17:00:00+00:00,UTC,NRG Stadium,Houston,Not Started,NS,1,World Cup,2026,Group Stage - 1,25,Germany,5530,Curaçao,,,,,,,,
-1489376,2026-06-14T20:00:00+00:00,UTC,AT&T Stadium,Dallas,Not Started,NS,1,World Cup,2026,Group Stage - 1,1118,Netherlands,12,Japan,,,,,,,,
-1489375,2026-06-14T23:00:00+00:00,UTC,Lincoln Financial Field,Philadelphia,Not Started,NS,1,World Cup,2026,Group Stage - 1,1501,Ivory Coast,2382,Ecuador,,,,,,,,
-1539002,2026-06-15T02:00:00+00:00,UTC,Estadio BBVA,Monterrey,Not Started,NS,1,World Cup,2026,Group Stage - 1,5,Sweden,28,Tunisia,,,,,,,,
-1489380,2026-06-15T16:00:00+00:00,UTC,Mercedes-Benz Stadium,Atlanta,Not Started,NS,1,World Cup,2026,Group Stage - 1,9,Spain,1533,Cape Verde Islands,,,,,,,,
-1489377,2026-06-15T19:00:00+00:00,UTC,Lumen Field,Seattle,Not Started,NS,1,World Cup,2026,Group Stage - 1,1,Belgium,32,Egypt,,,,,,,,
+1538999,2026-06-12T02:00:00+00:00,UTC,Estadio Akron,Guadalajara,Match Finished,FT,1,World Cup,2026,Group Stage - 1,17,South Korea,770,Czechia,2.0,1.0,True,False,0.0,0.0,2.0,1.0
+1539000,2026-06-12T19:00:00+00:00,UTC,BMO Field,Toronto,Match Finished,FT,1,World Cup,2026,Group Stage - 1,5529,Canada,1113,Bosnia & Herzegovina,1.0,1.0,,,0.0,1.0,1.0,1.0
+1489370,2026-06-13T01:00:00+00:00,UTC,SoFi Stadium,Inglewood,Match Finished,FT,1,World Cup,2026,Group Stage - 1,2384,USA,2380,Paraguay,4.0,1.0,True,False,3.0,0.0,4.0,1.0
+1489373,2026-06-13T19:00:00+00:00,UTC,Levi's Stadium,Santa Clara,Match Finished,FT,1,World Cup,2026,Group Stage - 1,1569,Qatar,15,Switzerland,1.0,1.0,,,0.0,1.0,1.0,1.0
+1489371,2026-06-13T22:00:00+00:00,UTC,MetLife Stadium,East Rutherford,Match Finished,FT,1,World Cup,2026,Group Stage - 1,6,Brazil,31,Morocco,1.0,1.0,,,1.0,1.0,1.0,1.0
+1489372,2026-06-14T01:00:00+00:00,UTC,Gillette Stadium,Boston,Match Finished,FT,1,World Cup,2026,Group Stage - 1,2386,Haiti,1108,Scotland,0.0,1.0,False,True,0.0,1.0,0.0,1.0
+1539001,2026-06-14T04:00:00+00:00,UTC,BC Place,Vancouver,Match Finished,FT,1,World Cup,2026,Group Stage - 1,20,Australia,777,Türkiye,2.0,0.0,True,False,1.0,0.0,2.0,0.0
+1489374,2026-06-14T17:00:00+00:00,UTC,NRG Stadium,Houston,Match Finished,FT,1,World Cup,2026,Group Stage - 1,25,Germany,5530,Curaçao,7.0,1.0,True,False,3.0,1.0,7.0,1.0
+1489376,2026-06-14T20:00:00+00:00,UTC,AT&T Stadium,Arlington,Match Finished,FT,1,World Cup,2026,Group Stage - 1,1118,Netherlands,12,Japan,2.0,2.0,,,0.0,0.0,2.0,2.0
+1489375,2026-06-14T23:00:00+00:00,UTC,Lincoln Financial Field,Philadelphia,Match Finished,FT,1,World Cup,2026,Group Stage - 1,1501,Ivory Coast,2382,Ecuador,1.0,0.0,True,False,0.0,0.0,1.0,0.0
+1539002,2026-06-15T02:00:00+00:00,UTC,Estadio BBVA,Monterrey,Match Finished,FT,1,World Cup,2026,Group Stage - 1,5,Sweden,28,Tunisia,5.0,1.0,True,False,2.0,1.0,5.0,1.0
+1489380,2026-06-15T16:00:00+00:00,UTC,Mercedes-Benz Stadium,Atlanta,Match Finished,FT,1,World Cup,2026,Group Stage - 1,9,Spain,1533,Cape Verde Islands,0.0,0.0,,,0.0,0.0,0.0,0.0
 1489379,2026-06-15T22:00:00+00:00,UTC,Hard Rock Stadium,Miami,Not Started,NS,1,World Cup,2026,Group Stage - 1,23,Saudi Arabia,7,Uruguay,,,,,,,,
 1489378,2026-06-16T01:00:00+00:00,UTC,SoFi Stadium,Los Angeles,Not Started,NS,1,World Cup,2026,Group Stage - 1,22,Iran,4673,New Zealand,,,,,,,,
 1489383,2026-06-16T19:00:00+00:00,UTC,MetLife Stadium,New York New Jersey,Not Started,NS,1,World Cup,2026,Group Stage - 1,2,France,13,Senegal,,,,,,,,
@@ -23,7 +23,7 @@ fixture_id,date,timezone,venue_name,venue_city,status_long,status_short,league_i
 1489384,2026-06-17T20:00:00+00:00,UTC,AT&T Stadium,Dallas,Not Started,NS,1,World Cup,2026,Group Stage - 1,10,England,3,Croatia,,,,,,,,
 1489385,2026-06-17T23:00:00+00:00,UTC,BMO Field,Toronto,Not Started,NS,1,World Cup,2026,Group Stage - 1,1504,Ghana,11,Panama,,,,,,,,
 1489386,2026-06-18T02:00:00+00:00,UTC,Estadio Azteca,Mexico City,Not Started,NS,1,World Cup,2026,Group Stage - 1,1568,Uzbekistan,8,Colombia,,,,,,,,
-1539004,2026-06-18T16:00:00+00:00,UTC,Mercedes-Benz Stadium,Atlanta,Not Started,NS,1,World Cup,2026,Group Stage - 2,770,Czech Republic,1531,South Africa,,,,,,,,
+1539004,2026-06-18T16:00:00+00:00,UTC,Mercedes-Benz Stadium,Atlanta,Not Started,NS,1,World Cup,2026,Group Stage - 2,770,Czechia,1531,South Africa,,,,,,,,
 1539005,2026-06-18T19:00:00+00:00,UTC,SoFi Stadium,Los Angeles,Not Started,NS,1,World Cup,2026,Group Stage - 2,15,Switzerland,1113,Bosnia & Herzegovina,,,,,,,,
 1489387,2026-06-18T22:00:00+00:00,UTC,BC Place,Vancouver,Not Started,NS,1,World Cup,2026,Group Stage - 2,5529,Canada,1569,Qatar,,,,,,,,
 1489388,2026-06-19T01:00:00+00:00,UTC,Estadio Akron,Guadalajara,Not Started,NS,1,World Cup,2026,Group Stage - 2,16,Mexico,17,South Korea,,,,,,,,
@@ -51,7 +51,7 @@ fixture_id,date,timezone,venue_name,venue_city,status_long,status_short,league_i
 1539009,2026-06-24T19:00:00+00:00,UTC,Lumen Field,Seattle,Not Started,NS,1,World Cup,2026,Group Stage - 3,1113,Bosnia & Herzegovina,1569,Qatar,,,,,,,,
 1489405,2026-06-24T22:00:00+00:00,UTC,Mercedes-Benz Stadium,Atlanta,Not Started,NS,1,World Cup,2026,Group Stage - 3,31,Morocco,2386,Haiti,,,,,,,,
 1489406,2026-06-24T22:00:00+00:00,UTC,Hard Rock Stadium,Miami,Not Started,NS,1,World Cup,2026,Group Stage - 3,1108,Scotland,6,Brazil,,,,,,,,
-1539010,2026-06-25T01:00:00+00:00,UTC,Estadio Azteca,Mexico City,Not Started,NS,1,World Cup,2026,Group Stage - 3,770,Czech Republic,16,Mexico,,,,,,,,
+1539010,2026-06-25T01:00:00+00:00,UTC,Estadio Azteca,Mexico City,Not Started,NS,1,World Cup,2026,Group Stage - 3,770,Czechia,16,Mexico,,,,,,,,
 1489407,2026-06-25T01:00:00+00:00,UTC,Estadio BBVA,Monterrey,Not Started,NS,1,World Cup,2026,Group Stage - 3,1531,South Africa,17,South Korea,,,,,,,,
 1489410,2026-06-25T20:00:00+00:00,UTC,MetLife Stadium,New York New Jersey,Not Started,NS,1,World Cup,2026,Group Stage - 3,2382,Ecuador,25,Germany,,,,,,,,
 1489409,2026-06-25T20:00:00+00:00,UTC,Lincoln Financial Field,Philadelphia,Not Started,NS,1,World Cup,2026,Group Stage - 3,5530,Curaçao,1501,Ivory Coast,,,,,,,,

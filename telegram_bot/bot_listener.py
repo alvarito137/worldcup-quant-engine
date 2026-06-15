@@ -12,6 +12,7 @@ from dotenv import load_dotenv
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ENV_PATH = os.path.join(BASE_DIR, ".env")
 
+
 load_dotenv(ENV_PATH)
 
 TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
@@ -20,6 +21,7 @@ REPORT_TIMEZONE = os.getenv("REPORT_TIMEZONE", "America/Toronto")
 REPORTS_DIR = os.path.join(BASE_DIR, "reports")
 FREE_REPORT_PATH = os.path.join(REPORTS_DIR, "telegram_free_intelligence.md")
 FREE_REPORT_META_PATH = os.path.join(REPORTS_DIR, "free_report_meta.json")
+PAYMENT_CLAIMS_PATH = os.path.join(REPORTS_DIR, "payment_claims.csv")
 
 
 def send_message(chat_id, message):
@@ -230,6 +232,29 @@ def handle_premium(chat_id):
 
     send_message(chat_id, message)
 
+def looks_like_email(text):
+    text = text.strip()
+
+    return (
+        "@" in text
+        and "." in text
+        and " " not in text
+        and len(text) >= 6
+    )
+
+
+def save_payment_claim(chat_id, email):
+    os.makedirs(REPORTS_DIR, exist_ok=True)
+
+    file_exists = os.path.exists(PAYMENT_CLAIMS_PATH)
+
+    with open(PAYMENT_CLAIMS_PATH, "a", encoding="utf-8") as file:
+        if not file_exists:
+            file.write("timestamp,chat_id,email,status\n")
+
+        timestamp = datetime.now(ZoneInfo(REPORT_TIMEZONE)).isoformat()
+
+        file.write(f"{timestamp},{chat_id},{email},pending_verification\n")
 
 def handle_update(update):
     message = update.get("message")
@@ -261,9 +286,23 @@ def handle_update(update):
         handle_premium(chat_id)
 
     else:
+     if looks_like_email(text):
+        email = text.strip().lower()
+
+        save_payment_claim(chat_id, email)
+
         send_message(
             chat_id,
-            "Command not recognized. Use /start, /free or /premium."
+            "Thanks. I received your payment email.\n\n"
+            "I will verify the payment in Stripe.\n"
+            "If the payment is confirmed, you will receive the private premium access link shortly."
+        )
+
+     else:
+        send_message(
+            chat_id,
+            "Command not recognized. Use /start, /free or /premium.\n\n"
+            "If you already paid for premium, send the email you used at checkout."
         )
 
 

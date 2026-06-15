@@ -1,5 +1,7 @@
 import os
 import pandas as pd
+from zoneinfo import ZoneInfo
+from dotenv import load_dotenv
 
 from probability_engine import (
     build_probability_summary,
@@ -10,6 +12,10 @@ from probability_engine import (
 
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+ENV_PATH = os.path.join(BASE_DIR, ".env")
+load_dotenv(ENV_PATH)
+
+REPORT_TIMEZONE = os.getenv("REPORT_TIMEZONE", "America/Toronto")
 
 RAW_DIR = os.path.join(BASE_DIR, "data", "raw")
 PROCESSED_DIR = os.path.join(BASE_DIR, "data", "processed")
@@ -18,6 +24,7 @@ REPORTS_DIR = os.path.join(BASE_DIR, "reports")
 ANGLES_INPUT_PATH = os.path.join(PROCESSED_DIR, "market_angles_with_odds.csv")
 RECENT_STATS_PATH = os.path.join(RAW_DIR, "api_football_team_recent_stats.csv")
 H2H_STATS_PATH = os.path.join(RAW_DIR, "api_football_h2h_stats.csv")
+FIXTURES_PATH = os.path.join(RAW_DIR, "api_football_fixtures.csv")
 
 OUTPUT_PATH = os.path.join(REPORTS_DIR, "telegram_premium_report.md")
 
@@ -132,6 +139,7 @@ def add_probability_block(lines, home_team, away_team, home_stats, away_stats):
 
 
 def build_market_text(row):
+    model_angle = str(row["selection"])
     matched_selection = str(row["matched_selection"])
     matched_point = row["matched_point"]
 
@@ -140,18 +148,41 @@ def build_market_text(row):
     else:
         available_line = f"{matched_selection} {matched_point}"
 
+    line_aggression = get_line_aggression_note(
+        model_angle=model_angle,
+        available_line=available_line
+    )
+
     lines = []
+
     lines.append("🎯 Available market watch")
-    lines.append(f"Model angle: {row['selection']}")
+    lines.append(f"Model angle: {model_angle}")
     lines.append(f"Available betting line: {available_line}")
     lines.append(f"Available odds around: {row['best_decimal_odds']}")
-    lines.append(f"Market profile: {get_profile_text(row['adjusted_profile'])}")
-    lines.append(f"Confidence on this available line: {float(row['adjusted_confidence_score']):.1%}")
-    lines.append(f"Line note: {row['line_note']}")
+
+    if line_aggression["status"] != "normal":
+        lines.append(f"Market profile: {line_aggression['profile']}")
+        lines.append(f"Line warning: {line_aggression['warning']}")
+        lines.append(f"Action: {line_aggression['action']}")
+    else:
+        lines.append(f"Market profile: {get_profile_text(row['adjusted_profile'])}")
+
     lines.append(
-    "Interpretation: The safest statistical direction and the available betting line may not be identical. "
-    "When they differ, treat the available line with extra caution."
-)
+        f"Confidence on this available line: "
+        f"{float(row['adjusted_confidence_score']):.1%}"
+    )
+
+    if line_aggression["status"] != "normal":
+        lines.append(
+            "Interpretation: The model likes the general direction, "
+            "but the sportsbook line is much harder than the model angle."
+        )
+    else:
+        lines.append(f"Line note: {row['line_note']}")
+        lines.append(
+            "Interpretation: The safest statistical direction and the available betting line may not be identical. "
+            "When they differ, treat the available line with extra caution."
+        )
 
     return lines
 
@@ -189,6 +220,157 @@ def build_premium_reason(row, home_team, away_team, home_stats, away_stats):
 
     return str(row["reason"])
 
+def attach_fixture_dates(angles, fixtures):
+    fixtures = fixtures.copy()
+
+    fixtures["match"] = (
+        fixtures["home_team"].astype(str)
+        + " vs "
+        + fixtures["away_team"].astype(str)
+    )
+
+    fixtures["fixture_date"] = pd.to_datetime(
+        fixtures["date"],
+        utc=True,
+        errors="coerce"
+    )
+
+    fixture_dates = fixtures[["match", "fixture_date"]].drop_duplicates()
+
+    angles = angles.merge(
+        fixture_dates,
+        on="match",
+        how="left"
+    )
+
+    return angles
+
+
+def format_kickoff_time(fixture_date):
+    if pd.isna(fixture_date):
+        return None
+
+    utc_time = pd.to_datetime(
+        fixture_date,
+        utc=True,
+        errors="coerce"
+    )
+
+    if pd.isna(utc_time):
+        return None
+
+    local_time = utc_time.tz_convert(ZoneInfo(REPORT_TIMEZONE))
+
+    return local_time.strftime("%b %d, %I:%M %p %Z")
+
+def build_premium_summary(top):
+    summary_lines = []
+
+    summary_lines.append("🔥 Next 5 Premium Watchlist Summary")
+    summary_lines.append("")
+    summary_lines.append("Top model angles:")
+
+    summary_candidates = top.copy()
+
+    summary_candidates = summary_candidates.sort_values(
+        by="adjusted_confidence_score",
+        ascending=False
+    ).head(3)
+
+    for index, (_, row) in enumerate(summary_candidates.iterrows(), start=1):
+        match = row.get("match", "Unknown match")
+        model_angle = row.get("selection", "Market watch")
+        confidence = row.get("adjusted_confidence_score", 0)
+
+        try:
+          confidence_value = float(confidence)
+
+          if confidence_value <= 1:
+           confidence_value = confidence_value * 100
+
+          confidence_text = f"{confidence_value:.0f}%"
+
+        except Exception:
+          confidence_text = "N/A"
+
+        summary_lines.append(
+            f"{index}. {match} — {model_angle} — {confidence_text}"
+        )
+
+    summary_lines.append("")
+    summary_lines.append("Next 5 match breakdown below.")
+    summary_lines.append("")
+    summary_lines.append("━━━━━━━━━━━━━━")
+    summary_lines.append("")
+
+    return summary_lines
+
+def extract_goal_line(text):
+    """
+    Extracts a numeric goal line from text like:
+    'Over 2.5', 'Under 3.5 Goals', 'Over 4.0'
+    """
+
+    if pd.isna(text):
+        return None
+
+    text = str(text)
+
+    for part in text.replace("Goals", "").split():
+        try:
+            return float(part)
+        except ValueError:
+            continue
+
+    return None
+
+
+def get_line_aggression_note(model_angle, available_line):
+    """
+    Compares the model's preferred market with the available sportsbook line.
+
+    Example:
+    Model angle: Over 1.5 Goals
+    Available line: Over 4.0
+
+    That is too aggressive and should be flagged.
+    """
+
+    model_line = extract_goal_line(model_angle)
+    market_line = extract_goal_line(available_line)
+
+    if model_line is None or market_line is None:
+        return {
+            "status": "normal",
+            "profile": None,
+            "warning": None,
+            "action": None,
+        }
+
+    difference = abs(market_line - model_line)
+
+    if difference >= 1.5:
+        return {
+            "status": "too_aggressive",
+            "profile": "Watch only",
+            "warning": "Available line is too aggressive compared with the model angle.",
+            "action": "Do not treat this as a strong betting spot.",
+        }
+
+    if difference >= 1.0:
+        return {
+            "status": "aggressive",
+            "profile": "High caution watch",
+            "warning": "Available line is meaningfully stricter than the model angle.",
+            "action": "Use extra caution before considering this market.",
+        }
+
+    return {
+        "status": "normal",
+        "profile": None,
+        "warning": None,
+        "action": None,
+    }
 
 def generate_premium_telegram_report():
     if not os.path.exists(ANGLES_INPUT_PATH):
@@ -209,27 +391,56 @@ def generate_premium_telegram_report():
     angles = pd.read_csv(ANGLES_INPUT_PATH)
     recent_stats = pd.read_csv(RECENT_STATS_PATH)
     h2h_stats = pd.read_csv(H2H_STATS_PATH)
+    fixtures = pd.read_csv(FIXTURES_PATH)
 
-    angles = angles[angles["odds_found"] == True].copy()
+    angles = angles[
+    (angles["odds_found"] == True)
+    & (angles["best_decimal_odds"].notna())
+    & (angles["matched_selection"].notna())
+    ].copy()
+
+    angles = attach_fixture_dates(angles, fixtures)
+
+    angles["fixture_date"] = pd.to_datetime(
+    angles["fixture_date"],
+    utc=True,
+    errors="coerce"
+   )
+
+    now = pd.Timestamp.now(tz="UTC")
+
+    angles = angles[
+    (angles["fixture_date"].notna())
+    & (angles["fixture_date"] >= now)
+    ].copy()
+
+    angles = angles.sort_values(
+    by=["fixture_date", "adjusted_confidence_score"],
+    ascending=[True, False]
+    )
+
+    top = angles.head(5)
 
     lines = []
+
     lines.append("⚽ World Cup Premium Intelligence")
     lines.append("")
-    lines.append("Full daily betting intelligence report.")
-    lines.append("Based on recent form, goal trends, previous meetings, model probabilities and betting lines.")
+    lines.append("Premium betting intelligence report for the next 5 upcoming matches.")
+    lines.append(
+      "Based on recent form, goal trends, previous meetings, model probabilities and betting lines."
+       )
     lines.append("")
     lines.append("No guaranteed bets. Educational only. Bet responsibly.")
     lines.append("")
 
-    if angles.empty:
+    if top.empty:
         lines.append("No premium market watchlist available today.")
     else:
-        angles = angles.sort_values(
-            by=["adjusted_confidence_score"],
-            ascending=False
-        )
+        lines.extend(build_premium_summary(top))
 
-        for i, (_, row) in enumerate(angles.iterrows(), start=1):
+    
+
+    for i, (_, row) in enumerate(top.iterrows(), start=1):
             home_team = row["home_team"]
             away_team = row["away_team"]
 
@@ -241,6 +452,15 @@ def generate_premium_telegram_report():
                 continue
 
             lines.append(f"{i}) {home_team} vs {away_team}")
+
+            kickoff_time = None
+
+            if "fixture_date" in row and pd.notna(row["fixture_date"]):
+             kickoff_time = format_kickoff_time(row["fixture_date"])
+
+            if kickoff_time:
+             lines.append(f"Kickoff: {kickoff_time}")
+
             lines.append("")
 
             lines.append("📊 Last 10 matches")
