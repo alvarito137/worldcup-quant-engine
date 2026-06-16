@@ -29,6 +29,7 @@ ANGLES_INPUT_PATH = os.path.join(PROCESSED_DIR, "market_angles_with_odds.csv")
 RECENT_STATS_PATH = os.path.join(RAW_DIR, "api_football_team_recent_stats.csv")
 H2H_STATS_PATH = os.path.join(RAW_DIR, "api_football_h2h_stats.csv")
 FIXTURES_PATH = os.path.join(RAW_DIR, "api_football_fixtures.csv")
+ADVANCED_STATS_PATH = os.path.join(RAW_DIR, "api_football_advanced_team_stats.csv")
 
 OUTPUT_PATH = os.path.join(REPORTS_DIR, "telegram_premium_report.md")
 
@@ -378,6 +379,84 @@ def get_line_aggression_note(model_angle, available_line):
         "action": None,
     }
 
+def find_advanced_stats(advanced_stats, team_name):
+    if advanced_stats is None:
+        return None
+
+    row = advanced_stats[advanced_stats["team"] == team_name]
+
+    if row.empty:
+        return None
+
+    return row.iloc[0]
+
+def add_advanced_match_block(lines, home_team, away_team, home_advanced, away_advanced):
+    lines.append("📈 Advanced match profile")
+
+    if home_advanced is None or away_advanced is None:
+        lines.append("Advanced stats not available for this matchup yet.")
+        lines.append("")
+        return
+
+    home_corners_for = float(home_advanced["avg_corners_for"])
+    home_corners_against = float(home_advanced["avg_corners_against"])
+    away_corners_for = float(away_advanced["avg_corners_for"])
+    away_corners_against = float(away_advanced["avg_corners_against"])
+
+    projected_home_corners = (home_corners_for + away_corners_against) / 2
+    projected_away_corners = (away_corners_for + home_corners_against) / 2
+    projected_total_corners = projected_home_corners + projected_away_corners
+
+    home_yellows = float(home_advanced["avg_yellow_cards"])
+    away_yellows = float(away_advanced["avg_yellow_cards"])
+    projected_total_yellows = home_yellows + away_yellows
+
+    home_fouls = float(home_advanced["avg_fouls"])
+    away_fouls = float(away_advanced["avg_fouls"])
+    projected_total_fouls = home_fouls + away_fouls
+
+    home_sog = float(home_advanced["avg_shots_on_goal"])
+    away_sog = float(away_advanced["avg_shots_on_goal"])
+
+    home_xg = float(home_advanced["avg_expected_goals"])
+    away_xg = float(away_advanced["avg_expected_goals"])
+
+    lines.append("Corners projection:")
+    lines.append(f"{home_team}: {projected_home_corners:.1f}")
+    lines.append(f"{away_team}: {projected_away_corners:.1f}")
+    lines.append(f"Projected total corners: {projected_total_corners:.1f}")
+    lines.append("")
+
+    lines.append("Cards / fouls profile:")
+    lines.append(f"{home_team} yellow cards avg: {home_yellows:.1f}")
+    lines.append(f"{away_team} yellow cards avg: {away_yellows:.1f}")
+    lines.append(f"Projected total yellow cards: {projected_total_yellows:.1f}")
+    lines.append(f"Projected total fouls: {projected_total_fouls:.1f}")
+    lines.append("")
+
+    lines.append("Shots / xG profile:")
+    lines.append(f"{home_team} shots on goal avg: {home_sog:.1f}")
+    lines.append(f"{away_team} shots on goal avg: {away_sog:.1f}")
+    lines.append(f"{home_team} recent xG avg: {home_xg:.2f}")
+    lines.append(f"{away_team} recent xG avg: {away_xg:.2f}")
+    lines.append("")
+
+    if projected_total_corners >= 9.5:
+        lines.append("Corners note: Higher corner activity profile.")
+    elif projected_total_corners >= 8.0:
+        lines.append("Corners note: Moderate corner activity profile.")
+    else:
+        lines.append("Corners note: Lower corner activity profile.")
+
+    if projected_total_yellows >= 4.5:
+        lines.append("Cards note: Higher cards profile based on recent averages.")
+    elif projected_total_yellows >= 3.0:
+        lines.append("Cards note: Moderate cards profile based on recent averages.")
+    else:
+        lines.append("Cards note: Lower cards profile based on recent averages.")
+
+    lines.append("")
+
 def generate_premium_telegram_report():
     if not os.path.exists(ANGLES_INPUT_PATH):
         raise FileNotFoundError(
@@ -398,6 +477,11 @@ def generate_premium_telegram_report():
     recent_stats = pd.read_csv(RECENT_STATS_PATH)
     h2h_stats = pd.read_csv(H2H_STATS_PATH)
     fixtures = pd.read_csv(FIXTURES_PATH)
+
+    advanced_stats = None
+
+    if os.path.exists(ADVANCED_STATS_PATH):
+     advanced_stats = pd.read_csv(ADVANCED_STATS_PATH)
 
     angles = angles[
     (angles["odds_found"] == True)
@@ -453,6 +537,8 @@ def generate_premium_telegram_report():
             home_stats = find_team_stats(recent_stats, home_team)
             away_stats = find_team_stats(recent_stats, away_team)
             h2h = find_h2h_stats(h2h_stats, home_team, away_team)
+            home_advanced = find_advanced_stats(advanced_stats, home_team)
+            away_advanced = find_advanced_stats(advanced_stats, away_team)
 
             if home_stats is None or away_stats is None:
                 continue
@@ -485,7 +571,14 @@ def generate_premium_telegram_report():
             home_stats,
             away_stats
           )
-
+            
+            add_advanced_match_block(
+              lines=lines,
+              home_team=home_team,
+              away_team=away_team,
+              home_advanced=home_advanced,
+              away_advanced=away_advanced,
+)
             market_lines = build_market_text(row)
             lines.extend(market_lines)
             lines.append("")

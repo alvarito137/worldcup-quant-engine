@@ -16,66 +16,7 @@ Next 5 match breakdown below.
 
 ━━━━━━━━━━━━━━
 
-1) Iran vs New Zealand
-Kickoff: Jun 15, 09:00 PM EDT
-
-📊 Last 10 matches
-Iran: 4W-2D-2L
-Goals: 14 scored / 5 conceded
-Average: 1.75 scored / 0.62 conceded
-Games over 2.5 goals: 50%
-Games where both teams scored: 38%
-Clean sheet rate: 62%
-Failed to score rate: 25%
-
-New Zealand: 1W-1D-8L
-Goals: 7 scored / 18 conceded
-Average: 0.70 scored / 1.80 conceded
-Games over 2.5 goals: 40%
-Games where both teams scored: 40%
-Clean sheet rate: 0%
-Failed to score rate: 60%
-
-🤝 Previous meetings between both teams
-Not enough recent direct-meeting data found.
-
-🧠 Most likely by stats
-Most likely market: Under 3.5 Goals
-Estimated probability: 77%
-Profile: Strong statistical lean
-
-Projected goals:
-Iran: 1.77
-New Zealand: 0.66
-Projected total goals: 2.43
-
-Full probability table:
-Under 2.5 goals: 56%
-Over 2.5 goals: 44%
-Under 3.5 goals: 77%
-Over 1.5 goals: 70%
-Both teams score - Yes: 40%
-Both teams score - No: 60%
-Iran over 0.5 goals: 83%
-New Zealand over 0.5 goals: 48%
-Iran over 1.5 goals: 53%
-New Zealand over 1.5 goals: 14%
-
-🎯 Available market watch
-Model angle: Under 3.5 Goals
-Available betting line: Under 2.5
-Available odds around: 1.57
-Market profile: High caution watch
-Line warning: Available line is meaningfully stricter than the model angle.
-Action: Use extra caution before considering this market.
-Confidence on this available line: 55.7%
-Interpretation: The model likes the general direction, but the sportsbook line is much harder than the model angle.
-
-🧠 Premium read
-The main signal comes from the defensive side of the matchup. Iran are averaging 0.62 goals conceded recently, while New Zealand are averaging 1.80. The safer statistical direction is lower goals, but the available betting line may be stricter, so this should be treated as a watchlist market rather than a guaranteed pick.
-🧠 AI Premium read
-The main signal comes from the defensive side of the matchup. Iran are averaging 0.62 goals conceded recently, while New Zealand are averaging 1.80. The safer statistical direction is lower goals, but the available betting line may be stricter, so this should be treated as a watchlist market rather than a guaranteed pick.
-2) France vs Senegal
+1) France vs Senegal
 Kickoff: Jun 16, 03:00 PM EDT
 
 📊 Last 10 matches
@@ -120,6 +61,27 @@ Senegal over 0.5 goals: 71%
 France over 1.5 goals: 51%
 Senegal over 1.5 goals: 36%
 
+📈 Advanced match profile
+Corners projection:
+France: 4.7
+Senegal: 4.3
+Projected total corners: 9.1
+
+Cards / fouls profile:
+France yellow cards avg: 1.2
+Senegal yellow cards avg: 1.6
+Projected total yellow cards: 2.8
+Projected total fouls: 24.6
+
+Shots / xG profile:
+France shots on goal avg: 6.5
+Senegal shots on goal avg: 7.0
+France recent xG avg: 1.65
+Senegal recent xG avg: 0.00
+
+Corners note: Moderate corner activity profile.
+Cards note: Lower cards profile based on recent averages.
+
 🎯 Available market watch
 Model angle: Over 1.5 Goals
 Available betting line: Over 2.5
@@ -134,7 +96,7 @@ Interpretation: The model likes the general direction, but the sportsbook line i
 The goals angle comes from recent attacking and conceding trends. France are averaging 2.50 goals scored recently, while Senegal are averaging 1.60. The model sees enough attacking profile for a goals watch, but risk depends on the available line.
 🧠 AI Premium read
 The goals angle comes from recent attacking and conceding trends. France are averaging 2.50 goals scored recently, while Senegal are averaging 1.60. The model sees enough attacking profile for a goals watch, but risk depends on the available line.
-3) Iraq vs Norway
+2) Iraq vs Norway
 Kickoff: Jun 16, 06:00 PM EDT
 
 📊 Last 10 matches
@@ -179,6 +141,27 @@ Norway over 0.5 goals: 87%
 Iraq over 1.5 goals: 25%
 Norway over 1.5 goals: 61%
 
+📈 Advanced match profile
+Corners projection:
+Iraq: 3.6
+Norway: 5.7
+Projected total corners: 9.3
+
+Cards / fouls profile:
+Iraq yellow cards avg: 1.3
+Norway yellow cards avg: 0.6
+Projected total yellow cards: 1.9
+Projected total fouls: 19.4
+
+Shots / xG profile:
+Iraq shots on goal avg: 3.0
+Norway shots on goal avg: 5.4
+Iraq recent xG avg: 0.00
+Norway recent xG avg: 1.45
+
+Corners note: Moderate corner activity profile.
+Cards note: Lower cards profile based on recent averages.
+
 🎯 Available market watch
 Model angle: Over 1.5 Goals
 Available betting line: Over 2.5
@@ -193,7 +176,7 @@ Interpretation: The model likes the general direction, but the sportsbook line i
 The goals angle comes from recent attacking and conceding trends. Iraq are averaging 1.10 goals scored recently, while Norway are averaging 3.10. The model sees enough attacking profile for a goals watch, but risk depends on the available line.
 🧠 AI Premium read
 The goals angle comes from recent attacking and conceding trends. Iraq are averaging 1.10 goals scored recently, while Norway are averaging 3.10. The model sees enough attacking profile for a goals watch, but risk depends on the available line.
-4) Argentina vs Algeria
+3) Argentina vs Algeria
 Kickoff: Jun 16, 09:00 PM EDT
 
 📊 Last 10 matches
@@ -238,6 +221,27 @@ Algeria over 0.5 goals: 69%
 Argentina over 1.5 goals: 45%
 Algeria over 1.5 goals: 33%
 
+📈 Advanced match profile
+Corners projection:
+Argentina: 4.2
+Algeria: 3.4
+Projected total corners: 7.6
+
+Cards / fouls profile:
+Argentina yellow cards avg: 1.3
+Algeria yellow cards avg: 2.0
+Projected total yellow cards: 3.3
+Projected total fouls: 27.9
+
+Shots / xG profile:
+Argentina shots on goal avg: 5.7
+Algeria shots on goal avg: 3.3
+Argentina recent xG avg: 0.00
+Algeria recent xG avg: 0.00
+
+Corners note: Lower corner activity profile.
+Cards note: Moderate cards profile based on recent averages.
+
 🎯 Available market watch
 Model angle: Under 3.5 Goals
 Available betting line: Under 2.5
@@ -252,7 +256,7 @@ Interpretation: The model likes the general direction, but the sportsbook line i
 The main signal comes from the defensive side of the matchup. Argentina are averaging 0.25 goals conceded recently, while Algeria are averaging 0.40. The safer statistical direction is lower goals, but the available betting line may be stricter, so this should be treated as a watchlist market rather than a guaranteed pick.
 🧠 AI Premium read
 The main signal comes from the defensive side of the matchup. Argentina are averaging 0.25 goals conceded recently, while Algeria are averaging 0.40. The safer statistical direction is lower goals, but the available betting line may be stricter, so this should be treated as a watchlist market rather than a guaranteed pick.
-5) Austria vs Jordan
+4) Austria vs Jordan
 Kickoff: Jun 17, 12:00 AM EDT
 
 📊 Last 10 matches
@@ -297,6 +301,27 @@ Jordan over 0.5 goals: 66%
 Austria over 1.5 goals: 60%
 Jordan over 1.5 goals: 29%
 
+📈 Advanced match profile
+Corners projection:
+Austria: 4.2
+Jordan: 3.1
+Projected total corners: 7.3
+
+Cards / fouls profile:
+Austria yellow cards avg: 1.7
+Jordan yellow cards avg: 0.3
+Projected total yellow cards: 2.0
+Projected total fouls: 19.1
+
+Shots / xG profile:
+Austria shots on goal avg: 5.7
+Jordan shots on goal avg: 3.3
+Austria recent xG avg: 1.42
+Jordan recent xG avg: 0.00
+
+Corners note: Lower corner activity profile.
+Cards note: Lower cards profile based on recent averages.
+
 🎯 Available market watch
 Model angle: Over 1.5 Goals
 Available betting line: Over 2.5
@@ -311,6 +336,85 @@ Interpretation: The model likes the general direction, but the sportsbook line i
 The goals angle comes from recent attacking and conceding trends. Austria are averaging 2.56 goals scored recently, while Jordan are averaging 1.70. The model sees enough attacking profile for a goals watch, but risk depends on the available line.
 🧠 AI Premium read
 The goals angle comes from recent attacking and conceding trends. Austria are averaging 2.56 goals scored recently, while Jordan are averaging 1.70. The model sees enough attacking profile for a goals watch, but risk depends on the available line.
+5) Portugal vs Congo DR
+Kickoff: Jun 17, 01:00 PM EDT
+
+📊 Last 10 matches
+Portugal: 7W-2D-1L
+Goals: 26 scored / 9 conceded
+Average: 2.60 scored / 0.90 conceded
+Games over 2.5 goals: 60%
+Games where both teams scored: 50%
+Clean sheet rate: 40%
+Failed to score rate: 20%
+
+Congo DR: 5W-3D-2L
+Goals: 12 scored / 5 conceded
+Average: 1.20 scored / 0.50 conceded
+Games over 2.5 goals: 20%
+Games where both teams scored: 30%
+Clean sheet rate: 60%
+Failed to score rate: 20%
+
+🤝 Previous meetings between both teams
+Not enough recent direct-meeting data found.
+
+🧠 Most likely by stats
+Most likely market: Under 3.5 Goals
+Estimated probability: 74%
+Profile: Strong statistical lean
+
+Projected goals:
+Portugal: 1.55
+Congo DR: 1.05
+Projected total goals: 2.60
+
+Full probability table:
+Under 2.5 goals: 52%
+Over 2.5 goals: 48%
+Under 3.5 goals: 74%
+Over 1.5 goals: 73%
+Both teams score - Yes: 51%
+Both teams score - No: 49%
+Portugal over 0.5 goals: 79%
+Congo DR over 0.5 goals: 65%
+Portugal over 1.5 goals: 46%
+Congo DR over 1.5 goals: 28%
+
+📈 Advanced match profile
+Corners projection:
+Portugal: 4.1
+Congo DR: 2.6
+Projected total corners: 6.7
+
+Cards / fouls profile:
+Portugal yellow cards avg: 1.2
+Congo DR yellow cards avg: 1.1
+Projected total yellow cards: 2.3
+Projected total fouls: 19.1
+
+Shots / xG profile:
+Portugal shots on goal avg: 6.8
+Congo DR shots on goal avg: 2.0
+Portugal recent xG avg: 2.06
+Congo DR recent xG avg: 0.00
+
+Corners note: Lower corner activity profile.
+Cards note: Lower cards profile based on recent averages.
+
+🎯 Available market watch
+Model angle: Under 3.5 Goals
+Available betting line: Under 2.75
+Available odds around: 1.93
+Market profile: Caution watch
+Confidence on this available line: 54.0%
+Line note: Closest available line is more aggressive than the model angle.
+Interpretation: The safest statistical direction and the available betting line may not be identical. When they differ, treat the available line with extra caution.
+
+🧠 Premium read
+The main signal comes from the defensive side of the matchup. Portugal are averaging 0.90 goals conceded recently, while Congo DR are averaging 0.50. The safer statistical direction is lower goals, but the available betting line may be stricter, so this should be treated as a watchlist market rather than a guaranteed pick.
+🧠 AI Premium read
+The main signal comes from the defensive side of the matchup. Portugal are averaging 0.90 goals conceded recently, while Congo DR are averaging 0.50. The safer statistical direction is lower goals, but the available betting line may be stricter, so this should be treated as a watchlist market rather than a guaranteed pick.
 
 Premium beta note:
 This product is still improving. Future updates may include lineup alerts, player scoring watch, corners and cards once reliable data is connected.
