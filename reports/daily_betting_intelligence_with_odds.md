@@ -150,7 +150,27 @@ Bookmakers found: **5**
 
 Reason: Projected total goals: 3.1. Both teams combine for enough attacking volume.
 
-### 8. Uzbekistan vs Colombia
+### 8. USA vs Australia
+
+Market: **Total Goals**
+Model angle: **Over 1.5 Goals**
+Original profile: **BALANCED**
+Original confidence: **73.2%**
+Adjusted profile: **BALANCED**
+Adjusted confidence: **61.2%**
+
+Available market: **totals**
+Matched line: **Over 2.5**
+Exact line match: **False**
+Line note: **Closest available line is more aggressive than the model angle.**
+Average odds: **1.934**
+Best odds: **2.0**
+Best bookmaker: **BetMGM**
+Bookmakers found: **7**
+
+Reason: Projected total goals: 3.1. Both teams combine for enough attacking volume.
+
+### 9. Uzbekistan vs Colombia
 
 Market: **Total Goals**
 Model angle: **Over 1.5 Goals**
@@ -163,14 +183,14 @@ Available market: **totals**
 Matched line: **Over 2.5**
 Exact line match: **False**
 Line note: **Closest available line is more aggressive than the model angle.**
-Average odds: **1.926**
+Average odds: **1.921**
 Best odds: **1.96**
 Best bookmaker: **BetOnline.ag**
 Bookmakers found: **7**
 
 Reason: Projected total goals: 3.05. Both teams combine for enough attacking volume.
 
-### 9. Iraq vs Norway
+### 10. Iraq vs Norway
 
 Market: **Total Goals**
 Model angle: **Over 1.5 Goals**
@@ -183,32 +203,12 @@ Available market: **totals**
 Matched line: **Over 2.5**
 Exact line match: **False**
 Line note: **Closest available line is more aggressive than the model angle.**
-Average odds: **1.59**
+Average odds: **1.585**
 Best odds: **1.61**
 Best bookmaker: **BetMGM**
 Bookmakers found: **2**
 
 Reason: Projected total goals: 3.0. Both teams combine for enough attacking volume.
-
-### 10. France vs Senegal
-
-Market: **Total Goals**
-Model angle: **Over 1.5 Goals**
-Original profile: **BALANCED**
-Original confidence: **71.4%**
-Adjusted profile: **AGGRESSIVE**
-Adjusted confidence: **59.4%**
-
-Available market: **totals**
-Matched line: **Over 2.5**
-Exact line match: **False**
-Line note: **Closest available line is more aggressive than the model angle.**
-Average odds: **1.784**
-Best odds: **1.82**
-Best bookmaker: **BetOnline.ag**
-Bookmakers found: **5**
-
-Reason: Projected total goals: 2.95. Both teams combine for enough attacking volume.
 
 ## Responsible Betting Note
 

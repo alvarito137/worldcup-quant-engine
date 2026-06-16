@@ -73,7 +73,16 @@ Confidence: **73.2%**
 
 Reason: Projected total goals: 3.1. Both teams combine for enough attacking volume.
 
-### 8. Uzbekistan vs Colombia
+### 8. USA vs Australia
+
+Market: **Total Goals**
+Selection: **Over 1.5 Goals**
+Profile: **BALANCED**
+Confidence: **73.2%**
+
+Reason: Projected total goals: 3.1. Both teams combine for enough attacking volume.
+
+### 9. Uzbekistan vs Colombia
 
 Market: **Total Goals**
 Selection: **Over 1.5 Goals**
@@ -82,7 +91,7 @@ Confidence: **72.6%**
 
 Reason: Projected total goals: 3.05. Both teams combine for enough attacking volume.
 
-### 9. Iraq vs Norway
+### 10. Iraq vs Norway
 
 Market: **Total Goals**
 Selection: **Over 1.5 Goals**
@@ -90,15 +99,6 @@ Profile: **BALANCED**
 Confidence: **72.0%**
 
 Reason: Projected total goals: 3.0. Both teams combine for enough attacking volume.
-
-### 10. France vs Senegal
-
-Market: **Total Goals**
-Selection: **Over 1.5 Goals**
-Profile: **BALANCED**
-Confidence: **71.4%**
-
-Reason: Projected total goals: 2.95. Both teams combine for enough attacking volume.
 
 ## Responsible Betting Note
 

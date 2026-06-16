@@ -1,5 +1,4 @@
 home_team_id,away_team_id,home_team,away_team,h2h_matches_found,home_team_h2h_wins,away_team_h2h_wins,h2h_draws,h2h_avg_goals,h2h_over_2_5_rate,h2h_btts_rate
-2,13,France,Senegal,0,0,0,0,0.0,0.0,0.0
 1567,1090,Iraq,Norway,0,0,0,0,0.0,0.0,0.0
 26,1532,Argentina,Algeria,0,0,0,0,0.0,0.0,0.0
 775,1548,Austria,Jordan,0,0,0,0,0.0,0.0,0.0
@@ -11,3 +10,4 @@ home_team_id,away_team_id,home_team,away_team,h2h_matches_found,home_team_h2h_wi
 15,1113,Switzerland,Bosnia & Herzegovina,0,0,0,0,0.0,0.0,0.0
 5529,1569,Canada,Qatar,1,1,0,0,2.0,0.0,0.0
 16,17,Mexico,South Korea,3,2,0,1,4.0,1.0,1.0
+2384,20,USA,Australia,1,1,0,0,3.0,1.0,1.0
