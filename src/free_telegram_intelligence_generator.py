@@ -494,6 +494,10 @@ def generate_free_telegram_intelligence():
 
             if kickoff_time:
                 lines.append(f"Kickoff: {kickoff_time}")
+            
+            lines.append(
+              "Why selected: Upcoming match with available odds and a clear statistical watchlist angle."
+              )
 
             lines.append("")
             lines.append("━━━━━━━━━━━━━━")
@@ -546,7 +550,7 @@ def generate_free_telegram_intelligence():
             lines.append(f"Model angle: {row['selection']}")
             lines.append(f"Available line: {available_line}")
             lines.append(f"Odds around: {row['best_decimal_odds']}")
-            lines.append(f"Confidence on available line: {float(row['adjusted_confidence_score']):.1%}")
+            lines.append(f"Model confidence on this line: {float(row['adjusted_confidence_score']):.1%}")
             lines.append("")
             lines.append(f"Risk profile: {risk_profile}")
             lines.append(f"Reason: {risk_reason}")
@@ -557,13 +561,16 @@ def generate_free_telegram_intelligence():
             lines.append("━━━━━━━━━━━━━━")
             lines.append("")
 
-            lines.append("🔒 Premium includes:")
+            lines.append("🔒 Want the full board?")
+            lines.append("")
+            lines.append("Premium includes:")
             lines.append("- Next 5 upcoming matches")
-            lines.append("- Full probability tables")
+            lines.append("- Full model probabilities")
             lines.append("- Odds comparison")
-            lines.append("- Risk labels")
+            lines.append("- Risk labels for each market")
             lines.append("- Strong watch / caution watch filters")
             lines.append("- Deeper match reasoning")
+            lines.append("- Private premium Telegram access")
             lines.append("")
             lines.append("Use /premium to see access info.")
             lines.append("")

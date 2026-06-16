@@ -6,6 +6,7 @@ No guaranteed bets. Educational only. Bet responsibly.
 Today’s selected match:
 ⚽ Iran vs New Zealand
 Kickoff: Jun 15, 09:00 PM EDT
+Why selected: Upcoming match with available odds and a clear statistical watchlist angle.
 
 ━━━━━━━━━━━━━━
 
@@ -67,7 +68,7 @@ Not enough recent direct-meeting data found.
 Model angle: Under 3.5 Goals
 Available line: Under 2.5
 Odds around: 1.57
-Confidence on available line: 55.7%
+Model confidence on this line: 55.7%
 
 Risk profile: High caution watch
 Reason: The model likes the general direction, but the available line is stricter.
@@ -76,13 +77,16 @@ Verdict: Watchlist spot, not a guaranteed bet.
 
 ━━━━━━━━━━━━━━
 
-🔒 Premium includes:
+🔒 Want the full board?
+
+Premium includes:
 - Next 5 upcoming matches
-- Full probability tables
+- Full model probabilities
 - Odds comparison
-- Risk labels
+- Risk labels for each market
 - Strong watch / caution watch filters
 - Deeper match reasoning
+- Private premium Telegram access
 
 Use /premium to see access info.
 
