@@ -77,7 +77,7 @@ Shots / xG profile:
 France shots on goal avg: 6.5
 Senegal shots on goal avg: 7.0
 France recent xG avg: 1.65
-Senegal recent xG avg: 0.00
+Senegal recent xG avg: N/A
 
 Corners note: Moderate corner activity profile.
 Cards note: Lower cards profile based on recent averages.
@@ -89,13 +89,14 @@ Available odds around: 1.95
 Market profile: High caution watch
 Line warning: Available line is meaningfully stricter than the model angle.
 Action: Use extra caution before considering this market.
-Confidence on this available line: 59.4%
+Model confidence on this line: 59.4%
 Interpretation: The model likes the general direction, but the sportsbook line is much harder than the model angle.
 
 🧠 Premium read
 The goals angle comes from recent attacking and conceding trends. France are averaging 2.50 goals scored recently, while Senegal are averaging 1.60. The model sees enough attacking profile for a goals watch, but risk depends on the available line.
-🧠 AI Premium read
-The goals angle comes from recent attacking and conceding trends. France are averaging 2.50 goals scored recently, while Senegal are averaging 1.60. The model sees enough attacking profile for a goals watch, but risk depends on the available line.
+
+━━━━━━━━━━━━━━
+
 2) Iraq vs Norway
 Kickoff: Jun 16, 06:00 PM EDT
 
@@ -156,7 +157,7 @@ Projected total fouls: 19.4
 Shots / xG profile:
 Iraq shots on goal avg: 3.0
 Norway shots on goal avg: 5.4
-Iraq recent xG avg: 0.00
+Iraq recent xG avg: N/A
 Norway recent xG avg: 1.45
 
 Corners note: Moderate corner activity profile.
@@ -169,13 +170,14 @@ Available odds around: 1.61
 Market profile: High caution watch
 Line warning: Available line is meaningfully stricter than the model angle.
 Action: Use extra caution before considering this market.
-Confidence on this available line: 60.0%
+Model confidence on this line: 60.0%
 Interpretation: The model likes the general direction, but the sportsbook line is much harder than the model angle.
 
 🧠 Premium read
 The goals angle comes from recent attacking and conceding trends. Iraq are averaging 1.10 goals scored recently, while Norway are averaging 3.10. The model sees enough attacking profile for a goals watch, but risk depends on the available line.
-🧠 AI Premium read
-The goals angle comes from recent attacking and conceding trends. Iraq are averaging 1.10 goals scored recently, while Norway are averaging 3.10. The model sees enough attacking profile for a goals watch, but risk depends on the available line.
+
+━━━━━━━━━━━━━━
+
 3) Argentina vs Algeria
 Kickoff: Jun 16, 09:00 PM EDT
 
@@ -236,8 +238,8 @@ Projected total fouls: 27.9
 Shots / xG profile:
 Argentina shots on goal avg: 5.7
 Algeria shots on goal avg: 3.3
-Argentina recent xG avg: 0.00
-Algeria recent xG avg: 0.00
+Argentina recent xG avg: N/A
+Algeria recent xG avg: N/A
 
 Corners note: Lower corner activity profile.
 Cards note: Moderate cards profile based on recent averages.
@@ -249,13 +251,14 @@ Available odds around: 1.91
 Market profile: High caution watch
 Line warning: Available line is meaningfully stricter than the model angle.
 Action: Use extra caution before considering this market.
-Confidence on this available line: 53.1%
+Model confidence on this line: 53.1%
 Interpretation: The model likes the general direction, but the sportsbook line is much harder than the model angle.
 
 🧠 Premium read
 The main signal comes from the defensive side of the matchup. Argentina are averaging 0.25 goals conceded recently, while Algeria are averaging 0.40. The safer statistical direction is lower goals, but the available betting line may be stricter, so this should be treated as a watchlist market rather than a guaranteed pick.
-🧠 AI Premium read
-The main signal comes from the defensive side of the matchup. Argentina are averaging 0.25 goals conceded recently, while Algeria are averaging 0.40. The safer statistical direction is lower goals, but the available betting line may be stricter, so this should be treated as a watchlist market rather than a guaranteed pick.
+
+━━━━━━━━━━━━━━
+
 4) Austria vs Jordan
 Kickoff: Jun 17, 12:00 AM EDT
 
@@ -317,7 +320,7 @@ Shots / xG profile:
 Austria shots on goal avg: 5.7
 Jordan shots on goal avg: 3.3
 Austria recent xG avg: 1.42
-Jordan recent xG avg: 0.00
+Jordan recent xG avg: N/A
 
 Corners note: Lower corner activity profile.
 Cards note: Lower cards profile based on recent averages.
@@ -329,13 +332,14 @@ Available odds around: 1.71
 Market profile: High caution watch
 Line warning: Available line is meaningfully stricter than the model angle.
 Action: Use extra caution before considering this market.
-Confidence on this available line: 61.2%
+Model confidence on this line: 61.2%
 Interpretation: The model likes the general direction, but the sportsbook line is much harder than the model angle.
 
 🧠 Premium read
 The goals angle comes from recent attacking and conceding trends. Austria are averaging 2.56 goals scored recently, while Jordan are averaging 1.70. The model sees enough attacking profile for a goals watch, but risk depends on the available line.
-🧠 AI Premium read
-The goals angle comes from recent attacking and conceding trends. Austria are averaging 2.56 goals scored recently, while Jordan are averaging 1.70. The model sees enough attacking profile for a goals watch, but risk depends on the available line.
+
+━━━━━━━━━━━━━━
+
 5) Portugal vs Congo DR
 Kickoff: Jun 17, 01:00 PM EDT
 
@@ -397,7 +401,7 @@ Shots / xG profile:
 Portugal shots on goal avg: 6.8
 Congo DR shots on goal avg: 2.0
 Portugal recent xG avg: 2.06
-Congo DR recent xG avg: 0.00
+Congo DR recent xG avg: N/A
 
 Corners note: Lower corner activity profile.
 Cards note: Lower cards profile based on recent averages.
@@ -407,14 +411,15 @@ Model angle: Under 3.5 Goals
 Available betting line: Under 2.75
 Available odds around: 1.93
 Market profile: Caution watch
-Confidence on this available line: 54.0%
+Model confidence on this line: 54.0%
 Line note: Closest available line is more aggressive than the model angle.
 Interpretation: The safest statistical direction and the available betting line may not be identical. When they differ, treat the available line with extra caution.
 
 🧠 Premium read
 The main signal comes from the defensive side of the matchup. Portugal are averaging 0.90 goals conceded recently, while Congo DR are averaging 0.50. The safer statistical direction is lower goals, but the available betting line may be stricter, so this should be treated as a watchlist market rather than a guaranteed pick.
-🧠 AI Premium read
-The main signal comes from the defensive side of the matchup. Portugal are averaging 0.90 goals conceded recently, while Congo DR are averaging 0.50. The safer statistical direction is lower goals, but the available betting line may be stricter, so this should be treated as a watchlist market rather than a guaranteed pick.
+
+━━━━━━━━━━━━━━
+
 
 Premium beta note:
 This product is still improving. Future updates may include lineup alerts, player scoring watch, corners and cards once reliable data is connected.

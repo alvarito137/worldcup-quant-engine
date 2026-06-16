@@ -10,10 +10,10 @@ from probability_engine import (
     format_probability,
 )
 
-from ai_match_analyst import (
-    build_match_data_payload,
-    generate_ai_premium_read,
-)
+# from ai_match_analyst import (
+#    build_match_data_payload,
+#    generate_ai_premium_read,
+# )
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ENV_PATH = os.path.join(BASE_DIR, ".env")
@@ -174,10 +174,7 @@ def build_market_text(row):
     else:
         lines.append(f"Market profile: {get_profile_text(row['adjusted_profile'])}")
 
-    lines.append(
-        f"Confidence on this available line: "
-        f"{float(row['adjusted_confidence_score']):.1%}"
-    )
+    lines.append(f"Model confidence on this line: {float(row['adjusted_confidence_score']):.1%}")
 
     if line_aggression["status"] != "normal":
         lines.append(
@@ -421,6 +418,9 @@ def add_advanced_match_block(lines, home_team, away_team, home_advanced, away_ad
     home_xg = float(home_advanced["avg_expected_goals"])
     away_xg = float(away_advanced["avg_expected_goals"])
 
+    home_xg_text = "N/A" if home_xg == 0 else f"{home_xg:.2f}"
+    away_xg_text = "N/A" if away_xg == 0 else f"{away_xg:.2f}"
+
     lines.append("Corners projection:")
     lines.append(f"{home_team}: {projected_home_corners:.1f}")
     lines.append(f"{away_team}: {projected_away_corners:.1f}")
@@ -437,8 +437,8 @@ def add_advanced_match_block(lines, home_team, away_team, home_advanced, away_ad
     lines.append("Shots / xG profile:")
     lines.append(f"{home_team} shots on goal avg: {home_sog:.1f}")
     lines.append(f"{away_team} shots on goal avg: {away_sog:.1f}")
-    lines.append(f"{home_team} recent xG avg: {home_xg:.2f}")
-    lines.append(f"{away_team} recent xG avg: {away_xg:.2f}")
+    lines.append(f"{home_team} recent xG avg: {home_xg_text}")
+    lines.append(f"{away_team} recent xG avg: {away_xg_text}")
     lines.append("")
 
     if projected_total_corners >= 9.5:
@@ -601,33 +601,12 @@ def generate_premium_telegram_report():
                }
 
             kickoff_for_ai = kickoff_time if kickoff_time else "Unknown"
-
-            match_payload = build_match_data_payload(
-            home_team=home_team,
-            away_team=away_team,
-            kickoff_time=kickoff_for_ai,
-            home_stats=home_stats,
-            away_stats=away_stats,
-            h2h=h2h,
-            probabilities=probabilities,
-            market_data=market_data,
-             )
-
-            ai_read = generate_ai_premium_read(match_payload)
-
-            if ai_read:
-              lines.append("🧠 AI Premium read")
-              lines.append(ai_read)
-            else:
-               lines.append("🧠 Premium read")
-               lines.append(build_premium_reason(row, home_team, away_team, home_stats, away_stats))
-
-            lines.append("🧠 AI Premium read")
-
-            if ai_read:
-              lines.append(ai_read)
-            else:
-             lines.append(build_premium_reason(row, home_team, away_team, home_stats, away_stats))
+            
+            lines.append("🧠 Premium read")
+            lines.append(build_premium_reason(row, home_team, away_team, home_stats, away_stats))
+            lines.append("")
+            lines.append("━━━━━━━━━━━━━━")
+            lines.append("")
 
     lines.append("")
 
