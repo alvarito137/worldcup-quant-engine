@@ -10,6 +10,10 @@ from probability_engine import (
     format_probability,
 )
 
+from ai_match_analyst import (
+    build_match_data_payload,
+    generate_ai_premium_read,
+)
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ENV_PATH = os.path.join(BASE_DIR, ".env")
@@ -136,6 +140,8 @@ def add_probability_block(lines, home_team, away_team, home_stats, away_stats):
     lines.append(f"{home_team} over 1.5 goals: {format_probability(probabilities['home_over_1_5'])}")
     lines.append(f"{away_team} over 1.5 goals: {format_probability(probabilities['away_over_1_5'])}")
     lines.append("")
+
+    return probabilities, best_market, best_probability, profile
 
 
 def build_market_text(row):
@@ -472,17 +478,65 @@ def generate_premium_telegram_report():
             add_h2h_block(lines, h2h, home_team, away_team)
             lines.append("")
 
-            add_probability_block(lines, home_team, away_team, home_stats, away_stats)
+            probabilities, best_market, best_probability, model_profile = add_probability_block(
+            lines,
+            home_team,
+            away_team,
+            home_stats,
+            away_stats
+          )
 
             market_lines = build_market_text(row)
             lines.extend(market_lines)
             lines.append("")
 
-            lines.append("🧠 Premium read")
-            lines.append(build_premium_reason(row, home_team, away_team, home_stats, away_stats))
-            lines.append("")
-            lines.append("━━━━━━━━━━━━━━")
-            lines.append("")
+            matched_selection = str(row["matched_selection"])
+            matched_point = row["matched_point"]
+
+            if pd.isna(matched_point):
+             available_line = matched_selection
+            else:
+             available_line = f"{matched_selection} {matched_point}"
+
+            market_data = {
+              "model_angle": str(row["selection"]),
+              "available_betting_line": available_line,
+              "available_odds": float(row["best_decimal_odds"]),
+              "market_profile": get_profile_text(row["adjusted_profile"]),
+              "confidence_on_available_line": float(row["adjusted_confidence_score"]),
+              "line_note": str(row["line_note"]),
+               }
+
+            kickoff_for_ai = kickoff_time if kickoff_time else "Unknown"
+
+            match_payload = build_match_data_payload(
+            home_team=home_team,
+            away_team=away_team,
+            kickoff_time=kickoff_for_ai,
+            home_stats=home_stats,
+            away_stats=away_stats,
+            h2h=h2h,
+            probabilities=probabilities,
+            market_data=market_data,
+             )
+
+            ai_read = generate_ai_premium_read(match_payload)
+
+            if ai_read:
+              lines.append("🧠 AI Premium read")
+              lines.append(ai_read)
+            else:
+               lines.append("🧠 Premium read")
+               lines.append(build_premium_reason(row, home_team, away_team, home_stats, away_stats))
+
+            lines.append("🧠 AI Premium read")
+
+            if ai_read:
+              lines.append(ai_read)
+            else:
+             lines.append(build_premium_reason(row, home_team, away_team, home_stats, away_stats))
+
+    lines.append("")
 
     lines.append("Premium beta note:")
     lines.append("This product is still improving. Future updates may include lineup alerts, player scoring watch, corners and cards once reliable data is connected.")

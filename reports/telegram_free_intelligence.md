@@ -1,65 +1,89 @@
-⚽ World Cup Free Betting Intelligence
+⚽ World Cup Free Match Intelligence
 
-Main match betting watchlist for today.
-Based on recent form, goals scored/conceded, previous meetings and betting lines.
-
+One selected match. Data-backed football analysis before the game.
 No guaranteed bets. Educational only. Bet responsibly.
 
-⚽ Canada vs Bosnia & Herzegovina
-Kickoff: Jun 12, 03:00 PM EDT
+Today’s selected match:
+⚽ Iran vs New Zealand
+Kickoff: Jun 15, 09:00 PM EDT
 
-📊 Last 10 matches
-Canada: 4W-5D-1L
-Goals: 9 scored / 4 conceded
-Avg: 0.90 scored / 0.40 conceded
-Over 2.5 trend: 10%
-Games where both teams scored: 20%
+━━━━━━━━━━━━━━
 
-Bosnia & Herzegovina: 3W-6D-1L
-Goals: 20 scored / 10 conceded
-Avg: 2.00 scored / 1.00 conceded
+🧠 Model probabilities
+
+Projected goals:
+Iran: 1.77
+New Zealand: 0.66
+Projected total: 2.43
+
+Strongest statistical angle: Under 3.5 Goals
+Estimated probability: 77%
+Model profile: Strong statistical lean
+
+Key probabilities:
+Under 2.5 goals: 56%
+Over 2.5 goals: 44%
+Under 3.5 goals: 77%
+Over 1.5 goals: 70%
+Both teams score - Yes: 40%
+Both teams score - No: 60%
+
+━━━━━━━━━━━━━━
+
+📌 Quick read
+Iran enter this matchup with a recent defensive profile of 0.62 goals conceded per match, while New Zealand concede around 1.80. The model projects 2.43 total goals, which points toward a lower-goals watch.
+
+Risk view: High caution watch. This is a statistical watchlist spot, not a guaranteed bet.
+
+━━━━━━━━━━━━━━
+
+📊 Recent form
+Iran
+Record: 4W-2D-2L
+Goals: 14 scored / 5 conceded
+Avg goals: 1.75 scored / 0.62 conceded
 Over 2.5 trend: 50%
-Games where both teams scored: 80%
+Both teams scored trend: 38%
+Clean sheet rate: 62%
+Failed to score rate: 25%
+
+New Zealand
+Record: 1W-1D-8L
+Goals: 7 scored / 18 conceded
+Avg goals: 0.70 scored / 1.80 conceded
+Over 2.5 trend: 40%
+Both teams scored trend: 40%
+Clean sheet rate: 0%
+Failed to score rate: 60%
+
+━━━━━━━━━━━━━━
 
 🤝 Previous meetings between both teams
 Not enough recent direct-meeting data found.
 
-🧠 Most likely by stats
-Most likely market: Under 3.5 Goals
-Estimated probability: 83%
-Profile: Strong statistical lean
+━━━━━━━━━━━━━━
 
-Projected goals:
-Canada: 0.95
-Bosnia & Herzegovina: 1.20
-Projected total goals: 2.15
+🎯 Market watch
+Model angle: Under 3.5 Goals
+Available line: Under 2.5
+Odds around: 1.57
+Confidence on available line: 55.7%
 
-Other probabilities:
-Under 2.5 goals: 64%
-Over 2.5 goals: 36%
-Over 1.5 goals: 63%
-Both teams score - Yes: 43%
-Both teams score - No: 57%
+Risk profile: High caution watch
+Reason: The model likes the general direction, but the available line is stricter.
 
-🎯 Market Watch
-Goals market: Watch Under 2.5 goals
-Available odds around: 1.67
-Market profile: Caution watch
-Confidence on this available line: 58.5%
-
-Note: The statistical model likes the safer goals direction, but the available betting line may be stricter.
-
-🧠 Simple read
-The model leans toward a lower-scoring game. Canada concede about 0.40 goals per match recently, while Bosnia & Herzegovina concede about 1.00. The available sportsbook line is stricter than the original model angle, so this is a watchlist spot, not a lock.
+Verdict: Watchlist spot, not a guaranteed bet.
 
 ━━━━━━━━━━━━━━
 
-Premium version includes:
-- all matches today/tomorrow
-- full market list
-- odds comparison
-- CSV access
-- deeper H2H and form notes
-- future lineup/player alerts
+🔒 Premium includes:
+- Next 5 upcoming matches
+- Full probability tables
+- Odds comparison
+- Risk labels
+- Strong watch / caution watch filters
+- Deeper match reasoning
+
+Use /premium to see access info.
 
 No model can guarantee outcomes.

@@ -155,19 +155,23 @@ def find_h2h_stats(h2h_stats, home_team, away_team):
 
 
 def add_team_block(lines, label, stats):
-    lines.append(f"{label}: {format_record(stats)}")
+    lines.append(f"{label}")
+    lines.append(f"Record: {format_record(stats)}")
     lines.append(
         f"Goals: {int(stats['goals_for'])} scored / {int(stats['goals_against'])} conceded"
     )
     lines.append(
-        f"Avg: {float(stats['avg_goals_for']):.2f} scored / {float(stats['avg_goals_against']):.2f} conceded"
+        f"Avg goals: {float(stats['avg_goals_for']):.2f} scored / "
+        f"{float(stats['avg_goals_against']):.2f} conceded"
     )
-    lines.append(
-        f"Over 2.5 trend: {format_percent(stats['over_2_5_rate'])}"
-    )
-    lines.append(
-        f"Games where both teams scored: {format_percent(stats['btts_rate'])}"
-    )
+    lines.append(f"Over 2.5 trend: {format_percent(stats['over_2_5_rate'])}")
+    lines.append(f"Both teams scored trend: {format_percent(stats['btts_rate'])}")
+
+    if "clean_sheet_rate" in stats:
+        lines.append(f"Clean sheet rate: {format_percent(stats['clean_sheet_rate'])}")
+
+    if "failed_to_score_rate" in stats:
+        lines.append(f"Failed to score rate: {format_percent(stats['failed_to_score_rate'])}")
 
 
 def add_h2h_block(lines, h2h, home_team, away_team):
@@ -245,8 +249,8 @@ def attach_fixture_dates(angles, fixtures):
 
 def select_main_free_match(angles):
     """
-    Selects the first scheduled match of the day with a real available betting line.
-    If there is no match today, it selects the closest upcoming match.
+    Selects the next upcoming match with real available odds.
+    It does not select matches that already passed.
     """
 
     angles = angles.copy()
@@ -267,36 +271,23 @@ def select_main_free_match(angles):
         errors="coerce"
     )
 
-    now = pd.Timestamp.utcnow()
-
-    today_start = now.normalize()
-    today_end = today_start + pd.Timedelta(days=1)
-
-    today_matches = angles[
-        (angles["fixture_date"] >= today_start)
-        & (angles["fixture_date"] < today_end)
-    ].copy()
-
-    if not today_matches.empty:
-        return today_matches.sort_values(
-            by=["fixture_date", "adjusted_confidence_score"],
-            ascending=[True, False]
-        ).head(1)
+    now = pd.Timestamp.now(tz="UTC")
 
     upcoming = angles[
-        angles["fixture_date"] >= now
+        (angles["fixture_date"].notna())
+        & (angles["fixture_date"] >= now)
     ].copy()
 
-    if not upcoming.empty:
-        return upcoming.sort_values(
-            by=["fixture_date", "adjusted_confidence_score"],
-            ascending=[True, False]
-        ).head(1)
+    if upcoming.empty:
+        print("No upcoming free match found.")
+        return upcoming
 
-    return angles.sort_values(
+    upcoming = upcoming.sort_values(
         by=["fixture_date", "adjusted_confidence_score"],
         ascending=[True, False]
-    ).head(1)
+    )
+
+    return upcoming.head(1)
 
 def format_kickoff_time(fixture_date):
     if pd.isna(fixture_date):
@@ -314,6 +305,120 @@ def format_kickoff_time(fixture_date):
     local_time = utc_time.tz_convert(ZoneInfo(REPORT_TIMEZONE))
 
     return local_time.strftime("%b %d, %I:%M %p %Z")
+
+def get_available_line(row):
+    matched_selection = str(row["matched_selection"])
+    matched_point = row["matched_point"]
+
+    if pd.isna(matched_point):
+        return matched_selection
+
+    return f"{matched_selection} {matched_point}"
+
+
+def extract_goal_line(text):
+    if pd.isna(text):
+        return None
+
+    text = str(text)
+
+    for part in text.replace("Goals", "").split():
+        try:
+            return float(part)
+        except ValueError:
+            continue
+
+    return None
+
+
+def get_free_market_risk(model_angle, available_line, adjusted_profile):
+    model_line = extract_goal_line(model_angle)
+    market_line = extract_goal_line(available_line)
+
+    if model_line is None or market_line is None:
+        return get_profile_text(adjusted_profile), "Use this as a watchlist spot, not as a guaranteed position."
+
+    difference = abs(market_line - model_line)
+
+    if difference >= 1.5:
+        return (
+            "Watch only",
+            "The available sportsbook line is much harder than the model angle."
+        )
+
+    if difference >= 1.0:
+        return (
+            "High caution watch",
+            "The model likes the general direction, but the available line is stricter."
+        )
+
+    return (
+        get_profile_text(adjusted_profile),
+        "The available line is reasonably close to the model direction."
+    )
+
+
+def build_quick_read(row, home_team, away_team, home_stats, away_stats, probabilities, risk_profile):
+    selection = str(row["selection"])
+
+    home_gf = float(home_stats["avg_goals_for"])
+    home_ga = float(home_stats["avg_goals_against"])
+    away_gf = float(away_stats["avg_goals_for"])
+    away_ga = float(away_stats["avg_goals_against"])
+
+    expected_total = probabilities["expected_total_goals"]
+
+    if "Under" in selection:
+        return (
+            f"{home_team} enter this matchup with a recent defensive profile of "
+            f"{home_ga:.2f} goals conceded per match, while {away_team} concede around "
+            f"{away_ga:.2f}. The model projects {expected_total:.2f} total goals, "
+            f"which points toward a lower-goals watch.\n\n"
+            f"Risk view: {risk_profile}. This is a statistical watchlist spot, not a guaranteed bet."
+        )
+
+    if "Over" in selection:
+        return (
+            f"{home_team} average {home_gf:.2f} goals scored recently, while "
+            f"{away_team} average {away_gf:.2f}. The model projects "
+            f"{expected_total:.2f} total goals, which supports a goals-market watch.\n\n"
+            f"Risk view: {risk_profile}. The available line still matters, so this should not be treated as automatic value."
+        )
+
+    return (
+        f"The model sees this match as worth monitoring based on recent form, goals profile, "
+        f"and available market lines.\n\n"
+        f"Risk view: {risk_profile}. Educational only, not guaranteed betting advice."
+    )
+
+
+def add_free_probability_block(lines, home_team, away_team, home_stats, away_stats):
+    probabilities = build_probability_summary(home_stats, away_stats)
+
+    best_market, best_probability = get_best_statistical_angle(probabilities)
+    profile = get_probability_profile(best_probability)
+
+    lines.append("🧠 Model probabilities")
+    lines.append("")
+    lines.append("Projected goals:")
+    lines.append(f"{home_team}: {probabilities['home_xg']:.2f}")
+    lines.append(f"{away_team}: {probabilities['away_xg']:.2f}")
+    lines.append(f"Projected total: {probabilities['expected_total_goals']:.2f}")
+    lines.append("")
+    lines.append(f"Strongest statistical angle: {best_market}")
+    lines.append(f"Estimated probability: {format_probability(best_probability)}")
+    lines.append(f"Model profile: {profile}")
+    lines.append("")
+    lines.append("Key probabilities:")
+    lines.append(f"Under 2.5 goals: {format_probability(probabilities['under_2_5'])}")
+    lines.append(f"Over 2.5 goals: {format_probability(probabilities['over_2_5'])}")
+    lines.append(f"Under 3.5 goals: {format_probability(probabilities['under_3_5'])}")
+    lines.append(f"Over 1.5 goals: {format_probability(probabilities['over_1_5'])}")
+    lines.append(f"Both teams score - Yes: {format_probability(probabilities['btts_yes'])}")
+    lines.append(f"Both teams score - No: {format_probability(probabilities['btts_no'])}")
+    lines.append("")
+
+    return probabilities, best_market, best_probability, profile
 
 def generate_free_telegram_intelligence():
     if not os.path.exists(ANGLES_INPUT_PATH):
@@ -336,116 +441,133 @@ def generate_free_telegram_intelligence():
     h2h_stats = pd.read_csv(H2H_STATS_PATH)
     fixtures = pd.read_csv(FIXTURES_PATH)
 
-    angles = angles[angles["odds_found"] == True].copy()
+    angles = angles[
+        (angles["odds_found"] == True)
+        & (angles["best_decimal_odds"].notna())
+        & (angles["matched_selection"].notna())
+    ].copy()
 
-    if angles.empty:
-        lines = [
-            "⚽ World Cup Free Betting Intelligence",
-            "",
-            "No clear market watchlist today.",
-            "",
-            "No guaranteed bets. Educational only. Bet responsibly.",
-        ]
+    angles = attach_fixture_dates(angles, fixtures)
+
+    top = select_main_free_match(angles)
+
+    lines = []
+
+    lines.append("⚽ World Cup Free Match Intelligence")
+    lines.append("")
+    lines.append("One selected match. Data-backed football analysis before the game.")
+    lines.append("No guaranteed bets. Educational only. Bet responsibly.")
+    lines.append("")
+
+    if top.empty:
+        lines.append("No upcoming free match with available odds found right now.")
+        lines.append("")
+        lines.append("Try again later or use /premium for the full watchlist.")
     else:
-        angles = angles.sort_values(
-            by=["adjusted_confidence_score"],
-            ascending=False
-        )
+        row = top.iloc[0]
 
-        angles = angles[
-           (angles["odds_found"] == True)
-         & (angles["best_decimal_odds"].notna())
-         & (angles["matched_selection"].notna())
-          ].copy()
- 
-        angles = attach_fixture_dates(angles, fixtures)
+        home_team = row["home_team"]
+        away_team = row["away_team"]
 
-        top = select_main_free_match(angles)
+        home_stats = find_team_stats(recent_stats, home_team)
+        away_stats = find_team_stats(recent_stats, away_team)
+        h2h = find_h2h_stats(h2h_stats, home_team, away_team)
 
-        print("")
-        print("Free match selected:")
-        if not top.empty:
-         print(
-        top[
-            ["match", "fixture_date", "selection", "best_decimal_odds"]
-        ].to_string(index=False)
-    )
+        if home_stats is None or away_stats is None:
+            lines.append("Not enough team data available for today’s free report.")
         else:
-         print("No free match selected.")
+            available_line = get_available_line(row)
 
-        lines = []
-        lines.append("⚽ World Cup Free Betting Intelligence")
-        lines.append("")
-        lines.append("Main match betting watchlist for today.")
-        lines.append("Based on recent form, goals scored/conceded, previous meetings and betting lines.")
-        lines.append("")
-        lines.append("No guaranteed bets. Educational only. Bet responsibly.")
-        lines.append("")
+            risk_profile, risk_reason = get_free_market_risk(
+                model_angle=str(row["selection"]),
+                available_line=available_line,
+                adjusted_profile=row["adjusted_profile"]
+            )
 
-        for i, (_, row) in enumerate(top.iterrows(), start=1):
-            home_team = row["home_team"]
-            away_team = row["away_team"]
-
-            home_stats = find_team_stats(recent_stats, home_team)
-            away_stats = find_team_stats(recent_stats, away_team)
-            h2h = find_h2h_stats(h2h_stats, home_team, away_team)
-
-            if home_stats is None or away_stats is None:
-                continue
-
+            lines.append(f"Today’s selected match:")
             lines.append(f"⚽ {home_team} vs {away_team}")
 
+            kickoff_time = None
+
             if "fixture_date" in row and pd.notna(row["fixture_date"]):
-             kickoff_time = format_kickoff_time(row["fixture_date"])
+                kickoff_time = format_kickoff_time(row["fixture_date"])
 
             if kickoff_time:
-             lines.append(f"Kickoff: {kickoff_time}")
+                lines.append(f"Kickoff: {kickoff_time}")
 
             lines.append("")
-            lines.append("📊 Last 10 matches")
+            lines.append("━━━━━━━━━━━━━━")
+            lines.append("")
+
+            probabilities, best_market, best_probability, model_profile = add_free_probability_block(
+                lines=lines,
+                home_team=home_team,
+                away_team=away_team,
+                home_stats=home_stats,
+                away_stats=away_stats,
+            )
+
+            lines.append("━━━━━━━━━━━━━━")
+            lines.append("")
+
+            lines.append("📌 Quick read")
+            lines.append(
+                build_quick_read(
+                    row=row,
+                    home_team=home_team,
+                    away_team=away_team,
+                    home_stats=home_stats,
+                    away_stats=away_stats,
+                    probabilities=probabilities,
+                    risk_profile=risk_profile,
+                )
+            )
+            lines.append("")
+
+            lines.append("━━━━━━━━━━━━━━")
+            lines.append("")
+
+            lines.append("📊 Recent form")
             add_team_block(lines, home_team, home_stats)
             lines.append("")
             add_team_block(lines, away_team, away_stats)
             lines.append("")
 
+            lines.append("━━━━━━━━━━━━━━")
+            lines.append("")
+
             add_h2h_block(lines, h2h, home_team, away_team)
             lines.append("")
 
-            add_probability_block(
-    lines=lines,
-    home_team=home_team,
-    away_team=away_team,
-    home_stats=home_stats,
-    away_stats=away_stats,
-)
+            lines.append("━━━━━━━━━━━━━━")
+            lines.append("")
 
-        lines.append("🎯 Market Watch")
-        lines.append(get_simple_market_text(row))
-        lines.append(f"Available odds around: {row['best_decimal_odds']}")
-        lines.append(f"Market profile: {get_profile_text(row['adjusted_profile'])}")
-        lines.append(f"Confidence on this available line: {float(row['adjusted_confidence_score']):.1%}")
-        lines.append("")
-        lines.append(
-    "Note: The statistical model likes the safer goals direction, but the available betting line may be stricter."
-)
-        lines.append("")
+            lines.append("🎯 Market watch")
+            lines.append(f"Model angle: {row['selection']}")
+            lines.append(f"Available line: {available_line}")
+            lines.append(f"Odds around: {row['best_decimal_odds']}")
+            lines.append(f"Confidence on available line: {float(row['adjusted_confidence_score']):.1%}")
+            lines.append("")
+            lines.append(f"Risk profile: {risk_profile}")
+            lines.append(f"Reason: {risk_reason}")
+            lines.append("")
+            lines.append("Verdict: Watchlist spot, not a guaranteed bet.")
+            lines.append("")
 
-        lines.append("🧠 Simple read")
-        lines.append(get_plain_english_reason(row, home_stats, away_stats, h2h))
-        lines.append("")
+            lines.append("━━━━━━━━━━━━━━")
+            lines.append("")
 
-        lines.append("━━━━━━━━━━━━━━")
-        lines.append("")
-
-        lines.append("Premium version includes:")
-        lines.append("- all matches today/tomorrow")
-        lines.append("- full market list")
-        lines.append("- odds comparison")
-        lines.append("- CSV access")
-        lines.append("- deeper H2H and form notes")
-        lines.append("- future lineup/player alerts")
-        lines.append("")
-        lines.append("No model can guarantee outcomes.")
+            lines.append("🔒 Premium includes:")
+            lines.append("- Next 5 upcoming matches")
+            lines.append("- Full probability tables")
+            lines.append("- Odds comparison")
+            lines.append("- Risk labels")
+            lines.append("- Strong watch / caution watch filters")
+            lines.append("- Deeper match reasoning")
+            lines.append("")
+            lines.append("Use /premium to see access info.")
+            lines.append("")
+            lines.append("No model can guarantee outcomes.")
 
     os.makedirs(REPORTS_DIR, exist_ok=True)
 

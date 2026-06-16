@@ -8,79 +8,15 @@ No guaranteed bets. Educational only. Bet responsibly.
 🔥 Next 5 Premium Watchlist Summary
 
 Top model angles:
-1. Iraq vs Norway — Over 1.5 Goals — 60%
-2. Saudi Arabia vs Uruguay — Under 3.5 Goals — 60%
+1. Austria vs Jordan — Over 1.5 Goals — 61%
+2. Iraq vs Norway — Over 1.5 Goals — 60%
 3. France vs Senegal — Over 1.5 Goals — 59%
 
 Next 5 match breakdown below.
 
 ━━━━━━━━━━━━━━
 
-1) Saudi Arabia vs Uruguay
-Kickoff: Jun 15, 06:00 PM EDT
-
-📊 Last 10 matches
-Saudi Arabia: 3W-2D-5L
-Goals: 10 scored / 12 conceded
-Average: 1.00 scored / 1.20 conceded
-Games over 2.5 goals: 60%
-Games where both teams scored: 40%
-Clean sheet rate: 30%
-Failed to score rate: 50%
-
-Uruguay: 4W-4D-2L
-Goals: 10 scored / 9 conceded
-Average: 1.00 scored / 0.90 conceded
-Games over 2.5 goals: 30%
-Games where both teams scored: 30%
-Clean sheet rate: 60%
-Failed to score rate: 40%
-
-🤝 Previous meetings between both teams
-Games found: 1
-Results: Saudi Arabia wins 0 / Uruguay wins 1 / Draws 0
-Average goals: 1.00
-Games over 2.5 goals: 0%
-Games where both teams scored: 0%
-
-🧠 Most likely by stats
-Most likely market: Under 3.5 Goals
-Estimated probability: 85%
-Profile: Strong statistical lean
-
-Projected goals:
-Saudi Arabia: 0.95
-Uruguay: 1.10
-Projected total goals: 2.05
-
-Full probability table:
-Under 2.5 goals: 66%
-Over 2.5 goals: 34%
-Under 3.5 goals: 85%
-Over 1.5 goals: 61%
-Both teams score - Yes: 41%
-Both teams score - No: 59%
-Saudi Arabia over 0.5 goals: 61%
-Uruguay over 0.5 goals: 67%
-Saudi Arabia over 1.5 goals: 25%
-Uruguay over 1.5 goals: 30%
-
-🎯 Available market watch
-Model angle: Under 3.5 Goals
-Available betting line: Under 2.5
-Available odds around: 1.78
-Market profile: High caution watch
-Line warning: Available line is meaningfully stricter than the model angle.
-Action: Use extra caution before considering this market.
-Confidence on this available line: 59.5%
-Interpretation: The model likes the general direction, but the sportsbook line is much harder than the model angle.
-
-🧠 Premium read
-The main signal comes from the defensive side of the matchup. Saudi Arabia are averaging 1.20 goals conceded recently, while Uruguay are averaging 0.90. The safer statistical direction is lower goals, but the available betting line may be stricter, so this should be treated as a watchlist market rather than a guaranteed pick.
-
-━━━━━━━━━━━━━━
-
-2) Iran vs New Zealand
+1) Iran vs New Zealand
 Kickoff: Jun 15, 09:00 PM EDT
 
 📊 Last 10 matches
@@ -137,10 +73,9 @@ Interpretation: The model likes the general direction, but the sportsbook line i
 
 🧠 Premium read
 The main signal comes from the defensive side of the matchup. Iran are averaging 0.62 goals conceded recently, while New Zealand are averaging 1.80. The safer statistical direction is lower goals, but the available betting line may be stricter, so this should be treated as a watchlist market rather than a guaranteed pick.
-
-━━━━━━━━━━━━━━
-
-3) France vs Senegal
+🧠 AI Premium read
+The main signal comes from the defensive side of the matchup. Iran are averaging 0.62 goals conceded recently, while New Zealand are averaging 1.80. The safer statistical direction is lower goals, but the available betting line may be stricter, so this should be treated as a watchlist market rather than a guaranteed pick.
+2) France vs Senegal
 Kickoff: Jun 16, 03:00 PM EDT
 
 📊 Last 10 matches
@@ -197,10 +132,9 @@ Interpretation: The model likes the general direction, but the sportsbook line i
 
 🧠 Premium read
 The goals angle comes from recent attacking and conceding trends. France are averaging 2.50 goals scored recently, while Senegal are averaging 1.60. The model sees enough attacking profile for a goals watch, but risk depends on the available line.
-
-━━━━━━━━━━━━━━
-
-4) Iraq vs Norway
+🧠 AI Premium read
+The goals angle comes from recent attacking and conceding trends. France are averaging 2.50 goals scored recently, while Senegal are averaging 1.60. The model sees enough attacking profile for a goals watch, but risk depends on the available line.
+3) Iraq vs Norway
 Kickoff: Jun 16, 06:00 PM EDT
 
 📊 Last 10 matches
@@ -257,10 +191,9 @@ Interpretation: The model likes the general direction, but the sportsbook line i
 
 🧠 Premium read
 The goals angle comes from recent attacking and conceding trends. Iraq are averaging 1.10 goals scored recently, while Norway are averaging 3.10. The model sees enough attacking profile for a goals watch, but risk depends on the available line.
-
-━━━━━━━━━━━━━━
-
-5) Argentina vs Algeria
+🧠 AI Premium read
+The goals angle comes from recent attacking and conceding trends. Iraq are averaging 1.10 goals scored recently, while Norway are averaging 3.10. The model sees enough attacking profile for a goals watch, but risk depends on the available line.
+4) Argentina vs Algeria
 Kickoff: Jun 16, 09:00 PM EDT
 
 📊 Last 10 matches
@@ -317,8 +250,67 @@ Interpretation: The model likes the general direction, but the sportsbook line i
 
 🧠 Premium read
 The main signal comes from the defensive side of the matchup. Argentina are averaging 0.25 goals conceded recently, while Algeria are averaging 0.40. The safer statistical direction is lower goals, but the available betting line may be stricter, so this should be treated as a watchlist market rather than a guaranteed pick.
+🧠 AI Premium read
+The main signal comes from the defensive side of the matchup. Argentina are averaging 0.25 goals conceded recently, while Algeria are averaging 0.40. The safer statistical direction is lower goals, but the available betting line may be stricter, so this should be treated as a watchlist market rather than a guaranteed pick.
+5) Austria vs Jordan
+Kickoff: Jun 17, 12:00 AM EDT
 
-━━━━━━━━━━━━━━
+📊 Last 10 matches
+Austria: 7W-1D-1L
+Goals: 23 scored / 4 conceded
+Average: 2.56 scored / 0.44 conceded
+Games over 2.5 goals: 33%
+Games where both teams scored: 33%
+Clean sheet rate: 56%
+Failed to score rate: 11%
+
+Jordan: 5W-2D-3L
+Goals: 17 scored / 15 conceded
+Average: 1.70 scored / 1.50 conceded
+Games over 2.5 goals: 70%
+Games where both teams scored: 60%
+Clean sheet rate: 30%
+Failed to score rate: 10%
+
+🤝 Previous meetings between both teams
+Not enough recent direct-meeting data found.
+
+🧠 Most likely by stats
+Most likely market: Over 1.5 Goals
+Estimated probability: 82%
+Profile: Strong statistical lean
+
+Projected goals:
+Austria: 2.03
+Jordan: 1.07
+Projected total goals: 3.10
+
+Full probability table:
+Under 2.5 goals: 40%
+Over 2.5 goals: 60%
+Under 3.5 goals: 62%
+Over 1.5 goals: 82%
+Both teams score - Yes: 57%
+Both teams score - No: 43%
+Austria over 0.5 goals: 87%
+Jordan over 0.5 goals: 66%
+Austria over 1.5 goals: 60%
+Jordan over 1.5 goals: 29%
+
+🎯 Available market watch
+Model angle: Over 1.5 Goals
+Available betting line: Over 2.5
+Available odds around: 1.71
+Market profile: High caution watch
+Line warning: Available line is meaningfully stricter than the model angle.
+Action: Use extra caution before considering this market.
+Confidence on this available line: 61.2%
+Interpretation: The model likes the general direction, but the sportsbook line is much harder than the model angle.
+
+🧠 Premium read
+The goals angle comes from recent attacking and conceding trends. Austria are averaging 2.56 goals scored recently, while Jordan are averaging 1.70. The model sees enough attacking profile for a goals watch, but risk depends on the available line.
+🧠 AI Premium read
+The goals angle comes from recent attacking and conceding trends. Austria are averaging 2.56 goals scored recently, while Jordan are averaging 1.70. The model sees enough attacking profile for a goals watch, but risk depends on the available line.
 
 Premium beta note:
 This product is still improving. Future updates may include lineup alerts, player scoring watch, corners and cards once reliable data is connected.
