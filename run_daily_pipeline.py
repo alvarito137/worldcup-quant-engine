@@ -65,23 +65,18 @@ def main():
             "Generate premium report",
             [python, "src/premium_telegram_report_generator.py"],
         ),
+
+        (
+            "Send premium report to Telegram premium group",
+            [python, "telegram_bot/send_premium_alerts.py"],
+        ),
     ]
 
     for name, command in steps:
         run_step(name, command)
 
-    send_premium = os.getenv("SEND_PREMIUM_REPORT", "false").lower() == "true"
-
-    if send_premium:
-        run_step(
-            "Send premium report to Telegram premium group",
-            [python, "telegram_bot/send_premium_alerts.py"],
-        )
-    else:
-        print("")
-        print("SEND_PREMIUM_REPORT is false. Premium report generated but not sent.")
-
     print("")
+    print("Premium report was generated and sent to the premium Telegram group.")
     print("Daily pipeline completed successfully.")
 
 
