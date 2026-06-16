@@ -203,8 +203,8 @@ Available market: **totals**
 Matched line: **Over 2.5**
 Exact line match: **False**
 Line note: **Closest available line is more aggressive than the model angle.**
-Average odds: **1.772**
-Best odds: **1.81**
+Average odds: **1.784**
+Best odds: **1.82**
 Best bookmaker: **BetOnline.ag**
 Bookmakers found: **5**
 
