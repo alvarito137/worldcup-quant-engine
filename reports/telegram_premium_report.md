@@ -85,7 +85,7 @@ Cards note: Lower cards profile based on recent averages.
 🎯 Available market watch
 Model angle: Over 1.5 Goals
 Available betting line: Over 2.5
-Available odds around: 1.95
+Available odds around: 1.81
 Market profile: High caution watch
 Line warning: Available line is meaningfully stricter than the model angle.
 Action: Use extra caution before considering this market.
@@ -328,7 +328,7 @@ Cards note: Lower cards profile based on recent averages.
 🎯 Available market watch
 Model angle: Over 1.5 Goals
 Available betting line: Over 2.5
-Available odds around: 1.71
+Available odds around: 1.83
 Market profile: High caution watch
 Line warning: Available line is meaningfully stricter than the model angle.
 Action: Use extra caution before considering this market.
@@ -409,7 +409,7 @@ Cards note: Lower cards profile based on recent averages.
 🎯 Available market watch
 Model angle: Under 3.5 Goals
 Available betting line: Under 2.75
-Available odds around: 1.93
+Available odds around: 1.89
 Market profile: Caution watch
 Model confidence on this line: 54.0%
 Line note: Closest available line is more aggressive than the model angle.

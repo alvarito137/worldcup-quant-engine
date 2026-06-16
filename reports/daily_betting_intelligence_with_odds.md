@@ -10,47 +10,27 @@ If the exact model line is not available, the report may show the closest availa
 
 ## Top Markets To Watch
 
-### 1. Saudi Arabia vs Uruguay
+### 1. Canada vs Qatar
 
 Market: **Total Goals**
 Model angle: **Under 3.5 Goals**
-Original profile: **BALANCED**
-Original confidence: **71.5%**
-Adjusted profile: **AGGRESSIVE**
-Adjusted confidence: **59.5%**
+Original profile: **CONSERVATIVE**
+Original confidence: **76.5%**
+Adjusted profile: **BALANCED**
+Adjusted confidence: **64.5%**
 
 Available market: **totals**
-Matched line: **Under 2.5**
+Matched line: **Under 2.75**
 Exact line match: **False**
 Line note: **Closest available line is more aggressive than the model angle.**
-Average odds: **1.758**
-Best odds: **1.78**
-Best bookmaker: **BetOnline.ag**
-Bookmakers found: **6**
+Average odds: **1.87**
+Best odds: **1.87**
+Best bookmaker: **Bovada**
+Bookmakers found: **1**
 
-Reason: Projected total goals: 2.05. Recent goal profile suggests controlled scoring.
+Reason: Projected total goals: 1.55. Recent goal profile suggests controlled scoring.
 
-### 2. Iran vs New Zealand
-
-Market: **Total Goals**
-Model angle: **Under 3.5 Goals**
-Original profile: **BALANCED**
-Original confidence: **67.7%**
-Adjusted profile: **AGGRESSIVE**
-Adjusted confidence: **55.7%**
-
-Available market: **totals**
-Matched line: **Under 2.5**
-Exact line match: **False**
-Line note: **Closest available line is more aggressive than the model angle.**
-Average odds: **1.57**
-Best odds: **1.57**
-Best bookmaker: **BetMGM**
-Bookmakers found: **2**
-
-Reason: Projected total goals: 2.43. Recent goal profile suggests controlled scoring.
-
-### 3. Czechia vs South Africa
+### 2. Czechia vs South Africa
 
 Market: **Total Goals**
 Model angle: **Under 3.5 Goals**
@@ -70,6 +50,26 @@ Bookmakers found: **6**
 
 Reason: Projected total goals: 2.5. Recent goal profile suggests controlled scoring.
 
+### 3. Mexico vs South Korea
+
+Market: **Total Goals**
+Model angle: **Under 3.5 Goals**
+Original profile: **BALANCED**
+Original confidence: **67.0%**
+Adjusted profile: **AGGRESSIVE**
+Adjusted confidence: **55.0%**
+
+Available market: **totals**
+Matched line: **Under 2.5**
+Exact line match: **False**
+Line note: **Closest available line is more aggressive than the model angle.**
+Average odds: **1.565**
+Best odds: **1.57**
+Best bookmaker: **BetMGM**
+Bookmakers found: **2**
+
+Reason: Projected total goals: 2.5. Recent goal profile suggests controlled scoring.
+
 ### 4. Portugal vs Congo DR
 
 Market: **Total Goals**
@@ -83,8 +83,8 @@ Available market: **totals**
 Matched line: **Under 2.75**
 Exact line match: **False**
 Line note: **Closest available line is more aggressive than the model angle.**
-Average odds: **1.93**
-Best odds: **1.93**
+Average odds: **1.89**
+Best odds: **1.89**
 Best bookmaker: **Bovada**
 Bookmakers found: **1**
 
@@ -103,9 +103,9 @@ Available market: **totals**
 Matched line: **Under 2.5**
 Exact line match: **False**
 Line note: **Closest available line is more aggressive than the model angle.**
-Average odds: **1.869**
+Average odds: **1.87**
 Best odds: **1.91**
-Best bookmaker: **BetUS**
+Best bookmaker: **BetRivers**
 Bookmakers found: **7**
 
 Reason: Projected total goals: 2.69. Recent goal profile suggests controlled scoring.
@@ -123,7 +123,7 @@ Available market: **totals**
 Matched line: **Under 2.5**
 Exact line match: **False**
 Line note: **Closest available line is more aggressive than the model angle.**
-Average odds: **1.758**
+Average odds: **1.757**
 Best odds: **1.8**
 Best bookmaker: **LowVig.ag**
 Bookmakers found: **6**
@@ -143,10 +143,10 @@ Available market: **totals**
 Matched line: **Over 2.5**
 Exact line match: **False**
 Line note: **Closest available line is more aggressive than the model angle.**
-Average odds: **1.667**
-Best odds: **1.71**
+Average odds: **1.796**
+Best odds: **1.83**
 Best bookmaker: **BetMGM**
-Bookmakers found: **3**
+Bookmakers found: **5**
 
 Reason: Projected total goals: 3.1. Both teams combine for enough attacking volume.
 
@@ -163,9 +163,9 @@ Available market: **totals**
 Matched line: **Over 2.5**
 Exact line match: **False**
 Line note: **Closest available line is more aggressive than the model angle.**
-Average odds: **1.94**
-Best odds: **1.98**
-Best bookmaker: **BetMGM**
+Average odds: **1.926**
+Best odds: **1.96**
+Best bookmaker: **BetOnline.ag**
 Bookmakers found: **7**
 
 Reason: Projected total goals: 3.05. Both teams combine for enough attacking volume.
@@ -183,10 +183,10 @@ Available market: **totals**
 Matched line: **Over 2.5**
 Exact line match: **False**
 Line note: **Closest available line is more aggressive than the model angle.**
-Average odds: **1.61**
+Average odds: **1.59**
 Best odds: **1.61**
 Best bookmaker: **BetMGM**
-Bookmakers found: **1**
+Bookmakers found: **2**
 
 Reason: Projected total goals: 3.0. Both teams combine for enough attacking volume.
 
@@ -203,10 +203,10 @@ Available market: **totals**
 Matched line: **Over 2.5**
 Exact line match: **False**
 Line note: **Closest available line is more aggressive than the model angle.**
-Average odds: **1.91**
-Best odds: **1.95**
-Best bookmaker: **Bovada**
-Bookmakers found: **7**
+Average odds: **1.772**
+Best odds: **1.81**
+Best bookmaker: **BetOnline.ag**
+Bookmakers found: **5**
 
 Reason: Projected total goals: 2.95. Both teams combine for enough attacking volume.
 

@@ -10,25 +10,25 @@ The goal is to identify markets where recent form, goals profile, and matchup co
 
 ## Top 10 Markets To Watch
 
-### 1. Saudi Arabia vs Uruguay
+### 1. Canada vs Qatar
+
+Market: **Total Goals**
+Selection: **Under 3.5 Goals**
+Profile: **CONSERVATIVE**
+Confidence: **76.5%**
+
+Reason: Projected total goals: 1.55. Recent goal profile suggests controlled scoring.
+
+### 2. Czechia vs South Africa
 
 Market: **Total Goals**
 Selection: **Under 3.5 Goals**
 Profile: **BALANCED**
-Confidence: **71.5%**
+Confidence: **67.0%**
 
-Reason: Projected total goals: 2.05. Recent goal profile suggests controlled scoring.
+Reason: Projected total goals: 2.5. Recent goal profile suggests controlled scoring.
 
-### 2. Iran vs New Zealand
-
-Market: **Total Goals**
-Selection: **Under 3.5 Goals**
-Profile: **BALANCED**
-Confidence: **67.7%**
-
-Reason: Projected total goals: 2.43. Recent goal profile suggests controlled scoring.
-
-### 3. Czechia vs South Africa
+### 3. Mexico vs South Korea
 
 Market: **Total Goals**
 Selection: **Under 3.5 Goals**
